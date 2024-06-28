@@ -1,0 +1,185 @@
+.custom-navbar {
+    background-color: rgba(220, 212, 201, 1);
+}
+
+.navbar-brand {
+    font-size: 4ch;
+    font-weight: bold;
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 30px;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 3px;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: white;
+    font-family: "Inknut Antiqua", serif;
+    background-color: black;
+    border-radius: 50px;
+    padding: 5px 5px;
+    margin: 5px 15px;
+    text-align: center;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.custom-nav-link,
+.navbar-nav .nav-item .dropdown-toggle {
+    border-radius: 50px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 6px;
+    color: white !important;
+}
+
+.navbar-nav .custom-nav-link:focus,
+.navbar-nav .nav-item .dropdown-toggle:focus {
+    color: white;
+    background-color: rgba(163, 20, 20, 1);
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: rgba(163, 20, 20, 1);
+}
+
+.navbar-nav .login-signup .signin-login-button:hover,
+.navbar-nav .custom-nav-link:hover,
+.navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-nav .nav-item .dropdown-toggle:hover {
+    background-color: rgba(163, 20, 20, 1);
+}
+
+.navbar-nav .nav-item.no-caret .dropdown-toggle::after {
+    display: none;
+}
+
+.login-signup .signin-login-button {
+    border-radius: 50px;
+    background-color: rgba(186, 153, 115, .53) !important;
+    border-color: rgba(165, 103, 11, 1);
+    border-width: 2px;
+    font-family: "Inknut Antiqua", serif !important;
+    text-decoration: underline;
+    font-size: 20px !important;
+    color: rgba(165, 103, 11, 1);
+    transition: transform 0.5s;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content {
+    background: none;
+    border: none;
+    border-radius: 0;
+    width: 200vw;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.custom-modal .modal-dialog {
+    max-width: 80vw;
+    width: auto;
+    margin: 0 auto;
+}
+
+.custom-modal .modal-content {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+}
+
+.custom-modal .modal-body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-modal .sinsout {
+    width: 50vw;
+    min-height: 480px;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: transparent; 
+}
+
+.custom-navbar .navbar-toggler:focus,
+.custom-navbar .navbar-toggler:active {
+    border-color: rgba(163, 20, 20, 1);
+    outline: none; 
+    box-shadow: 0 0 5px rgba(163, 20, 20, 1);
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(163, 20, 20, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+@media (min-width: 768px) {
+    .custom-nav-link{
+        font-size: 16px !important;
+    }
+    .navbar-nav .nav-item .dropdown-toggle {
+    font-size: 16px;
+    }
+    .navbar-brand {
+        font-size: 22px;
+    }
+    .login-signup .signin-login-button{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-nav-link{
+        font-size: 20px !important;
+    }
+    .navbar-nav .nav-item .dropdown-toggle {
+    font-size: 20px;
+    }
+    .navbar-brand {
+        font-size: 29px;
+    }
+    .login-signup .signin-login-button{
+        font-size: 16px;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    .custom-nav-link{
+        font-size: 25px !important;
+    }
+    .navbar-nav .nav-item .dropdown-toggle {
+    font-size: 25px;
+    }
+    .navbar-brand {
+        font-size: 35px;
+    }
+    .login-signup .signin-login-button{
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,23 @@
+.rcustom-button {
+    border-radius: 50px;
+    background-color: rgba(186, 153, 115, .53) !important;
+    box-shadow: 5px 5px 20px black;
+    border-color: rgba(165, 103, 11, 1);
+    transition: transform 0.5s;
+}
+
+.rcustom-button .rcustom-button-title {
+    font-size: 30px !important;
+    color: rgba(165, 103, 11, 1);
+    font-family: "Inknut Antiqua", serif !important;
+    text-decoration: underline;
+}
+
+
+.rcustom-button:hover{
+    transform: scale(1.1);
+}
+
+.rcustom-button:focus{
+    border: rgba(165, 103, 11, 1);
+}

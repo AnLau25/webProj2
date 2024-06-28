@@ -1,10 +1,12 @@
-import { useState } from 'react'
 import './App.css'
+import GoldBtn from '../public/GoldBtn'
+import Navnav from '../public/Navnav'
 
 function App() {
 
   return (
     <>
+     <Navnav/>
     </>
   )
 }
