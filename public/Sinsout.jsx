@@ -54,7 +54,7 @@ const Sinsout = ({ onClose, onSignIn }) => {
           </div>
           <div class="divider">
             <div class="line"></div>
-            <img src="/public/Symbol.svg" alt="Symbol" class="symbol"/>
+            <img src="./public/Symbol.svg" alt="Symbol" class="symbol"/>
             <div class="line"></div>
         </div>
           <div className='input-group mb-3'>
@@ -79,7 +79,7 @@ const Sinsout = ({ onClose, onSignIn }) => {
           </div>
           <div class="divider">
             <div class="line"></div>
-            <img src="/public/Symbol.svg" alt="Symbol" class="symbol"/>
+            <img src="./public/Symbol.svg" alt="Symbol" class="symbol"/>
             <div class="line"></div>
         </div>
           <div className='input-group mb-3'>
