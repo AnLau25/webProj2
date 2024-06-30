@@ -48,21 +48,18 @@ const Navnav = () => {
         <>
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container>
-                    <Navbar.Brand href="#home" className="navbar-brand">Insert logo here</Navbar.Brand>
+                    <Navbar.Brand href="#home" className="navbar-brand">Capricho de medianoche</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                            <NavDropdown title="Services" id="services-dropdown" className="no-caret">
-                                <NavDropdown.Item href="#servPage" onClick={() => handleNavLinkClick('servPage')}>Nos services</NavDropdown.Item>
-                                <NavDropdown.Item href="#qundsa" onClick={() => handleNavLinkClick('qundsa')}>Foire aux questions</NavDropdown.Item>
-                                <NavDropdown.Item href="#calc" onClick={() => handleNavLinkClick('calc')}>Estimer les coûts</NavDropdown.Item>
+                        <Nav.Link href="#" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Capricho</Nav.Link>
+                            <NavDropdown title="Our Café" className="no-caret">
+                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('abtus')}>General Info</NavDropdown.Item>
+                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('abtus')}>Schedule</NavDropdown.Item>
+                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('locFind')}>Menu</NavDropdown.Item>
+                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('experts')}>Forms</NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="Notre équipe" className="no-caret">
-                                <NavDropdown.Item href="#abtus" onClick={() => handleNavLinkClick('abtus')}>À propos</NavDropdown.Item>
-                                <NavDropdown.Item href="#locFind" onClick={() => handleNavLinkClick('locFind')}>Nos sites</NavDropdown.Item>
-                                <NavDropdown.Item href="#experts" onClick={() => handleNavLinkClick('experts')}>Nos équipes</NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link href="#rndvs" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Prendre rendez-vous</Nav.Link>
+                            <Nav.Link href="#r" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Collection</Nav.Link>
                         </Nav>
                         <div className="login-signup">
                             {isSignedIn ? (
