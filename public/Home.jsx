@@ -8,13 +8,13 @@ const Home = () => {
             <div className='Carrousel'>
                 <Carousel>
                     <Carousel.Item>
-                        <img src='../public/JULES VERNE (c)Pop Films et 13 Prods.jpg' text="First slide" />
+                        <img src='./public/JULES VERNE (c)Pop Films et 13 Prods.jpg' text="First slide" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src='../public/69309ab082550bebe755a7094c28e507 2.svg'text="Second slide" />
+                        <img src='./public/69309ab082550bebe755a7094c28e507 2.svg'text="Second slide" />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img src='../public/69309ab082550bebe755a7094c28e507 2.svg'text="Third slide" />
+                        <img src='./public/69309ab082550bebe755a7094c28e507 2.svg'text="Third slide" />
                     </Carousel.Item>
                 </Carousel>
             </div>
