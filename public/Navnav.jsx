@@ -1,8 +1,7 @@
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Button, Container, Modal } from 'react-bootstrap';
 import './Navnav.css';
-import SignIn from './SignIn';
-import { useState } from 'react';
+import Sinsout from './Sinsout';
 
 const Navnav = () => {
     const [showModal, setShowModal] = useState(false);
@@ -52,14 +51,14 @@ const Navnav = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                        <Nav.Link href="#" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Capricho</Nav.Link>
+                            <Nav.Link href="#home" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Capricho</Nav.Link>
                             <NavDropdown title="Our Café" className="no-caret">
                                 <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('abtus')}>General Info</NavDropdown.Item>
                                 <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('abtus')}>Schedule</NavDropdown.Item>
                                 <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('locFind')}>Menu</NavDropdown.Item>
                                 <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('experts')}>Forms</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#r" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Collection</Nav.Link>
+                            <Nav.Link href="#home" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Collection</Nav.Link>
                         </Nav>
                         <div className="login-signup">
                             {isSignedIn ? (
@@ -74,7 +73,7 @@ const Navnav = () => {
 
             <Modal show={showModal} onHide={handleClose} centered className="custom-modal">
                 <Modal.Body>
-                    <SignIn onClose={handleClose} onSignIn={handleSignIn} />
+                    <Sinsout onClose={handleClose} onSignIn={handleSignIn} />
                 </Modal.Body>
             </Modal>
         </>

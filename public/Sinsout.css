@@ -1,0 +1,106 @@
+
+.sinsout {
+    background-color: rgba(220, 212, 201, 1);
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
+    min-height: 480px;
+    max-width: 100%;
+}
+
+.sinsout .right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+.sinsout h1 {
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+}
+
+.sinsout p{
+    font-size: 20px;
+    font-family: "Inknut Antiqua", serif !important;
+}
+
+.sinsout .switch-content {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 0 50px 50px 0;
+    z-index: 1000;
+}
+
+.sinsout.active .switch-content {
+    transform: translateX(100%);
+    border-radius: 60px 0 0 60px;
+}
+
+.sinsout .switch {
+    background-color: rgba(63, 40, 7, 1);
+    height: 100%;
+    color: white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.sinsout.active .switch {
+    transform: translateX(0);
+}
+
+.sinsout .switch-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: 0.6s ease-in-out;
+}
+
+.sinsout .switch-left {
+    transform: translateX(-200%);
+}
+
+.sinsout.active .switch-left {
+    right: 0;
+    transform: translateX(0);
+}
+
+.switch-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.sinsout.active .switch-right {
+    transform: translateX(200%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2000;
+  color: rgba(165, 103, 11, 1); 
+}
+
+.col-md-6 {
+  position: relative; 
+}

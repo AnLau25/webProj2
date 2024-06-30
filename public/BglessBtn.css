@@ -1,11 +1,11 @@
-.rcustom-button {
+.bcustom-button {
     border-radius: 50px;
-    background-color: rgba(186, 153, 115, .53) !important;
+    background-color: transparent !important;
     border-color: rgba(165, 103, 11, 1);
     transition: transform 0.5s;
 }
 
-.rcustom-button .rcustom-button-title {
+.bcustom-button .bcustom-button-title {
     font-size: 20px !important;
     color: rgba(165, 103, 11, 1);
     font-family: "Inknut Antiqua", serif !important;
@@ -13,11 +13,11 @@
 }
 
 
-.rcustom-button:hover{
+.bcustom-button:hover{
     transform: scale(1.1);
     border-color: rgba(165, 103, 11, 1);
 }
 
-.rcustom-button:focus{
+.bcustom-button:focus{
     border: rgba(165, 103, 11, 1);
 }

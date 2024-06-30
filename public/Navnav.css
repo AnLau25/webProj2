@@ -9,7 +9,7 @@
 }
 
 .navbar-nav .nav-link {
-    color: rgba(91, 71, 40, 1) !important;
+    color: rgba(63, 40, 7, 1) !important;
     margin-right: 10px;
     font-size: 20px !important;
 }
@@ -24,7 +24,7 @@
 }
 
 .navbar-nav .dropdown-menu .dropdown-item {
-    color: rgba(91, 71, 40, 1);
+    color: rgba(63, 40, 7, 1);
     font-family: "Inknut Antiqua", serif;
     background-color: rgba(220, 212, 201, 1);
     border-radius: 50px;
@@ -46,7 +46,7 @@
     font-size: 20px !important;
     font-weight: bold;
     padding: 6px;
-    color: rgba(91, 71, 40, 1) !important;
+    color: rgba(63, 40, 7, 1) !important;
 }
 
 .navbar-brand:hover,
@@ -78,7 +78,7 @@
     font-family: "Inknut Antiqua", serif !important;
     text-decoration: underline;
     font-size: 20px !important;
-    color: rgba(91, 71, 40, 1);
+    color: rgba(63, 40, 7, 1);
     transition: transform 0.5s;
     transition: background-color 0.3s ease;
 }
@@ -173,5 +173,4 @@
     .login-signup .signin-login-button{
         font-size: 20px;
     }
-
 }
