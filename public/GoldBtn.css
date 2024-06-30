@@ -7,6 +7,7 @@
 
 .rcustom-button .rcustom-button-title {
     font-size: 20px !important;
+    font-weight: lighter;
     color: rgba(165, 103, 11, 1);
     font-family: "Inknut Antiqua", serif !important;
     text-decoration: underline;
