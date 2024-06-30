@@ -52,6 +52,11 @@ const Sinsout = ({ onClose, onSignIn }) => {
           <div className='header-text mb-4 justify-content-center'>
             <h1>Create an acount</h1>
           </div>
+          <div class="divider">
+            <div class="line"></div>
+            <img src="/public/Symbol.svg" alt="Symbol" class="symbol"/>
+            <div class="line"></div>
+        </div>
           <div className='input-group mb-3'>
             <input type='text' placeholder="User name" className='form-control form-control-lg bg-light fs-6' />
           </div>
@@ -70,8 +75,13 @@ const Sinsout = ({ onClose, onSignIn }) => {
       <div className='col-md-6 right-box'>
         <form>
           <div className='header-text mb-4 justify-content-center'>
-            <h1>Connect to your account</h1>
+            <h1>Connect to account</h1>
           </div>
+          <div class="divider">
+            <div class="line"></div>
+            <img src="/public/Symbol.svg" alt="Symbol" class="symbol"/>
+            <div class="line"></div>
+        </div>
           <div className='input-group mb-3'>
             <input type='text' placeholder="User name" className='form-control form-control-lg bg-light fs-6' />
           </div>
