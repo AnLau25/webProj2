@@ -1,0 +1,27 @@
+/* Ensure the slideshow takes the full width and height of the viewport */
+.slideshow {
+    width: 100%;
+    height: 95vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Carousel container should be responsive */
+.Carrousel {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Images should be responsive and cover the container without overflow */
+.Carrousel img {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    display: block;
+}
