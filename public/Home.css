@@ -1,17 +1,16 @@
 /* Ensure the slideshow takes the full width and height of the viewport */
 .slideshow {
     width: 100%;
-    height: 95vh; 
+    height: 100vh;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    overflow: hidden; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
-/* Carousel container should be responsive */
-.Carrousel {
+.carousel {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -19,9 +18,56 @@
 }
 
 /* Images should be responsive and cover the container without overflow */
-.Carrousel img {
+.carousel img {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     object-fit: cover;
-    display: block;
+    display: block !important;
+}
+
+
+.text-container {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translateY(-50%);
+    background-color: rgba(220, 212, 201, 1);
+    max-width: 30%;
+    padding: 20px;
+    border-radius: 30px;
+    z-index: 10;
+    font-family: "Inknut Antiqua", serif;
+    color: rgba(63, 40, 7, 1);
+    font-size: 20px;
+}
+
+.text-container h3{
+    font-size: 3ch !important;
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+}
+
+.text-container h3::before{
+    content: '';
+    position: absolute;
+    bottom: 77%;
+    width: 60%; 
+    height: 1px;
+    background-color: rgba(165, 103, 11, 1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content:start;
+    width: 100%;
+}
+
+.nav-links a {
+    padding: 10px;
+    text-decoration: underline;
+    border-radius: 30px;
+}
+
+.nav-links a:hover{
+    color: rgba(165, 103, 11, 1);
 }
