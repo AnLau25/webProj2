@@ -1,0 +1,17 @@
+.GoldSep .dvdr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.GoldSep .dvdr .line {
+    width: 80%;
+    height: 2px;
+    background-color: rgba(165, 103, 11, 1); 
+}
+
+.GoldSep .dvdr .symbol {
+    width:2%;
+    margin: 0 70px;
+}

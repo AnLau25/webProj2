@@ -63,7 +63,7 @@
 .navbar-nav .custom-nav-link:hover,
 .navbar-nav .dropdown-menu .dropdown-item:hover,
 .navbar-nav .nav-item .dropdown-toggle:hover {
-    background-color: rgba(186, 153, 115, .53) !important;
+    background-color: rgba(202, 181, 155, 1) !important;
 }
 
 .navbar-nav .nav-item.no-caret .dropdown-toggle::after {
