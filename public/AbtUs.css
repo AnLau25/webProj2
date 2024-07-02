@@ -1,5 +1,15 @@
 .AbtUs{
     background-color: rgba(220, 212, 201, 1);
+    height: 100%;
+    width: 100%;
+}
+
+.AbtUs .txt-container{
+    position: relative;
+    left: 15%;
+    top: 15%;
+    max-width: 30%;
+    padding: 20px;
 }
 
 .AbtUs h1{
@@ -14,8 +24,14 @@
     font-family: "Inknut Antiqua", serif;
     color: rgba(63, 40, 7, 1);
     font-size: 20px;
+    line-height: 50px;
 }
 
 .AbtUs .times{
     text-decoration: underline;
+}
+
+.AbtUs .btn-container{
+    display: flex;
+    justify-content: flex-start;
 }
