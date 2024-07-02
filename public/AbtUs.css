@@ -1,0 +1,21 @@
+.AbtUs{
+    background-color: rgba(220, 212, 201, 1);
+}
+
+.AbtUs h1{
+    font-size: 5ch !important;
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+    text-decoration: underline;
+}
+
+.AbtUs .times,
+.AbtUs p{
+    font-family: "Inknut Antiqua", serif;
+    color: rgba(63, 40, 7, 1);
+    font-size: 20px;
+}
+
+.AbtUs .times{
+    text-decoration: underline;
+}
