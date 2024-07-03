@@ -49,11 +49,10 @@
 
 .map-container {
     position: relative;
-    padding-left: 70px;
-    padding-right: 150px;
+    padding-left: 80px;
+    padding-right: 140px;
     padding-top: 20px;
-    padding-bottom:5px;
-   
+    margin-bottom:5px;  
 }
 
 .map {
