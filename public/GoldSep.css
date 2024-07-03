@@ -6,8 +6,8 @@
 }
 
 .GoldSep .dvdr .line {
-    width: 80%;
-    height: 2px;
+    width: 100%;
+    height: 1px;
     background-color: rgba(165, 103, 11, 1); 
 }
 
