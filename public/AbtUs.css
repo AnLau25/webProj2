@@ -23,6 +23,7 @@
     color: rgba(165, 103, 11, 1);
     font-family: "Italianno", cursive;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
 }
 
 .AbtUs .times,
