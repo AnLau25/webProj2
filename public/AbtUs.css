@@ -11,10 +11,10 @@
 }
 
 .AbtUs .txt-container {
-    padding-left: 120px;
-    padding-right: 100px;
+    padding-left: 140px;
+    padding-right: 90px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-align: justify;
 }
 
@@ -49,10 +49,10 @@
 
 .map-container {
     position: relative;
-    padding-left: 120px;
-    padding-right: 100px;
+    padding-left: 140px;
+    padding-right: 90px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
    
 }
 
