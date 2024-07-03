@@ -30,6 +30,7 @@ const AbtUs = () => {
                     </div>
                 </Col>
                 <Col sx={6}>
+                    <h3>Placeholder</h3>
                 </Col>
             </Row>
 
