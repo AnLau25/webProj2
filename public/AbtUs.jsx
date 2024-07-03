@@ -7,13 +7,13 @@ import { Row, Col, Container } from 'react-bootstrap';
 const AbtUs = () => {
     return (
         <div className='AbtUs'>
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col xs={12}>
                         <GoldSep />
                     </Col>
                 </Row>
-                <Row>
+                <Row className='content-row'>
                     <Col xs={12} md={6} className='txt-container'>
                         <h1>About our “Capricho”</h1>
                         <p>
@@ -36,7 +36,7 @@ const AbtUs = () => {
                 </Row>
             </Container>
         </div>
-    )
+    );
 }
 
 export default AbtUs;

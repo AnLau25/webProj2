@@ -1,18 +1,19 @@
-.AbtUs{
+.AbtUs {
     background-color: rgba(220, 212, 201, 1);
-    height: 100%;
-    width: 100%;
+    min-height: 100%; /* Ensures the component fills the viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
-.AbtUs .txt-container{
-    position: relative;
-    left: 15%;
-    top: 15%;
-    max-width: 30%;
-    padding: 20px;
+.content-row {
+    flex: 1; /* Ensures the content row takes available space */
 }
 
-.AbtUs h1{
+.AbtUs .txt-container {
+    padding: 100px;
+}
+
+.AbtUs h1 {
     font-size: 5ch !important;
     color: rgba(165, 103, 11, 1);
     font-family: "Italianno", cursive;
@@ -20,18 +21,27 @@
 }
 
 .AbtUs .times,
-.AbtUs p{
+.AbtUs p {
     font-family: "Inknut Antiqua", serif;
     color: rgba(63, 40, 7, 1);
     font-size: 20px;
     line-height: 50px;
 }
 
-.AbtUs .times{
+.AbtUs .times {
     text-decoration: underline;
 }
 
-.AbtUs .btn-container{
+.AbtUs .btn-container {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row; /* Changed to row to display buttons side by side */
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.AbtUs .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
