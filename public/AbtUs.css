@@ -13,7 +13,7 @@
 .AbtUs .txt-container {
     padding-left: 120px;
     padding-right: 100px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     text-align: justify;
 }
@@ -30,7 +30,7 @@
 .AbtUs p {
     font-family: "Inknut Antiqua", serif;
     color: rgba(63, 40, 7, 1);
-    font-size: 17px;
+    font-size: 15px;
     line-height: 50px;
 }
 
@@ -51,7 +51,7 @@
     position: relative;
     padding-left: 120px;
     padding-right: 100px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
    
 }
