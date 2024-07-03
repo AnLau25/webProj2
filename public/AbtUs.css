@@ -4,6 +4,7 @@
     width: 100%; 
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
 
 .content-row {
@@ -12,18 +13,18 @@
 
 .AbtUs .txt-container {
     padding-left: 70px;
-    padding-right: 30px;
+    padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: justify;
 }
 
 .AbtUs h1 {
-    font-size: 80px !important;
+    font-size: 70px !important;
     color: rgba(165, 103, 11, 1);
     font-family: "Italianno", cursive;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
 }
 
 .AbtUs .times,
