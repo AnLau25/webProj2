@@ -4,7 +4,6 @@
     width: 100%; 
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
 }
 
 .content-row {
@@ -14,7 +13,7 @@
 .AbtUs .txt-container {
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-bottom: 20px;
     text-align: justify;
 }
