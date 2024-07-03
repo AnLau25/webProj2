@@ -17,17 +17,19 @@ const AbtUs = () => {
                     <Col xs={12} md={6} className='txt-container'>
                         <h1>About our “Capricho”</h1>
                         <p>
-                            Short explanation of the café’s name and the fact that “Capricho” 
-                            means whim in Spanish. Some background info as to who the small group 
-                            of entrepreneurs is, you know the basics. This page works well because 
-                            it’s for a start-up and cause this place has a background story in my 
+                            Short explanation of the café’s name and the fact that “Capricho”
+                            means whim in Spanish. Some background info as to who the small group
+                            of entrepreneurs is, you know the basics. This page works well because
+                            it’s for a start-up and cause this place has a background story in my
                             head that deserves to be told.
                         </p>
-                        <div className='times'>Mon-Thu : 10h00 - 12h00 am</div>
-                        <div className='times'>Fri-Sun : 11h00 - 01h00 am</div>
+                        <div className='times'>
+                            <div>Mon-Thu : 10h00 - 12h00 am</div>
+                            <div>Fri-Sun : 11h00 - 01h00 am</div>
+                        </div>
                         <div className='btn-container'>
-                            <GoldBtn href="#" prop='Check out the events'/>
-                            <GoldBtn href="#" prop='Check out the menu'/>
+                            <GoldBtn href="#" prop='Check out the events' />
+                            <GoldBtn href="#" prop='Check out the menu' />
                         </div>
                     </Col>
                     <Col xs={12} md={6} className='map'>
