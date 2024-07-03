@@ -29,8 +29,8 @@ const AbtUs = () => {
                         <GoldBtn href="#" prop='Check out the menu'/>
                     </div>
                 </Col>
-                <Col sx={6}>
-                    <h3>Placeholder</h3>
+                <Col sx={6} className='txt-container'>
+                    <h1>Placeholder</h1>
                 </Col>
             </Row>
 
