@@ -19,7 +19,7 @@
 }
 
 .AbtUs h1 {
-    font-size: 70px !important;
+    font-size: 60px !important;
     color: rgba(165, 103, 11, 1);
     font-family: "Italianno", cursive;
     text-decoration: underline;
@@ -44,6 +44,7 @@
     flex-direction: row; /* Changed to row to display buttons side by side */
     align-items: flex-start;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 .AbtUs .map {
