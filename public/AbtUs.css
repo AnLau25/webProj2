@@ -1,16 +1,16 @@
-.AbtUs{
+.AbtUs {
     background-color: rgba(220, 212, 201, 1);
     height: 100%;
     width: 100%;
+    padding: 20px;
 }
 
-.AbtUs .txt-container{
-    position: relative;
-    top: 15%;
-    margin: 20px;
+.AbtUs .txt-container {
+    margin: auto;
+    padding: 20px;
 }
 
-.AbtUs h1{
+.AbtUs h1 {
     font-size: 5ch !important;
     color: rgba(165, 103, 11, 1);
     font-family: "Italianno", cursive;
@@ -18,18 +18,27 @@
 }
 
 .AbtUs .times,
-.AbtUs p{
+.AbtUs p {
     font-family: "Inknut Antiqua", serif;
     color: rgba(63, 40, 7, 1);
     font-size: 20px;
     line-height: 50px;
 }
 
-.AbtUs .times{
+.AbtUs .times {
     text-decoration: underline;
 }
 
-.AbtUs .btn-container{
+.AbtUs .btn-container {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.AbtUs .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
