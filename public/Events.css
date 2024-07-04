@@ -45,7 +45,6 @@
 
 .txt-container {
     padding: 20px;
-    width: 40%;
 }
 
 .tab-container .txt{
@@ -74,7 +73,6 @@
 .events-card {
     background-color: rgba(202, 181, 155, 1);
     border-radius: 30px;
-    width: 50%;
     padding: 30px;
     border-color: rgba(165, 103, 11, 1);
     border-width: 2px;

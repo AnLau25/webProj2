@@ -13,7 +13,7 @@ const Events = () => {
                         <Tab eventKey="rdrs" title="Readers">
                             <div className='tab-content'>
                                 <Row>
-                                    <Col xs={12} md={6} className='txt-container'>
+                                    <Col xs={12} md={4} className='txt-container'>
                                         <div className='txt'>
                                             <h1>Library Collection</h1>
                                             <p>Short description of the way the library system works. A lil talk about the classics maybe talk abt the booking system.</p>
@@ -25,7 +25,7 @@ const Events = () => {
                                             <GoldBtn href="#" prop='Check out the menu' />
                                         </div>
                                     </Col>
-                                    <Col xs={12} md={6} className='events-card'>
+                                    <Col xs={12} md={8} className='events-card'>
                                         <h1>Events of the week</h1>
                                         <Container className='accord-container'>
                                             <Accordion defaultActiveKey="0" flush className='accord'>
