@@ -6,7 +6,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 const AbtUs = () => {
     return (
-        <div className='AbtUs'>
+        <section className='AbtUs' id='Abts'>
             <Container fluid>
                 <Row>
                     <Col xs={12}>
@@ -41,7 +41,7 @@ const AbtUs = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </section>
     );
 }
 

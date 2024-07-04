@@ -93,14 +93,15 @@
 }
 
 .carousel-control-prev-icon::before {
-    content: '\2039'; /* Unicode for left arrow */
+    content: '\2039';
 }
 
 .carousel-control-next-icon::before {
-    content: '\203A'; /* Unicode for right arrow */}
+    content: '\203A'; 
+}
 
     .carousel-control-prev::after,
     .carousel-control-next::after {
-        background-color: rgba(220, 212, 201, 1); /* Change this to your desired color */
+        background-color: rgba(220, 212, 201, 1); 
     }
 
