@@ -34,6 +34,7 @@
     border-radius: 0 30px 30px 30px;
     color: rgba(63, 40, 7, 1);
     font-family: "Inknut Antiqua", serif;   
+    height: 60%;
 }
 
 .placeholder {
@@ -52,7 +53,7 @@
 }
 
 .tab-content h1 {
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     margin-bottom: 20px;
 }
