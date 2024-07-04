@@ -28,6 +28,8 @@
 .tab-content {
     background-color: rgba(220, 212, 201, 1);
     border-radius: 0 30px 30px 30px;
+    color: rgba(63, 40, 7, 1) !important;
+    font-family: "Inknut Antiqua", serif;
 }
 
 .placeholder {
@@ -39,21 +41,23 @@
 
 .txt-container {
     margin: 20px;
-    color: rgba(63, 40, 7, 1) !important;
-    font-family: "Inknut Antiqua", serif;
 }
 
 .txt-container .txt {
     padding: 20px;
 }
 
-.txt-container .txt h1 {
+.bCard {
+    margin: 20px;
+}
+
+.tab-content h1 {
     font-size: 30px;
     position: relative;
     margin-bottom: 20px;
 }
 
-.txt-container .txt h1::before {
+.tab-content h1::before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -64,4 +68,8 @@
 
 .txt-container .txt p {
     font-size: 15px;
+}
+
+.Acord-container {
+    padding: 20px;
 }
