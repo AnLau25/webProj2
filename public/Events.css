@@ -1,5 +1,5 @@
 .tab-container {
-    padding: 5px 5px;
+    padding: 20px 0px 20px 0px;
 }
 
 .custom-tabs {
@@ -7,7 +7,7 @@
 }
 
 .custom-tabs .nav-link {
-    font-size: 60px;
+    font-size: 50px;
     color: rgba(220, 212, 201, 1);
     background-color: rgba(185, 170, 147, 0.5);
     font-family: "Italianno", cursive;
@@ -45,7 +45,6 @@
 
 .txt-container {
     padding: 10px;
-    
 }
 
 .tab-container .txt{
