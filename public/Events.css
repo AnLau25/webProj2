@@ -1,6 +1,7 @@
 .tab-container {
-    padding: 50px 10px;
+    padding: 5px 5px;
 }
+
 .custom-tabs {
     border: none;
 }
@@ -43,7 +44,8 @@
 }
 
 .txt-container {
-    padding: 20px;
+    padding: 10px;
+    
 }
 
 .tab-container .txt{
@@ -81,6 +83,8 @@
 .accord-container {
     background-color: rgba(202, 181, 155, 1);
     border-color: rgba(165, 103, 11, 1);
+    padding: 0;
+    margin: 0;
 }
 
 .accord-container .accordion-header {
