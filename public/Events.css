@@ -164,7 +164,9 @@
     justify-content: start;
     align-items: start;
     text-align: left;
-    box-shadow: none;
+    box-shadow: none;}
+
+.accord-container .accordion-collapse{    
     overflow-y: auto;
 }
 
