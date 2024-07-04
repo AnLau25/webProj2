@@ -7,20 +7,20 @@
 }
 
 .custom-tabs .nav-link {
-    font-size: 60px !important;
-    color: rgba(220, 212, 201, 1) !important;
-    background-color: rgba(185, 170, 147, 0.5) !important;
+    font-size: 60px;
+    color: rgba(220, 212, 201, 1);
+    background-color: rgba(185, 170, 147, 0.5);
     font-family: "Italianno", cursive;
     border-radius: 30px 30px 0 0;
     border: none;
-    line-height: 1 !important; 
+    line-height: 1;
 }
 
 .custom-tabs .nav-link:focus,
 .custom-tabs .nav-link:hover,
-.custom-tabs .nav-link:active {
-    color: rgba(165, 103, 11, 1) !important;
-    background-color: rgba(220, 212, 201, 1) !important;
+.custom-tabs .nav-link.active {
+    color: rgba(165, 103, 11, 1);
+    background-color: rgba(220, 212, 201, 1);
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
@@ -28,27 +28,23 @@
 .tab-content {
     background-color: rgba(220, 212, 201, 1);
     border-radius: 0 30px 30px 30px;
-    color: rgba(63, 40, 7, 1) !important;
+    color: rgba(63, 40, 7, 1);
     font-family: "Inknut Antiqua", serif;
 }
 
 .placeholder {
-    color: rgba(165, 103, 11, 1) !important;
-    font-size: 60px !important;
+    color: rgba(165, 103, 11, 1);
+    font-size: 60px;
     font-family: "Italianno", cursive;
     background-color: transparent;
 }
 
-.txt-container {
-    margin: 20px;
-}
-
-.txt-container .txt {
+.text-container {
     padding: 20px;
 }
 
-.bCard {
-    margin: 20px;
+.text-section {
+    padding: 20px;
 }
 
 .tab-content h1 {
@@ -66,10 +62,89 @@
     background-color: rgba(63, 40, 7, 1);
 }
 
-.txt-container .txt p {
+.text-section p {
     font-size: 15px;
 }
 
-.Acord-container {
-    padding: 20px;
+.events-card{
+    background-color: rgba(202, 181, 155, 1);
+    border-radius: 30px;
+    width: 30%;
 }
+
+.accord-container {
+    background-color: rgba(202, 181, 155, 1);
+    border-color: rgba(165, 103, 11, 1);
+    padding: 0;
+    margin: 0;
+}
+
+.accord-container .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.accord-container .accordion-button {
+    background-color: rgba(202, 181, 155, 1);
+    color: rgba(63, 40, 7, 1);
+    height: auto;
+    border-top: 0.5px solid rgba(63, 40, 7, 1);
+    border-bottom: none;
+    display: block;
+}
+
+.accord-container .accordion-button::after {
+    display: none;
+}
+
+.accord-container .accordion-button::before {
+    content: '';
+    background-image: url('AvroArrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accord-container .accordion-button:not(.collapsed) {
+    background-color: rgba(202, 181, 155, 1);
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.accord-container .accordion-button:not(.collapsed)::before {
+    transform: rotate(90deg);
+}
+
+.accord-container .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.accord-container .accordion-button.collapsed {
+    box-shadow: none !important;
+}
+
+.accord-container .accordion-body {
+    background-color: rgba(202, 181, 155, 1);
+    color: rgba(63, 40, 7, 1);
+    font-size: 15px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    padding-left: 60px;
+    box-shadow: none;
+}
+
+.accord-container .accordion-item {
+    border: none;
+}
+

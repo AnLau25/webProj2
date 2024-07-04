@@ -13,6 +13,40 @@ const Events = () => {
                         <Tab eventKey="rdrs" title="Readers">
                             <div className='tab-content'>
                                 <Row>
+                                    <Col xs={12} md={6} className='events-card'>
+                                        <h1>Events of the week</h1>
+                                        <Container className='accord-container'>
+                                            <Accordion defaultActiveKey="0" flush>
+                                                <Accordion.Item eventKey="0">
+                                                    <Accordion.Header>
+                                                        <div className='auth'>Maurice Leblanc<span>Mon Tue</span></div>
+                                                        <div>On how to write a classy burglar</div>
+                                                    </Accordion.Header>
+                                                    <Accordion.Body>
+                                                        Join literary genius of mystery, Leblanc, for a workshop on how to write a character with dubious morale but plenty of finesse.
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="1">
+                                                    <Accordion.Header className='accordion-header-custom'>Mettre une deuxième question ici ?</Accordion.Header>
+                                                    <Accordion.Body>
+                                                        La réponse irait ici, l'engrenage fonctionne comme un toggle.
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="2">
+                                                    <Accordion.Header className='accordion-header-custom'>Mettre une troisième question ici ?</Accordion.Header>
+                                                    <Accordion.Body>
+                                                        La réponse irait ici, l'engrenage fonctionne comme un toggle.
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                                <Accordion.Item eventKey="3">
+                                                    <Accordion.Header className='accordion-header-custom'>Mettre une quatrième question ici ?</Accordion.Header>
+                                                    <Accordion.Body>
+                                                        La réponse irait ici, l'engrenage fonctionne comme un toggle.
+                                                    </Accordion.Body>
+                                                </Accordion.Item>
+                                            </Accordion>
+                                        </Container>
+                                    </Col>
                                     <Col xs={12} md={6} className='txt-container'>
                                         <div className='txt'>
                                             <h1>Library Collection</h1>
@@ -24,37 +58,6 @@ const Events = () => {
                                             <p>Specs about the menu, the time at which each menu happens, maybe talk about the chef.</p>
                                             <GoldBtn href="#" prop='Check out the menu' />
                                         </div>
-                                    </Col>
-                                    <Col xs={12} md={6} className='bCard'>
-                                        <h1>QUESTIONS & RÉPONSES</h1>
-                                        <Container className='Acord-container'>
-                                            <Accordion defaultActiveKey="0" flush>
-                                                <Accordion.Item eventKey="0">
-                                                    <Accordion.Header>Mettre une première question ici ?</Accordion.Header>
-                                                    <Accordion.Body>
-                                                        La réponse irait ici, l'engrenage fonctionne comme un toggle.
-                                                    </Accordion.Body>
-                                                </Accordion.Item>
-                                                <Accordion.Item eventKey="1">
-                                                    <Accordion.Header>Mettre une deuxième question ici ?</Accordion.Header>
-                                                    <Accordion.Body>
-                                                        La réponse irait ici, l'engrenage fonctionne comme un toggle.
-                                                    </Accordion.Body>
-                                                </Accordion.Item>
-                                                <Accordion.Item eventKey="2">
-                                                    <Accordion.Header>Mettre une troisième question ici ?</Accordion.Header>
-                                                    <Accordion.Body>
-                                                        La réponse irait ici, l'engrenage fonctionne comme un toggle.
-                                                    </Accordion.Body>
-                                                </Accordion.Item>
-                                                <Accordion.Item eventKey="3">
-                                                    <Accordion.Header>Mettre une quatrième question ici ?</Accordion.Header>
-                                                    <Accordion.Body>
-                                                        La réponse irait ici, l'engrenage fonctionne comme un toggle.
-                                                    </Accordion.Body>
-                                                </Accordion.Item>
-                                            </Accordion>
-                                        </Container>
                                     </Col>
                                 </Row>
                             </div>
