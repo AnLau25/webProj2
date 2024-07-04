@@ -78,6 +78,7 @@
     border-color: rgba(165, 103, 11, 1);
     border-width: 2px;
     border-style: solid; 
+    height: 80px;
 }
 
 .accord-container {
