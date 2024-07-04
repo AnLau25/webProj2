@@ -159,19 +159,13 @@
     background-color: rgba(202, 181, 155, 1);
     color: rgba(63, 40, 7, 1);
     font-size: 15px;
-    height: auto;
+    max-height: 100px;
     display: flex;
     justify-content: start;
     align-items: start;
     text-align: left;
-    box-shadow: none;}
-
-.accord-container .accordion-collapse{    
-    overflow-y: auto;
-}
-
-.accord-container .accordion-item {
-    border: none;
+    box-shadow: none;
+    overflow-y: auto !important; 
 }
 
 .accordion-flush>.accordion-item>.accordion-collapse {
