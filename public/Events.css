@@ -34,7 +34,6 @@
     border-radius: 0 30px 30px 30px;
     color: rgba(63, 40, 7, 1);
     font-family: "Inknut Antiqua", serif;   
-    height: 60%;
 }
 
 .placeholder {
@@ -78,7 +77,6 @@
     border-color: rgba(165, 103, 11, 1);
     border-width: 2px;
     border-style: solid; 
-    height: 80px;
 }
 
 .accord-container {
