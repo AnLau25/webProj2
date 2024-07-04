@@ -69,13 +69,14 @@
 .events-card{
     background-color: rgba(202, 181, 155, 1);
     border-radius: 30px;
-    width: 30%;
+    width: 50%;
+    padding: 20px;
+    border-color: rgba(165, 103, 11, 1);
 }
 
 .accord-container {
     background-color: rgba(202, 181, 155, 1);
     border-color: rgba(165, 103, 11, 1);
-    padding: 20px;
 }
 
 .accord-container .accordion-header {
