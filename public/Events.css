@@ -165,6 +165,7 @@
     align-items: start;
     text-align: left;
     box-shadow: none;
+    overflow-y: auto;
 }
 
 .accord-container .accordion-item {
