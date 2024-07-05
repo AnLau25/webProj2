@@ -46,12 +46,15 @@ const Menu = () => {
                                     <Row>
                                         <h3 className="center-align">10h00 - 01h00 pm</h3>
                                     </Row>
-                                    <Row>
+                                    <Row className="center-align">
                                         <Col xs={12} md={3}>
+                                            <h1>Drink up!</h1>
                                         </Col>
                                         <Col xs={12} md={3}>
+                                        <h1>Savory of mind</h1>
                                         </Col>
                                         <Col xs={12} md={3}>
+                                        <h1>For the sweet tooth!</h1>
                                         </Col>
                                     </Row>
                                 </Tab.Pane>
