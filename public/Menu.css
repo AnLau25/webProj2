@@ -85,3 +85,7 @@
     margin-left: 70px;
     margin-bottom: -60px;
 }
+
+.menu .tab-content .tab-pane{
+    margin-top: -20px;
+}

@@ -59,8 +59,6 @@ const Menu = () => {
                                                 <p>Drink 3 : Short description</p>
                                                 <h3>Drink 4</h3>
                                                 <p>Drink 4 : Short description</p>
-                                                <h3>Drink 5</h3>
-                                                <p>Drink 5 : Short description</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
@@ -80,8 +78,6 @@ const Menu = () => {
                                                 <p>Salty dish 1 : Short description</p>
                                                 <h3>Salty dish  2</h3>
                                                 <p>Salty dish 2 : Short description</p>
-                                                <h3>Salty dish  3</h3>
-                                                <p>Salty dish 3 : Short description</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
