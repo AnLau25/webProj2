@@ -43,21 +43,32 @@ const Menu = () => {
                             </div>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
-                                    <h3>10h00 - 01h00 pm</h3>
                                     <Row>
-                                        {/*Brunch*/}
+                                        <h3 className="center-align">10h00 - 01h00 pm</h3>
+                                    </Row>
+                                    <Row>
+                                        <Col xs={12} md={3}>
+                                        </Col>
+                                        <Col xs={12} md={3}>
+                                        </Col>
+                                        <Col xs={12} md={3}>
+                                        </Col>
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <h3>To be defined</h3>
                                     <Row>
-                                        <div className='placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
+                                        <h3 className="center-placeholder">To be defined</h3>
+                                    </Row>
+                                    <Row>
+                                        <div className='placeholder center-placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    <h3>To be defined</h3>
                                     <Row>
-                                        <div className='placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
+                                        <h3 className="center-placeholder">To be defined</h3>
+                                    </Row>
+                                    <Row>
+                                        <div className='placeholder center-placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
                                     </Row>
                                 </Tab.Pane>
                             </Tab.Content>
