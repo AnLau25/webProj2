@@ -70,15 +70,15 @@
 
 .menu .tab-content .tab-pane h3{
     text-decoration: underline;
-    font-size: 15px;
-}
-
-.menu .tab-content .tab-pane p{
     font-size: 17px;
 }
 
+.menu .tab-content .tab-pane p{
+    font-size: 15px;
+}
+
 .menu .tab-content .tab-pane img{
-    width: 70%;
+    width: 60%;
 }
 
 .menu .tab-content .tab-pane .img1{
