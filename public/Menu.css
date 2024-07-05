@@ -54,7 +54,7 @@
 }
 
 .menu .tab-content .tab-pane .menu-content{
-    padding: 30px 30px 0 30px;
+    padding: 0 30px 0 30px;
     
 }
 
@@ -63,7 +63,7 @@
 }
 
 .menu .tab-content .tab-pane h1{
-    font-size: 30px;
+    font-size: 25spx;
     font-weight: bold;
     text-decoration: underline;
     margin-bottom: 20px;
@@ -71,11 +71,11 @@
 
 .menu .tab-content .tab-pane h3{
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 15spx;
 }
 
 .menu .tab-content .tab-pane p{
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .menu .tab-content .tab-pane img{
