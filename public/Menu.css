@@ -47,3 +47,8 @@
     border-style: solid;
 }
 
+.tab-content .tab-pane h3{
+    text-decoration: underline;
+    font-size: 15px;
+}
+
