@@ -1,12 +1,12 @@
-.tab-container {
+.events .tab-container {
     padding: 130px 0px 20px 0px;
 }
 
-.custom-tabs {
+.events .custom-tabs {
     border: none;
 }
 
-.custom-tabs .nav-link {
+.events .custom-tabs .nav-link {
     font-size: 50px;
     color: rgba(220, 212, 201, 1);
     background-color: rgba(185, 170, 147, 0.5);
@@ -29,7 +29,7 @@
     border-color:rgba(220, 212, 201, 1);
 }
 
-.tab-content {
+.events .tab-content {
     background-color: rgba(220, 212, 201, 1);
     border-radius: 0 30px 30px 30px;
     color: rgba(63, 40, 7, 1);
@@ -37,28 +37,21 @@
     height: 70vh;   
 }
 
-.placeholder {
-    color: rgba(165, 103, 11, 1);
-    font-size: 60px;
-    font-family: "Italianno", cursive;
-    background-color: transparent;
-}
-
-.txt-container {
+.events .txt-container {
     padding: 15px;
 }
 
-.tab-container .txt{
+.events .tab-container .txt{
     padding: 10px;
 }
 
-.tab-content h1 {
+.events .tab-content h1 {
     font-size: 25px;
     position: relative;
     margin-bottom: 20px;
 }
 
-.tab-content h1::before {
+.events .tab-content h1::before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -67,11 +60,11 @@
     background-color: rgba(63, 40, 7, 1);
 }
 
-.tab-content p {
+.events .tab-content p {
     font-size: 15px;
 }
 
-.events-card {
+.events .events-card {
     background-color: rgba(202, 181, 155, 1);
     border-radius: 30px;
     padding: 30px;
@@ -81,14 +74,14 @@
     height: 70vh;
 }
 
-.accord-container {
+.events .accord-container {
     background-color: rgba(202, 181, 155, 1);
     border-color: rgba(165, 103, 11, 1);
     padding: 0;
     margin: 0;
 }
 
-.accord-container .accordion-header {
+.events .accord-container .accordion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,11 +89,11 @@
     font-size: 15px;
 }
 
-.accord-container .accordion-header span{
+.events .accord-container .accordion-header span{
     text-decoration: underline;
 }
 
-.accord-container .accordion-header span::after{
+.events .accord-container .accordion-header span::after{
     content: "";
     display: inline-block;
     width: 10px;
@@ -110,7 +103,7 @@
     vertical-align: middle;
 }
 
-.accord-container .accordion-button:not(.collapsed) span::after{
+.events .accord-container .accordion-button:not(.collapsed) span::after{
     height: 2px;
 }
 
@@ -175,4 +168,11 @@
 .accord-container .accord{
     padding: 10px;
 
+}
+
+.placeholder {
+    color: rgba(165, 103, 11, 1);
+   font-size: 60px;
+   font-family: "Italianno", cursive;
+   background-color: transparent;
 }
