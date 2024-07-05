@@ -1,0 +1,35 @@
+.menu-tab-container{
+    background-color: rgba(220, 212, 201, 1);
+    border-radius: 30px;
+}
+
+.nav.nav-pills {
+    width: auto; 
+    display: inline-flex; 
+    background-color: rgba(202, 181, 155, 1);
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+    border-color: rgba(165, 103, 11, 1);
+    border-width: 2px;
+    border-style: solid; 
+}
+
+.nav.nav-pills .nav-item {
+    width: auto; 
+}
+
+.nav.nav-pills .nav-link {
+    font-size: 60px !important;
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+    line-height: 1;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav.nav-pills .nav-link.active {
+    background-color: rgba(220, 212, 201, 1);
+    color: rgba(63, 40, 7, 1) !important;
+    border-color: rgba(165, 103, 11, 1);
+    border-width: 2px;
+    border-style: solid; 
+}

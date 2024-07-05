@@ -5,7 +5,7 @@ import Navnav from '../public/Navnav'
 import Home from '../public/Home'
 import AbtUs from '../public/AbtUs'
 import Events from '/public/Events'
-
+import Menu from '../public/Menu'
 
 function App() {
 
@@ -13,6 +13,7 @@ function App() {
     <>
       <Navnav/>
       <Events/>
+      <Menu/>
     </>
   )
 }
