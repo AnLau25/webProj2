@@ -63,8 +63,7 @@
 }
 
 .menu .tab-content .tab-pane h1{
-    font-size: 25spx;
-    font-weight: bold;
+    font-size: 25px;
     text-decoration: underline;
     margin-bottom: 20px;
 }
