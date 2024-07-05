@@ -47,7 +47,7 @@ const Menu = () => {
                                         <h3 className="center-align">10h00 - 01h00 pm</h3>
                                     </Row>
                                     <Row className='menu-content'>
-                                        <Col xs={12} md={4} className='menu-list'>
+                                        <Col xs={12} md={4}>
                                             <img src='../Component 1BookMug.png' alt='menuDeco' className='img1'/>
                                             <h1>Drink up!</h1>
                                             <div className='menu-items'>
