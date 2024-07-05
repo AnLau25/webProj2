@@ -23,7 +23,7 @@ const Menu = () => {
     };
 
     return (
-        <section className='background-banner' id='menu'>
+        <section className='background-banner menu' id='menu'>
             <Container className='menu-tab-container'>
                 <Row>
                     <Col>
