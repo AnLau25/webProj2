@@ -6,6 +6,7 @@ import Home from '../public/Home'
 import AbtUs from '../public/AbtUs'
 import Events from '/public/Events'
 import Menu from '../public/Menu'
+import Pay from '../public/Pay'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navnav/>
       <Events/>
       <Menu/>
+      <Pay/>
     </>
   )
 }

@@ -1,0 +1,211 @@
+.pay {
+    padding: 80px 0 10px 0;
+    text-align: center;
+    position: relative;    
+}
+
+.pay .oves {
+    color: rgba(163, 20, 20, 1);
+    font-size: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.pay h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.pay .subs {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-section {
+    background-color: white;
+    border-radius: 50px;
+    padding-right: 0;
+    width: 100%;
+    max-width: 900px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.form-section .form-element {
+    margin-bottom: 20px; 
+    font-family: 'Urbanist', sans-serif !important;
+}
+
+.inner-container form {
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.inner-container {
+    padding-right: 0;
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.form-section .form-element:last-child {
+    margin-top: 40px;
+    z-index: 0;
+}
+
+.pay .select__menu {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pay .select__multi-value {
+    background-color: rgba(163, 20, 20, 1);
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    padding: 2px 5px;
+}
+
+.pay .select__multi-value__label {
+    font-weight: bold;
+    color: white;
+}
+
+.pay .select__multi-value__remove {
+    color: #fff;
+    cursor: pointer;
+}
+
+.pay .custom-toast-container {
+    z-index: 1050; 
+}
+
+.pay .custom-toast-container .toast {
+    color: black;       
+    border-radius: 50px;
+    width: 800px;
+    height: auto;
+}
+
+.pay .custom-toast-container .toast-header {
+    background-color: #f8f9fa; 
+    color: rgba(163, 20, 20, 1);     
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: bold;      
+    font-size: 50px;
+    background-color: white; 
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;   
+    justify-content: center;
+}
+
+.pay .custom-toast-container .toast-body {
+    font-size: 30px;     
+    font-family: 'Urbanist', sans-serif !important;      
+}
+
+.pay .custom-select {
+    color: rgba(128, 128, 128, 1) !important;
+    font-family: inherit;
+    background-color: white;
+    background-image: none;
+    appearance: menulist; 
+}
+
+
+@media (max-width: 1397px) {
+    .form-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .pay h1 {
+        font-size: 40px;
+    }
+    .pay .subs {
+        font-size: 18px;
+    }
+    .pay .custom-toast-container .toast-header {
+        font-size: 40px;
+    }
+    .pay .custom-toast-container .toast-body {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        padding: 15px;
+    }
+    .inner-container form {
+        margin-left: 0;
+    }
+    .pay h1 {
+        font-size: 35px;
+    }
+    .pay .subs {
+        font-size: 16px;
+    }
+    .pay .custom-toast-container .toast-header {
+        font-size: 35px;
+    }
+    .pay .custom-toast-container .toast-body {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pay h1 {
+        font-size: 30px;
+    }
+    .pay .subs {
+        font-size: 14px;
+    }
+    .inner-container {
+        padding-right: 0;
+    }
+    .form-section {
+        padding: 10px;
+    }
+    .pay .custom-toast-container .toast {
+        width: 90%;
+    }
+    .pay .custom-toast-container .toast-header {
+        font-size: 30px;
+    }
+    .pay .custom-toast-container .toast-body {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pay h1 {
+        font-size: 25px;
+    }
+    .pay .subs {
+        font-size: 12px;
+    }
+    .form-section {
+        padding: 5px;
+    }
+    .inner-container form {
+        margin-top: 20px;
+    }
+    .pay .custom-toast-container .toast-header {
+        font-size: 25px;
+    }
+    .pay .custom-toast-container .toast-body {
+        font-size: 16px;
+    }
+}
