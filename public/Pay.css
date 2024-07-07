@@ -16,7 +16,6 @@
 
 .pay .inner-container form h1 {
     font-size: 50px;
-    margin-bottom: 5px;
     position: relative;
     z-index: 1;
     color: rgba(165, 103, 11, 1);
@@ -25,6 +24,7 @@
 
 .pay .inner-container form h3 {
     font-size: 25px;
+    margin-top: 10px;
     color: rgba(63, 40, 7, 1);
     font-family: "Inknut Antiqua", serif;
 }
