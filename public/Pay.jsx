@@ -3,6 +3,7 @@ import './Pay.css';
 import './Bluebg.css';
 import GoldBtn from './GoldBtn';
 import GoldCard from './GoldCard';
+import GoldSep from './GoldSep';
 import Select from 'react-select';
 import { Row, Col, Container, ToastContainer, Toast } from 'react-bootstrap';
 
@@ -60,6 +61,7 @@ const Pay = () => {
                             <form ref={formRef}>
                                 <Row>
                                     <h1>We’ll save you a chair</h1>
+                                    <GoldSep/>
                                     <h3>Event info</h3>
                                     <Col sm={6} className='px-1 form-element'>
                                         <select className="form-control custom-select" value={site} onChange={handleSiteChange}>

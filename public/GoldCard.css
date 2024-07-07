@@ -19,7 +19,6 @@
     text-align: left;
 }
 
-.gold-card__contact-list::before,
 .gold-card__header::before {
     content: '';
     position: absolute;

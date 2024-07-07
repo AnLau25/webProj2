@@ -1,5 +1,6 @@
 import React from 'react';
 import './GoldCard.css';
+import GoldSep from './GoldSep';
 
 const GoldCard = () => {
     return (
@@ -20,6 +21,7 @@ const GoldCard = () => {
                         </div>
                     </li>
                 </ul>
+                <GoldSep/>
                 <div className='gold-card__socials'>
                     <a href='#'><img src='GInsta.svg' alt='Instagram' /></a>
                     <a href='#'><img src='GSnap.svg' alt='Snapchat' /></a>

@@ -1,6 +1,6 @@
 .pay {
     padding: 80px 0 10px 0;
-    text-align: center;
+    text-align: left;
     position: relative;    
     background-color: rgba(220, 212, 201, 1);
 }
@@ -14,12 +14,19 @@
     font-weight: bold;
 }
 
-.pay h1 {
+.pay .inner-container form h1 {
     font-size: 50px;
     margin-bottom: 5px;
     position: relative;
     z-index: 1;
-    font-weight: bold;
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+}
+
+.pay .inner-container form h3 {
+    font-size: 25px;
+    color: rgba(63, 40, 7, 1);
+    font-family: "Inknut Antiqua", serif;
 }
 
 .pay .subs {
@@ -34,14 +41,13 @@
     border-radius: 50px;
     padding-right: 0;
     width: 100%; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    align-items: center;
 }
 
 .form-section .form-element {
+    background-color: rgba(220, 212, 201, 1);
     margin-bottom: 20px; 
-    font-family: 'Urbanist', sans-serif !important;
+    text-align: center;
 }
 
 .inner-container form {
@@ -56,34 +62,14 @@
     gap: 20px;
 }
 
-.form-section .form-element:last-child {
-    margin-top: 40px;
-    z-index: 0;
-}
-
-.pay .select__menu {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.pay .select__multi-value {
-    background-color: rgba(163, 20, 20, 1);
-    font-weight: bold;
-    color: white;
-    border-radius: 50px;
-    padding: 2px 5px;
-}
-
-.pay .select__multi-value__label {
-    font-weight: bold;
-    color: white;
-}
-
-.pay .select__multi-value__remove {
-    color: #fff;
-    cursor: pointer;
+.pay .form-control,
+.pay .custom-select {
+    color: rgba(63, 40, 7, 1);
+    font-family: "Inknut Antiqua", serif;
+    background-color: rgba(220, 212, 201, 1);
+    appearance: menulist;
+    border-color: transparent; 
+    border-bottom-color:rgba(63, 40, 7, 1);
 }
 
 .pay .custom-toast-container {
@@ -113,15 +99,6 @@
     font-size: 30px;     
     font-family: 'Urbanist', sans-serif !important;      
 }
-
-.pay .custom-select {
-    color: rgba(128, 128, 128, 1) !important;
-    font-family: inherit;
-    background-color: white;
-    background-image: none;
-    appearance: menulist; 
-}
-
 
 @media (max-width: 1397px) {
     .form-section {
