@@ -12,15 +12,16 @@
     font-weight: lighter;
     color: rgba(165, 103, 11, 1);
     font-family: "Inknut Antiqua", serif !important;
-    text-decoration: underline;
 }
 
 
 .rcustom-button:hover{
-    transform: scale(1.1);
     border-color: rgba(165, 103, 11, 1);
+    text-decoration: underline;
+    color: rgba(165, 103, 11, 1);
 }
 
 .rcustom-button:focus{
-    border: rgba(165, 103, 11, 1);
+    transform: scale(1.1);
+    color: rgba(165, 103, 11, 1);
 }

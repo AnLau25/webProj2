@@ -1,5 +1,8 @@
 html {
     text-decoration-thickness: 1px;
+    h5{
+        margin-bottom: 0;
+    }
 }
 
 .App {
