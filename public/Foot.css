@@ -17,6 +17,7 @@
 
 .left-content {
     text-align: left;
+    transform: translateX(-10%);
     color: rgba(63, 40, 7, 1);
     font-family: "Inknut Antiqua", serif;
     font-size: 20px;
