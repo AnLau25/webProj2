@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel, Row, Col, Container } from 'react-bootstrap';
 import './Home.css';
 
@@ -22,8 +23,8 @@ const Home = () => {
                 <h3>Welcome Readers!</h3>
                 <p>Come experience the ultimate reading experience in our cozy café, with flavorful snacks and a collection of classics that accommodates everyone’s taste. </p>
                 <div className='nav-links'>
-                    <a href="#about" className='nav-link'>About us</a>
-                    <a href="#contact" className='nav-link'>Events & Activities</a>
+                    <a as={Link} to="/#abtus" className='nav-link'>About us</a>
+                    <a as={Link} to="/Cafe#events" className='nav-link'>Events & Activities</a>
                 </div>
             </div>
         </section>
