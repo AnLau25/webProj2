@@ -5,8 +5,10 @@ import './Clndr.css';
 const Clndr = () => {
   return (
     <>
-      <section id='clndr'>
-        <h1>Nan</h1>
+      <section className="abt-blank" id='clndr'>
+        <Row>
+          <div className='placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
+        </Row>
       </section>
     </>
   )

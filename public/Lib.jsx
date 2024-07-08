@@ -6,9 +6,10 @@ import Foot from './Foot';
 const Lib = () => {
     return (
         <>
-            <section id='lib'>
-                <h1>Nan</h1>
-                <Foot/>
+            <section className="abt-blank" id='lib'>
+                <Row>
+                    <div className='placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
+                </Row>
             </section>
 
         </>
