@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './Pay.css';
 import './Bluebg.css';
-import GoldBtn from './GoldBtn';
+import GoldBtnBase from './GoldBtnBase';
 import GoldCard from './GoldCard';
 import GoldSep from './GoldSep';
 import Select from 'react-select';
@@ -94,7 +94,7 @@ const Pay = () => {
                                         <input type="text" className="form-control" placeholder="CVV" />
                                     </Col>
                                     <Col sm={12} className='px-1 form-element'>
-                                        <GoldBtn prop="Prendre rendez-vous" onClick={handleClearForm} href="#" />
+                                        <GoldBtnBase prop="Prendre rendez-vous" onClick={handleClearForm} href="#" />
                                     </Col>
                                 </Row>
                             </form>
@@ -106,9 +106,9 @@ const Pay = () => {
             <ToastContainer position="middle-center" className="p-3 custom-toast-container">
                 <Toast onClose={() => setShowToast(false)} show={showToast} delay={10000} autohide>
                     <Toast.Header>
-                        <strong className="me-auto"><em>Rendez-vous programmé, à bientôt !</em></strong>
+                        <strong className="me-auto">Spot booked, see you soon!</strong>
                     </Toast.Header>
-                    <Toast.Body>Pour toute modification de votre rendez-vous, n'hésitez pas à nous contacter.</Toast.Body>
+                    <Toast.Body>For any modifications or cancellations, please do not hesitate to contact us.</Toast.Body>
                 </Toast>
             </ToastContainer>
         </section>

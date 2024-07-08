@@ -1,17 +1,8 @@
 .pay {
-    padding: 50px 0 50px 0;
+    padding: 60px 0 50px 0;
     text-align: left;
     position: relative;    
     background-color: rgba(220, 212, 201, 1);
-}
-
-.pay .oves {
-    color: rgba(163, 20, 20, 1);
-    font-size: 20px;
-    margin-bottom: 5px;
-    position: relative;
-    z-index: 1;
-    font-weight: bold;
 }
 
 .pay .inner-container form h1 {
@@ -84,12 +75,11 @@
 }
 
 .pay .custom-toast-container .toast-header {
-    background-color: #f8f9fa; 
-    color: rgba(163, 20, 20, 1);     
-    font-family: 'Urbanist', sans-serif !important;
-    font-weight: bold;      
+    background-color: rgba(220, 212, 201, 1);
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;   
+    font-weight: lighter; 
     font-size: 50px;
-    background-color: white; 
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;   
     justify-content: center;
@@ -97,7 +87,8 @@
 
 .pay .custom-toast-container .toast-body {
     font-size: 30px;     
-    font-family: 'Urbanist', sans-serif !important;      
+    color: rgba(63, 40, 7, 1);
+    font-family: "Inknut Antiqua", serif;      
 }
 
 @media (max-width: 1397px) {
