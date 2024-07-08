@@ -6,7 +6,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 const AbtUs = () => {
     return (
-        <section className='AbtUs' id='Abts'>
+        <section className='AbtUs' id='abtus'>
             <Container fluid>
                 <Row>
                     <Col xs={12}>

@@ -1,21 +1,20 @@
 import './App.css'
-import GoldBtn from '../public/GoldBtn'
-import GoldSep from '../public/GoldSep'
+import { Route, Routes } from 'react-router-dom'
 import Navnav from '../public/Navnav'
-import Home from '../public/Home'
-import AbtUs from '../public/AbtUs'
-import Events from '/public/Events'
-import Menu from '../public/Menu'
-import Pay from '../public/Pay'
+import Capricho from '../public/Capricho'
+import Cafe from '../public/Cafe'
+import Lib from '../public/Lib'
 
 function App() {
 
   return (
     <>
-      <Navnav/>
-      <Events/>
-      <Menu/>
-      <Pay/>
+      <Navnav />
+      <Routes>
+          <Route path="/" element={<Capricho/>}/>
+          <Route path="/Cafe" element={<Cafe/>}/>
+          <Route path="/Lib" element={<Lib/>}/>          
+      </Routes>
     </>
   )
 }
@@ -24,6 +23,6 @@ export default App
 
 //~Home~+~AbtUs~+Calender
 //~Events~+~Menu~+Pay
-    //Figure how to wrap tab-cntnt + add borders on menu
+//Figure how to wrap tab-cntnt + add borders on menu
 //Lib
 //~Nav~ / ~Footer~ 

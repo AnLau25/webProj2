@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Button, Container, Modal } from 'react-bootstrap';
 import './Navnav.css';
 import Sinsout from './Sinsout';
@@ -16,13 +17,13 @@ const Navnav = () => {
 
     const handleSignIn = () => {
         setIsSignedIn(true);
-        handleClose(); 
+        handleClose();
     };
 
     const handleNavLinkClick = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            const yOffset = 0; 
+            const yOffset = -70; // Adjust offset to account for fixed navbar
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
@@ -47,18 +48,20 @@ const Navnav = () => {
         <>
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container>
-                    <Navbar.Brand href="#home" className="navbar-brand">Capricho de medianoche</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/#home" className="navbar-brand">Capricho de medianoche</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                            <Nav.Link href="#home" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Capricho</Nav.Link>
-                            <NavDropdown title="Our Café" className="no-caret">
-                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('abtus')}>General Info</NavDropdown.Item>
-                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('abtus')}>Schedule</NavDropdown.Item>
-                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('locFind')}>Menu</NavDropdown.Item>
-                                <NavDropdown.Item href="#" onClick={() => handleNavLinkClick('experts')}>Forms</NavDropdown.Item>
+                            <NavDropdown title="Our Capricho" className="no-caret">
+                                <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>About Us</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('abtus')}>Schedule</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#home" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Collection</Nav.Link>
+                            <NavDropdown title="Our Café" className="no-caret">
+                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('abtus')}>Events</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('locFind')}>Menu</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('experts')}>Event booking</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Collection</Nav.Link>
                         </Nav>
                         <div className="login-signup">
                             {isSignedIn ? (
