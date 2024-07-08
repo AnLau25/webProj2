@@ -1,5 +1,6 @@
 html {
     text-decoration-thickness: 1px;
+    scroll-behavior: smooth;
     h5{
         margin-bottom: 0;
     }
