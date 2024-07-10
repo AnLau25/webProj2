@@ -1,6 +1,11 @@
+.menu{
+    padding: 130px 0px 20px 0px;
+}
+
 .menu-tab-container {
     background-color: rgba(220, 212, 201, 1);
     border-radius: 30px;
+    
 }
 
 .menu .center-align {

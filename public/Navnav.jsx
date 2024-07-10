@@ -54,14 +54,14 @@ const Navnav = () => {
                         <Nav className="mx-auto">
                             <NavDropdown title="Our Capricho" className="no-caret">
                                 <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>About Us</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('abtus')}>Schedule</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('clndr')}>Schedule</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title="Our Café" className="no-caret">
-                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('abtus')}>Events</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('locFind')}>Menu</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('experts')}>Event booking</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>Events</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>Menu</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>Event booking</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('rndvs')}>Our Collection</Nav.Link>
+                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>Our Collection</Nav.Link>
                         </Nav>
                         <div className="login-signup">
                             {isSignedIn ? (
