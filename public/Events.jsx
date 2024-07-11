@@ -6,7 +6,7 @@ import { Row, Col, Container, Tabs, Tab, Accordion } from 'react-bootstrap';
 
 const Events = () => {
     return (
-        <section className='background-banner events' id='events'>
+        <section className='events' id='events'>
             <Container className="tab-container">
                 <Row>
                     <Tabs defaultActiveKey="rdrs" className="custom-tabs">

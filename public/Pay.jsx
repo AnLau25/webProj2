@@ -53,7 +53,7 @@ const Pay = () => {
     };
 
     return (
-        <section className='background-banner pay' id='pay'>
+        <section className='pay' id='pay'>
             <Container className='h-100 form-container'>
                 <Row className='h-100 align-items-center justify-content-center'>
                     <Col md={7} className='form-section'>

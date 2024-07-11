@@ -7,10 +7,12 @@ import Foot from './Foot'
 const Cafe = () => {
   return (
     <>
+    <div className='background-banner menu'>
         <Events/>
         <Menu/>
         <Pay/>
-        <Foot/>
+    </div>
+    <Foot/>
     </>
   )
 }
