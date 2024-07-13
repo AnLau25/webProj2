@@ -94,7 +94,7 @@ const Pay = () => {
                                         <input type="text" className="form-control" placeholder="CVV" />
                                     </Col>
                                     <Col sm={12} className='px-1 form-element'>
-                                        <GoldBtnBase prop="Prendre rendez-vous" onClick={handleClearForm} href="#" />
+                                        <GoldBtnBase prop="Prendre rendez-vous" onClick={handleClearForm}/>
                                     </Col>
                                 </Row>
                             </form>

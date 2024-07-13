@@ -48,7 +48,9 @@ const Navnav = () => {
         <>
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container>
-                    <Navbar.Brand as={Link} to="/#home" className="navbar-brand">Capricho de medianoche</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/#home" className="navbar-brand">
+                        <img src='../Tuntun_Logo.svg'/>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
