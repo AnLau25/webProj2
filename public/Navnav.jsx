@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Button, Container, Modal } from 'react-bootstrap';
 import './Navnav.css';
 import Sinsout from './Sinsout';
+import Logo from './Tuntun_Logo.svg';
 
 const Navnav = () => {
     const [showModal, setShowModal] = useState(false);
@@ -49,7 +50,7 @@ const Navnav = () => {
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container>
                     <Navbar.Brand as={Link} to="/#home" className="navbar-brand">
-                        <img src='./Tuntun_Logo.svg' alt='Logo'/>
+                        <img src={Logo} alt='Logo' />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
