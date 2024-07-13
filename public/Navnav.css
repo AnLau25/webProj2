@@ -3,9 +3,10 @@
 }
 
 .navbar-brand {
-    font-size: 60px !important;
-    color: rgba(165, 103, 11, 1);
-    font-family: "Italianno", cursive;
+    height: 100px;
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-nav .nav-link {
