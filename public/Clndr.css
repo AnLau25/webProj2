@@ -1,9 +1,69 @@
-.abt-blank {
-    background-color: rgba(185, 170, 147, 0.5);
-    height: 70vh;
-    padding-top: 50px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  
+.clndr {
+  background-color: rgba(220, 212, 201, 1);
+}
+
+.clndr-container {
+  padding: 40px 70px 30px 70px;
+  /* Top Right Bottom Left */
+}
+
+.day-column {
+  border: none;
+  position: relative;
+}
+
+.day-column h5 {
+  font-size: 40px;
+  font-family: "Italianno", cursive;
+  border-radius: 30px 30px 0 0;
+  line-height: 1;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  padding: 10px;
+  color: rgba(165, 103, 11, 1);
+  background-color: rgba(220, 212, 201, 1);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.time-line {
+  height: 480px; /* Adjust based on work hours */
+  background-color: rgba(220, 212, 201, 1);
+  border: 2px solid rgba(165, 103, 11, 1);
+  position: relative;
+  cursor: pointer;
+}
+
+.event-card {
+  position: absolute;
+  width: 100%;
+  border: 2px solid rgba(165, 103, 11, 1);
+  background-color: rgba(202, 181, 155, 1);
+  color: rgba(63, 40, 7, 1);
+  text-align: center;
+}
+
+/* Toast Container Styling */
+.Toastify__toast {
+  background-color: rgba(202, 181, 155, 1);
+  color: rgba(63, 40, 7, 1);
+  border-radius: 10px;
+}
+
+.Toastify__toast-body {
+  font-family: "Inknut Antiqua", serif;
+}
+
+.btn-primary {
+  background-color: rgba(220, 212, 201, 1);
+  border: 2px solid rgba(165, 103, 11, 1);
+  color: rgba(63, 40, 7, 1);
+  font-family: "Inknut Antiqua", serif;
+}
+
+.btn-primary:hover {
+  background-color: rgba(185, 170, 147, 0.5);
+  color: rgba(220, 212, 201, 1);
+  border-color: rgba(220, 212, 201, 1);
+}
