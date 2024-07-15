@@ -63,20 +63,21 @@
     appearance: menulist;
     border-color: transparent; 
     border-bottom-color:rgba(63, 40, 7, 1);
+    border-radius: 0px;
 }
 
-.pay .custom-toast-container {
+.custom-toast-container {
     z-index: 1050; 
 }
 
-.pay .custom-toast-container .toast {
+.custom-toast-container .toast {
     color: black;       
     border-radius: 50px;
     width: 800px;
     height: auto;
 }
 
-.pay .custom-toast-container .toast-header {
+.custom-toast-container .toast-header {
     background-color: rgba(220, 212, 201, 1);
     color: rgba(165, 103, 11, 1);
     font-family: "Italianno", cursive;   
@@ -87,10 +88,11 @@
     justify-content: center;
 }
 
-.pay .custom-toast-container .toast-body {
+.custom-toast-container .toast-body {
     font-size: 30px;     
     color: rgba(63, 40, 7, 1);
-    font-family: "Inknut Antiqua", serif;      
+    font-family: "Inknut Antiqua", serif;   
+    background-color: rgba(220, 212, 201, 0.5);   
 }
 
 @media (max-width: 1397px) {

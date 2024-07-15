@@ -1,5 +1,6 @@
 .clndr {
   background-color: rgba(220, 212, 201, 1);
+  position: relative;
 }
 
 .clndr-container {
@@ -21,6 +22,7 @@
   border-style: solid;
   text-align: center;
   padding: 10px;
+  margin-bottom: 10px;
   color: rgba(165, 103, 11, 1);
   background-color: rgba(220, 212, 201, 1);
   text-decoration: underline;
@@ -33,15 +35,20 @@
   border: 2px solid rgba(165, 103, 11, 1);
   position: relative;
   cursor: pointer;
+  border-radius: 0 0 30px 30px;
 }
 
 .event-card {
   position: absolute;
   width: 100%;
-  border: 2px solid rgba(165, 103, 11, 1);
+  border-top: 2px solid rgba(165, 103, 11, 1);
+  border-bottom: 2px solid rgba(165, 103, 11, 1);
   background-color: rgba(202, 181, 155, 1);
   color: rgba(63, 40, 7, 1);
   text-align: center;
+  font-family: "Inknut Antiqua", serif;
+  border-radius: 0px;
+  box-sizing: border-box;
 }
 
 /* Toast Container Styling */
@@ -55,15 +62,28 @@
   font-family: "Inknut Antiqua", serif;
 }
 
-.btn-primary {
-  background-color: rgba(220, 212, 201, 1);
-  border: 2px solid rgba(165, 103, 11, 1);
-  color: rgba(63, 40, 7, 1);
-  font-family: "Inknut Antiqua", serif;
+.custom-toast-container {
+  z-index: 2000; 
+  position: absolute; 
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.btn-primary:hover {
-  background-color: rgba(185, 170, 147, 0.5);
-  color: rgba(220, 212, 201, 1);
-  border-color: rgba(220, 212, 201, 1);
+.clndr .form-control{
+  color: rgba(63, 40, 7, 1);
+  font-family: "Inknut Antiqua", serif;
+  appearance: menulist;
+  border-color: transparent; 
+  border-bottom-color:rgba(63, 40, 7, 1);
+  border-radius: 0px;
+  background-color: transparent;   
+}
+
+.clndr .toast-content {
+  padding: 0px 10px 10px 10px;
+}
+
+.clndr .form-label {
+  margin: 10px 0 -10px 0;
 }

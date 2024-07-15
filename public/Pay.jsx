@@ -94,7 +94,7 @@ const Pay = () => {
                                         <input type="text" className="form-control" placeholder="CVV" />
                                     </Col>
                                     <Col sm={12} className='px-1 form-element'>
-                                        <GoldBtnBase prop="Prendre rendez-vous" onClick={handleClearForm}/>
+                                        <GoldBtnBase prop="Prendre rendez-vous" onClick={handleClearForm} href="#" />
                                     </Col>
                                 </Row>
                             </form>
@@ -104,7 +104,7 @@ const Pay = () => {
                 </Row>
             </Container>
             <ToastContainer position="middle-center" className="p-3 custom-toast-container">
-                <Toast onClose={() => setShowToast(false)} show={showToast} delay={10000} autohide>
+                <Toast onClose={() => setShowToast(false)} show={showToast}>
                     <Toast.Header>
                         <strong className="me-auto">Spot booked, see you soon!</strong>
                     </Toast.Header>

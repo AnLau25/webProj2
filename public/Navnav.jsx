@@ -49,7 +49,7 @@ const Navnav = () => {
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container>
                     <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
-                        <img src='./Tuntun_Logo.svg' alt='Logo'className="navbar-brand"/>
+                        <img src='./Tuntun_Logo1.svg' alt='Logo'className="navbar-brand"/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
