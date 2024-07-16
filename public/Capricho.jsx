@@ -4,14 +4,15 @@ import AbtUs from './AbtUs'
 import Clndr from './Clndr'
 import Foot from './Foot'
 
-
 const Capricho = () => {
     return (
         <>
-            <Home />
-            <AbtUs />
-            <Clndr />
-            <Foot />
+            <section style={{ backgroundColor: 'rgba(220, 212, 201, 1)' }}>
+                <Home />
+                <AbtUs />
+                <Clndr />
+                <Foot />
+            </section>
         </>
     )
 }

@@ -86,7 +86,8 @@ const Clndr = () => {
     setShowToast(true);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();  // Prevent the default form submission behavior
     setShowToast(false);
     setShowLateralToast(true); 
   };
@@ -148,7 +149,7 @@ const Clndr = () => {
             </Toast.Header>
             <Toast.Body>
               <Container className='toast-content'>
-                <Form>
+                <Form onSubmit={handleSubmit}>
                   <Form.Group controlId="eventTitle">
                     <Form.Label>Event Title</Form.Label>
                     <Form.Control
@@ -189,7 +190,7 @@ const Clndr = () => {
                       </Form.Group>
                     </Col>
                   </Row>
-                  <GoldBtnBase prop="Create Event" onClick={handleSubmit} />
+                  <GoldBtnBase prop="Create Event" type="submit" />
                 </Form>
               </Container>
             </Toast.Body>
