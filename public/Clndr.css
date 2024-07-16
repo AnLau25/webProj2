@@ -1,6 +1,10 @@
 .clndr {
   background-color: rgba(220, 212, 201, 1);
   position: relative;
+}
+
+.clndr .title {
+  position: relative;
   text-align: center;
 }
 
@@ -31,7 +35,8 @@
 }
 
 .time-line {
-  height: 480px; /* Adjust based on work hours */
+  height: 480px;
+  /* Adjust based on work hours */
   background-color: rgba(220, 212, 201, 1);
   border: 2px solid rgba(165, 103, 11, 1);
   position: relative;
@@ -73,21 +78,21 @@
 }
 
 .custom-toast-container {
-  z-index: 2000; 
-  position: absolute; 
-  top: 10px; 
+  z-index: 2000;
+  position: absolute;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.clndr .form-control{
+.clndr .form-control {
   color: rgba(63, 40, 7, 1);
   font-family: "Inknut Antiqua", serif;
   appearance: menulist;
-  border-color: transparent; 
-  border-bottom-color:rgba(63, 40, 7, 1);
+  border-color: transparent;
+  border-bottom-color: rgba(63, 40, 7, 1);
   border-radius: 0px;
-  background-color: transparent;   
+  background-color: transparent;
 }
 
 .clndr .toast-content {
@@ -96,4 +101,16 @@
 
 .clndr .form-label {
   margin: 10px 0 -10px 0;
+}
+
+.clndr .tiny .toast-header {
+  background-color: rgba(220, 212, 201, 1);
+  color: rgba(165, 103, 11, 1);
+  font-family: "Italianno", cursive;
+}
+
+.clndr .tiny .toast-body {
+  color: rgba(63, 40, 7, 1);
+  font-family: "Inknut Antiqua", serif;   
+  background-color: rgba(220, 212, 201, 0.5);   
 }

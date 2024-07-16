@@ -121,7 +121,7 @@ const Clndr = () => {
   return (
     <>
       <section className="clndr" id='clndr'>
-        <Row>
+        <Row className='title'>
           <GoldSep />
           <h1>Our weekly schedule</h1>
         </Row>
