@@ -23,7 +23,7 @@ const Navnav = () => {
     const handleNavLinkClick = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            const yOffset = -100; // Adjust offset to account for fixed navbar
+            const yOffset = -120; // Adjust offset to account for fixed navbar
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
