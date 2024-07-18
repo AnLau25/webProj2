@@ -1,5 +1,6 @@
 .events .tab-container {
-    
+    height: 100%;
+    width: 100%; 
 }
 /*Top Right Left Btm*/
 .events .custom-tabs {
