@@ -7,7 +7,7 @@ import Foot from './Foot'
 const Cafe = () => {
   return (
     <>
-    <div className='background-banner menu'>
+    <div className='background-banner'>
         <Events/>
         <Menu/>
         <Pay/>
