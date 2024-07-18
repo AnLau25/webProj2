@@ -47,7 +47,7 @@ const Navnav = () => {
     return (
         <>
             <Navbar className="custom-navbar" expand="lg" fixed="top">
-                <Container>
+                <Container fluid>
                     <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
                         <img src='./Tuntun_Logo1.svg' alt='Logo'className="navbar-brand"/>
                     </Navbar.Brand>

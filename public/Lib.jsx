@@ -7,15 +7,18 @@ import Foot from './Foot';
 const Lib = () => {
     return (
         <>
-            <section className="abt-blank" id='lib'>
-                <Row>
-                    <GoldSep/>
-                    <div className='placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
-                </Row>
+            <section className="lib" id='lib'>
+                <Container fluid>
+                    <Row>
+                        <Col xs={12}>
+                            <GoldSep />
+                        </Col>
+                    </Row>
+                </Container>
             </section>
-
+            <Foot/>
         </>
     )
 }
 
-export default Lib
+export default Lib;

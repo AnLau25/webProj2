@@ -1,11 +1,10 @@
 .footer {
-    padding: 20px 0;
     background-color: rgba(220, 212, 201, 1);
+    width: 100%;
 }
 
-.footer .container {
-    height: 100%;
-    width: 100%;
+.footer-container {
+    padding: 0;
 }
 
 .footer-content {
@@ -13,27 +12,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 0px 5px 0px 5px;
 }
 
 .left-content {
     text-align: left;
-    transform: translateX(-10%);
     color: rgba(63, 40, 7, 1);
     font-family: "Inknut Antiqua", serif;
     font-size: 20px;
 }
 
-.logo-placeholder {
-    color: rgba(165, 103, 11, 1);
-    font-family: "Italianno", cursive;
-    font-size: 60px;
+.logo {
+    height: 100px;
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .right-content {
     display: flex;
     align-items: flex-end;
-    margin-left: auto;
-    transform: translateX(30%);
 }
 
 .social-icon {
@@ -50,4 +48,5 @@
 .social-icon:hover img {
     transform: scale(1.1);
 }
+
 
