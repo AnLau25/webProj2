@@ -1,6 +1,7 @@
 .clndr {
   background-color: rgba(220, 212, 201, 1);
   position: relative;
+  overflow-x: hidden; 
 }
 
 .clndr .title {
@@ -10,12 +11,14 @@
 
 .clndr-container {
   padding: 10px 70px 30px 70px;
+  box-sizing: border-box;
   /* Top Right Bottom Left */
 }
 
 .day-column {
   border: none;
   position: relative;
+  box-sizing: border-box;
 }
 
 .day-column h5 {
@@ -36,12 +39,12 @@
 
 .time-line {
   height: 480px;
-  /* Adjust based on work hours */
   background-color: rgba(220, 212, 201, 1);
   border: 2px solid rgba(165, 103, 11, 1);
   position: relative;
   cursor: pointer;
   border-radius: 0 0 30px 30px;
+  box-sizing: border-box;
 }
 
 .event-card {
