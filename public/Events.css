@@ -1,8 +1,8 @@
 .events .tab-container {
-    margin: 50px; 
+    margin-top: 50px; 
     padding: 0px 30px 30px 30px;
 }
-/*Top Right Left Btm*/
+/*Right Top Left Btm*/
 .events .custom-tabs {
     border: none;
 }
