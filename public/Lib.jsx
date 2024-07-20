@@ -3,7 +3,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import './Lib.css';
 import GoldSep from './GoldSep';
 import Foot from './Foot';
-import BCard from '/public/BCard';
+import BCard from '../public/BCard';
 
 const Lib = () => {
     return (
