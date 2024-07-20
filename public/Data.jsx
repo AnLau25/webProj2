@@ -10,6 +10,36 @@ const Data = [
     },
 
     {
+        img: './La_Edad_de_Oro.jpg',
+        title: 'La Edad de Oro',
+        language: 'Es',
+        author: 'José Martí',
+        genre: ['Children literature', 'Essay', 'Fables'],
+        period: 'Modernism',
+        summary: 'La Edad de Oro es una revista escrita por José Martí destinada a los niños de América Latina, llena de historias, poemas y ensayos que enseñan valores como la libertad, la justicia y la humanidad. A través de cuentos fascinantes y lecciones morales, Martí busca inspirar a las jóvenes mentes y fomentar un sentido de identidad y orgullo en sus raíces culturales.'
+    },
+
+    {
+        img: './CapitanoTempesta_1905.jpg',
+        title: 'Capitano Tempesta',
+        language: 'It',
+        author: 'Emilio Salgari',
+        genre: ['Adventure', 'Romance'],
+        period: 'Romanticism',
+        summary: 'È il 1571. Famagosta è l\'ultima roccaforte cristiana rimasta sull\'isola di Cipro, assediata dall\'esercito saraceno. Tra i soldati del campo cristiano, ce n\'è uno che si distingue particolarmente per le sue doti guerriere: Capitan Tempesta.'
+    },
+
+    {
+        img: './Cien_Años_de_Soledad.jpeg',
+        title: 'Cent ans de solitude',
+        language: 'Fr',
+        author: 'Gabriel García Márquez',
+        genre: ['Novel', 'Romance', 'Magic Realism'],
+        period: 'Realism',
+        summary: "À travers l'histoire de la famille Buendía, 'Cent ans de solitude' explore les thèmes de la solitude, du destin et du passage du temps dans le village fictif de Macondo. Avec un style unique mêlant réalisme et fantastique, Gabriel García Márquez tisse une saga épique et inoubliable."
+    },
+
+    {
         img: './51Bm2aZI5ZL.jpg',
         title: 'The Adventures of Sherlock Holmes',
         language: 'En',
@@ -81,16 +111,6 @@ const Data = [
     },
 
     {
-        img: './CapitanoTempesta_1905.jpg',
-        title: 'Capitano Tempesta',
-        language: 'It',
-        author: 'Emilio Salgari',
-        genre: ['Adventure', 'Romance'],
-        period: 'Romanticism',
-        summary: 'È il 1571. Famagosta è l\'ultima roccaforte cristiana rimasta sull\'isola di Cipro, assediata dall\'esercito saraceno. Tra i soldati del campo cristiano, ce n\'è uno che si distingue particolarmente per le sue doti guerriere: Capitan Tempesta.'
-    },
-
-    {
         img: './Arsene_Lupin.jpg',
         title: 'Arsène Lupin, Gentleman Cambrioleur',
         language: 'Fr',
@@ -118,16 +138,6 @@ const Data = [
         genre: ['Detective', 'Mystery'],
         period: 'Modernism',
         summary: 'Hercule Poirot est un brillant détective belge connu pour son approche méticuleuse dans la résolution des crimes et ses manières distinctives. Avec ses petites cellules grises et ses compétences d’observation aiguës, Poirot s’attaque à certains des mystères les plus complexes, dénouant des affaires avec son intellect inégalé.'
-    },
-    
-    {
-        img: './La_Edad_de_Oro.jpg',
-        title: 'La Edad de Oro',
-        language: 'Es',
-        author: 'José Martí',
-        genre: ['Children literature', 'Essay', 'Fables'],
-        period: 'Modernism',
-        summary: 'La Edad de Oro es una revista escrita por José Martí destinada a los niños de América Latina, llena de historias, poemas y ensayos que enseñan valores como la libertad, la justicia y la humanidad. A través de cuentos fascinantes y lecciones morales, Martí busca inspirar a las jóvenes mentes y fomentar un sentido de identidad y orgullo en sus raíces culturales.'
     },
 
     {
@@ -202,4 +212,6 @@ const Data = [
     }
     
     
-]
+];
+
+export default Data;

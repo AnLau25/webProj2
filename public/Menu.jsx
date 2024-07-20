@@ -44,7 +44,7 @@ const Menu = () => {
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>
-                                        <h3 className="center-align">10h00 - 01h00 pm</h3>
+                                        <h3 className="center-align">10h00 am - 01h00 pm</h3>
                                     </Row>
                                     <Row className='menu-content'>
                                         <Col xs={12} md={4}>
@@ -97,19 +97,111 @@ const Menu = () => {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <Row>
-                                        <h3 className="center-placeholder">To be defined</h3>
+                                <Row>
+                                        <h3 className="center-align">01h00 pm - 05h00 pm</h3>
                                     </Row>
-                                    <Row>
-                                        <div className='placeholder center-placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
+                                    <Row className='menu-content'>
+                                        <Col xs={12} md={4}>
+                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1'/>
+                                            <h1>Drink up!</h1>
+                                            <div className='menu-items'>
+                                                <h3>Drink 1</h3>
+                                                <p>Drink 1 : Short description</p>
+                                                <h3>Drink 2</h3>
+                                                <p>Drink 2 : Short description</p>
+                                                <h3>Drink 3</h3>
+                                                <p>Drink 3 : Short description</p>
+                                                <h3>Drink 4</h3>
+                                                <p>Drink 4 : Short description</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4}>
+                                            <h1>Savory of mind</h1>
+                                            <h3>Handhelds</h3>
+                                            <div className='menu-items'>
+                                                <h3>Salty dish  1</h3>
+                                                <p>Salty dish 1 : Short description</p>
+                                                <h3>Salty dish  2</h3>
+                                                <p>Salty dish 2 : Short description</p>
+                                                <h3>Salty dish  3</h3>
+                                                <p>Salty dish 3 : Short description</p>
+                                            </div>
+                                            <h3>Salads & Soups</h3>
+                                            <div className='menu-items'>
+                                                <h3>Salty dish  1</h3>
+                                                <p>Salty dish 1 : Short description</p>
+                                                <h3>Salty dish  2</h3>
+                                                <p>Salty dish 2 : Short description</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4}>
+                                            <h1>For the sweet tooth!</h1>
+                                            <div className='menu-items'>
+                                                <h3>Dessert  1</h3>
+                                                <p>Dessert 1 : Short description</p>
+                                                <h3>Dessert  2</h3>
+                                                <p>Dessert 2 : Short description</p>
+                                                <h3>Dessert  3</h3>
+                                                <p>Dessert 3 : Short description</p>
+                                                <h3>Dessert  4</h3>
+                                                <p>Dessert 4 : Short description</p>
+                                            </div>
+                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2'/>
+                                        </Col>
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    <Row>
-                                        <h3 className="center-placeholder">To be defined</h3>
+                                <Row>
+                                        <h3 className="center-align">05h00 pm - 12h00 am</h3>
                                     </Row>
-                                    <Row>
-                                        <div className='placeholder center-placeholder'>Dear gentle readers, fret not, this page shall be soon written.</div>
+                                    <Row className='menu-content'>
+                                        <Col xs={12} md={4}>
+                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1'/>
+                                            <h1>Drink up!</h1>
+                                            <div className='menu-items'>
+                                                <h3>Drink 1</h3>
+                                                <p>Drink 1 : Short description</p>
+                                                <h3>Drink 2</h3>
+                                                <p>Drink 2 : Short description</p>
+                                                <h3>Drink 3</h3>
+                                                <p>Drink 3 : Short description</p>
+                                                <h3>Drink 4</h3>
+                                                <p>Drink 4 : Short description</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4}>
+                                            <h1>Savory of mind</h1>
+                                            <h3>Handhelds</h3>
+                                            <div className='menu-items'>
+                                                <h3>Salty dish  1</h3>
+                                                <p>Salty dish 1 : Short description</p>
+                                                <h3>Salty dish  2</h3>
+                                                <p>Salty dish 2 : Short description</p>
+                                                <h3>Salty dish  3</h3>
+                                                <p>Salty dish 3 : Short description</p>
+                                            </div>
+                                            <h3>Salads & Soups</h3>
+                                            <div className='menu-items'>
+                                                <h3>Salty dish  1</h3>
+                                                <p>Salty dish 1 : Short description</p>
+                                                <h3>Salty dish  2</h3>
+                                                <p>Salty dish 2 : Short description</p>
+                                            </div>
+                                        </Col>
+                                        <Col xs={12} md={4}>
+                                            <h1>For the sweet tooth!</h1>
+                                            <div className='menu-items'>
+                                                <h3>Dessert  1</h3>
+                                                <p>Dessert 1 : Short description</p>
+                                                <h3>Dessert  2</h3>
+                                                <p>Dessert 2 : Short description</p>
+                                                <h3>Dessert  3</h3>
+                                                <p>Dessert 3 : Short description</p>
+                                                <h3>Dessert  4</h3>
+                                                <p>Dessert 4 : Short description</p>
+                                            </div>
+                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2'/>
+                                        </Col>
                                     </Row>
                                 </Tab.Pane>
                             </Tab.Content>

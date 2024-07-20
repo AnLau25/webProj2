@@ -11,3 +11,20 @@ html {
     height: 100%;
     text-decoration-thickness: 2px;
 }
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(220, 212, 201, 1); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(202, 181, 155, 1);;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(165, 103, 11, 1);
+}

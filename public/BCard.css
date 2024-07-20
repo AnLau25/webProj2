@@ -18,12 +18,12 @@
 }
 
 .BCard .introB h1 {
-    font-size: 40px;
+    font-size: 40px !important;
     text-align: left;
     font-family: "Italianno", cursive;
     color: rgba(165, 103, 11, 1);
-    line-height: 30px;
     text-decoration: underline 1px;
+    margin-bottom: 5px;
 }
 
 .BCard .introB p {
@@ -47,6 +47,8 @@
     transition: all .5s cubic-bezier(.13, .62, .81, .91) 0s;
     background: linear-gradient(to bottom, rgba(202, 181, 155, 0.1) 0%, rgba(202, 181, 155, .85) 10%, rgba(202, 181, 155, .90) 40%, rgba(202, 181, 155, .95) 60%, rgba(202, 181, 155, 1) 80%);
     text-align: left;
+    overflow-y: auto; /* Add this line */
+    max-height: 100%; /* Adjust this value as needed */
 }
 
 .BCard:hover .introB,
@@ -67,4 +69,20 @@
 
 .BCard:hover:after {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.4) 30%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.8) 59%);
+}
+
+.BCard .introB::-webkit-scrollbar {
+    width: 8px;
+}
+
+.BCard .introB::-webkit-scrollbar-track {
+    background: transparent 
+}
+
+.BCard .introB::-webkit-scrollbar-thumb {
+    background: rgba(220, 212, 201, 1);
+}
+
+.BCard .introB::-webkit-scrollbar-thumb:hover {
+    background: rgba(165, 103, 11, 1);
 }

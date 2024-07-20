@@ -4,16 +4,40 @@ import './Lib.css';
 import GoldSep from './GoldSep';
 import Foot from './Foot';
 import BCard from './BCard';
+import Data from './Data';
 
 const Lib = () => {
+    console.log(Data);  // Log Data to check if it is being imported correctly
+
     return (
         <>
             <section className="lib" id='lib'>
+                <GoldSep/>
+                <h1>Browse your next page-turner</h1>
                 <Container fluid>
                     <Row>
-                        <Col>
-                            <GoldSep />
-                            <BCard imgprop='./Tigri_1900.jpg' titleprop='Sandokan' langprop='It' authprop='Emilio Salgari' genprop= {['Adventure', 'Romance']} sumprop='Il pirata Sandokan viene ferito durante una battaglia contro gli inglesi. Aiutato da Lord Guillonk, che lo cura in casa sua, conosce la sua bellissima nipote Marianna. Tra i due nasce un amore che sembra impossibile. Ma niente è impossibile per Sandokan!' />
+                        <Col xs={12} md={3}>
+                            <Container className='filter'>
+                                <h1>Filter</h1>
+                            </Container>
+                        </Col>
+                        <Col xs={12} md={9}>
+                            <Container className='book-container' fluid>
+                                <Row>
+                                    {Data.map((book, index) => (
+                                        <Col key={index} xs={12} sm={6} md={4} className="mb-4">
+                                            <BCard
+                                                imgprop={book.img}
+                                                titleprop={book.title}
+                                                langprop={book.language}
+                                                authprop={book.author}
+                                                genprop={book.genre}
+                                                sumprop={book.summary}
+                                            />
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </Container>
                         </Col>
                     </Row>
                 </Container>

@@ -171,3 +171,19 @@
    font-family: "Italianno", cursive;
    background-color: transparent;
 }
+
+.events .accord-container .accordion-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.events .accord-container .accordion-body::-webkit-scrollbar-track {
+    background: transparent 
+}
+
+.events .accord-container .accordion-body::-webkit-scrollbar-thumb {
+    background: rgba(220, 212, 201, 1);
+}
+
+.events .accord-container .accordion-body::-webkit-scrollbar-thumb:hover {
+    background: rgba(165, 103, 11, 1);
+}

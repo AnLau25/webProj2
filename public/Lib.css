@@ -1,7 +1,38 @@
 .lib {
     background-color: rgba(220, 212, 201, 1);
-    padding-top: 120px; 
-
+    padding-top: 120px;
+    text-align: center;  /* Center text inside child elements */
 }
 
+.lib .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
 
+.lib .row {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the row content */
+}
+
+.lib h1 {
+    font-size: 60px !important;
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lib .book-container{
+    margin-left: 50px;
+}
+
+.lib .filter {
+    text-align: left; 
+    border-radius: 50px;
+    background-color: rgba(202, 181, 155, 1);
+    border: 2px solid rgba(165, 103, 11, 1);
+}

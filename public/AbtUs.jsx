@@ -7,12 +7,8 @@ import { Row, Col, Container } from 'react-bootstrap';
 const AbtUs = () => {
     return (
         <section className='AbtUs' id='abtus'>
+            <GoldSep />
             <Container fluid>
-                <Row>
-                    <Col xs={12}>
-                        <GoldSep />
-                    </Col>
-                </Row>
                 <Row className='content-row'>
                     <Col xs={12} md={6} className='txt-container'>
                         <h1>About our “Capricho”</h1>

@@ -122,10 +122,10 @@ const Clndr = () => {
   return (
     <>
       <section className="clndr" id='clndr'>
-        <Row className='title'>
+        <div className='title'>
           <GoldSep />
           <h1>Our weekly schedule</h1>
-        </Row>
+        </div>
         <Row>
           <Container className='clndr-container'>
             <Row>
