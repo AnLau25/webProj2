@@ -1,26 +1,18 @@
 import React from 'react';
-import './bCard.css';
+import './BCard.css';
+import GoldBtnBase from './GoldBtnBase';
 
-const bCard = ({ imgprop, servprop }) => {
+const BCard = ({ imgprop, titleprop, langprop, sumprop }) => {
     return (
-        <div className='card'>
-            <img src={imgprop} alt={servprop} />
-            <div className='intro'>
-                <h1><em>{servprop}</em></h1>
-                <p>Brève description du service en question. Quelques lignes pour attirer l'attention et résumer les autres sous-services.</p>
-                <p>Sans être trop technique, mais suffisamment pour donner à la personne une idée du service. Justifier les coûts... </p>
-                <ul>
-                    <li>Possible</li>
-                    <li>Pointform</li>
-                    <li>de sous-services</li>
-                </ul>
-                <a className="nav-link" href="#experts">
-                    <span className="servType"></span> 
-                    <em>Experts</em>
-                </a>
+        <div className='BCard'>
+            <img src={imgprop} alt={titleprop} />
+            <div className='introB'>
+                <h1>{titleprop}<em>({langprop})</em></h1>
+                <p>{sumprop}</p>
+                <GoldBtnBase className='smol' prop="Borrow for a day" />
             </div>
         </div>
     )
 }
 
-export default bCard;
+export default BCard;

@@ -1,110 +1,71 @@
-.card img {
-    height: auto;
+.BCard img {
     width: 100%;
+    height: auto;
 }
 
-.card {
-    border-radius: 50px;
-    height: 523px;
-    width: 334px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
+.BCard {
+    width: 255px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(165, 103, 11, 0.5);
+    border: rgba(165, 103, 11, 1) solid 2px;
     overflow: hidden;
     position: relative;
+    box-sizing: border-box;
 }
 
-.card:hover {
+.BCard:hover {
     cursor: pointer;
 }
 
-.card .intro h1,
-.card .nav-link {
-    font-weight: bold;
-}
-
-.card .intro h1 {
-    font-size: 50px;
+.BCard .introB h1 {
+    font-size: 40px; /* Adjust font size to fit better */
     text-align: left;
+    font-family: "Italianno", cursive;
+    color: rgba(165, 103, 11, 1);
+    line-height: 1;
+    text-decoration: underline 1px;
 }
 
-.card .intro {
-    width: auto;
-    height: auto;
-    padding: 20px;
-    color: white;
+.BCard .introB p{
+    margin-top: -7px;
+    margin-bottom: -0.5px;
+}
+
+.BCard .smol .rcustom-button-title{
+    font-size: 13px;
+}
+
+.BCard .introB {
+    padding: 100px 10px 10px 10px;
     bottom: 0;
     z-index: 1;
     box-sizing: border-box;
     position: absolute;
-    transform: translateY(309px);
+    color: rgba(63, 40, 7, 1);
+    font-size: 13px;
+    font-family: "Inknut Antiqua", serif;
+    transform: translateY(500px);
     transition: all .5s cubic-bezier(.13, .62, .81, .91) 0s;
-    background: linear-gradient(to bottom, rgba(134, 134, 134, 0.0) 2%, rgba(0, 0, 0, 0.65) 13%, rgba(0, 0, 0, 0.8) 45%, rgba(0, 0, 0, 1) 65%);
+    background: linear-gradient(to bottom, rgba(202, 181, 155, 0) 0%, rgba(202, 181, 155, .8) 30%, rgba(202, 181, 155, .85) 50%, rgba(202, 181, 155, .9) 50%, rgba(202, 181, 155, 1) 80%);
     text-align: left;
 }
 
-.card .intro:hover .intro {
+.BCard:hover .introB,
+.BCard .introB:hover .introB {
     transform: translateY(0);
 }
 
-.card .intro,
-.card:after {
-    width: 100%;
-    position: absolute;
-    left: 0;
-}
-
-.card:after {
+.BCard .introB,
+.BCard:after {
     content: '';
-    height: 100%;
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     transition: .5s;
 }
 
-.card:hover .intro {
-    transform: translateY(0);
-}
-
-.card:hover:after {
-    background: linear-gradient(to bottom, rgba(134, 134, 134, 0) 4%, rgba(0, 0, 0, 0.40) 30%, rgba(0, 0, 0, 0.70) 50%, rgba(0, 0, 0, 0.80) 59%);
-}
-
-.card .nav-link {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    font-size: 25px;
-    margin-top: 5px;
-}
-
-.nav-link .servType::before {
-    content: "";
-    display: inline-block;
-    width: 100px;
-    height: 1px;
-    background-color: white;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-
-
-@media (min-width: 1200px) {
-    .card {
-        height: 450px;
-        width: 300px;
-        margin: 30px;
-    }
-    .card .intro {
-        transform: translateY(250px);
-    }
-
-    .card .nav-link {
-        font-size: 20px;
-    }
-
-    .card .intro h1 {
-        font-size: 40px;
-        text-align: left;
-    }
-
+.BCard:hover:after {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.4) 30%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.8) 59%);
 }
