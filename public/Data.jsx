@@ -14,8 +14,8 @@ const Data = [
         title: 'La Edad de Oro',
         language: 'Es',
         author: 'José Martí',
-        genre: ['Children literature', 'Essay', 'Fables'],
-        period: 'Modernism',
+        genre: ['Poetry', 'Essay', 'Fables'],
+        period: 'Realism',
         summary: 'La Edad de Oro es una revista escrita por José Martí destinada a los niños de América Latina, llena de historias, poemas y ensayos que enseñan valores como la libertad, la justicia y la humanidad. A través de cuentos fascinantes y lecciones morales, Martí busca inspirar a las jóvenes mentes y fomentar un sentido de identidad y orgullo en sus raíces culturales.'
     },
 
@@ -34,7 +34,7 @@ const Data = [
         title: 'Cent ans de solitude',
         language: 'Fr',
         author: 'Gabriel García Márquez',
-        genre: ['Novel', 'Romance', 'Magic Realism'],
+        genre: ['Romance', 'Magic Realism'],
         period: 'Realism',
         summary: "À travers l'histoire de la famille Buendía, 'Cent ans de solitude' explore les thèmes de la solitude, du destin et du passage du temps dans le village fictif de Macondo. Avec un style unique mêlant réalisme et fantastique, Gabriel García Márquez tisse une saga épique et inoubliable."
     },
@@ -84,7 +84,7 @@ const Data = [
         title: 'Pride and Prejudice',
         language: 'En',
         author: 'Jane Austen',
-        genre: ['Romance', 'Satire', 'Classic'],
+        genre: ['Romance', 'Satire'],
         period: 'Neoclassicism',
         summary: 'Elizabeth Bennet navigates the intricate social hierarchy of early 19th-century England, balancing societal expectations and personal happiness. Her spirited intelligence and wit clash with the aloof and enigmatic Mr. Darcy, leading to misunderstandings and, ultimately, a deep and transformative love. "Pride and Prejudice" is a timeless exploration of manners, marriage, and morality.'
     },
@@ -94,7 +94,7 @@ const Data = [
         title: 'Orgueil et Préjugés',
         language: 'Fr',
         author: 'Jane Austen',
-        genre: ['Romance', 'Satire', 'Classic'],
+        genre: ['Romance', 'Satire'],
         period: 'Neoclassicism',
         summary: 'Elizabeth Bennet navigue dans la hiérarchie sociale complexe de l’Angleterre du début du XIXe siècle, équilibrant les attentes sociétales et le bonheur personnel. Son intelligence vive et son esprit se heurtent au mystérieux et distant Mr. Darcy, menant à des malentendus et, finalement, à un amour profond et transformateur. "Orgueil et Préjugés" est une exploration intemporelle des manières, du mariage et de la moralité.'
     },
@@ -125,8 +125,8 @@ const Data = [
         title: 'Hercule Poirot',
         language: 'En',
         author: 'Agatha Christie',
-        genre: ['Detective', 'Mystery'],
-        period: 'Modernism',
+        genre: ['Detective', 'Mystery', 'Crime'],
+        period: 'Realism',
         summary: 'Hercule Poirot is a brilliant Belgian detective known for his meticulous approach to solving crimes and his distinctive mannerisms. With his little gray cells and keen observation skills, Poirot tackles some of the most perplexing mysteries, unraveling complex cases with his unparalleled intellect. Notable works featuring Poirot include "Murder on the Orient Express" and "The Murder of Roger Ackroyd."'
     },
 
@@ -135,8 +135,8 @@ const Data = [
         title: 'Hercule Poirot',
         language: 'Fr',
         author: 'Agatha Christie',
-        genre: ['Detective', 'Mystery'],
-        period: 'Modernism',
+        genre: ['Detective', 'Mystery', 'Crime'],
+        period: 'Realism',
         summary: 'Hercule Poirot est un brillant détective belge connu pour son approche méticuleuse dans la résolution des crimes et ses manières distinctives. Avec ses petites cellules grises et ses compétences d’observation aiguës, Poirot s’attaque à certains des mystères les plus complexes, dénouant des affaires avec son intellect inégalé.'
     },
 
@@ -145,7 +145,7 @@ const Data = [
         title: 'El amor en los tiempos del cólera',
         language: 'Es',
         author: 'Gabriel García Márquez',
-        genre: ['Novel', 'Romance', 'Magic Realism'],
+        genre: ['Romance', 'Magic Realism'],
         period: 'Realism',
         summary: 'El amor en los tiempos del cólera es una novela del premio Nobel colombiano Gabriel García Márquez. La historia sigue a Florentino Ariza y Fermina Daza, dos amantes cuya relación apasionada y complicada se desarrolla a lo largo de más de cincuenta años.'
     },
@@ -155,7 +155,7 @@ const Data = [
         title: 'Lazarillo de Tormes',
         language: 'Es',
         author: 'Anónimo',
-        genre: ['Picaresque', 'Satire', 'Novel'],
+        genre: ['Picaresque', 'Satire'],
         period: 'Renaissance',
         summary: 'La vida de Lazarillo de Tormes y de sus fortunas y adversidades es una novela picaresca anónima publicada en 1554. La obra narra la vida de Lázaro, un joven pobre de Salamanca, que utiliza su ingenio y astucia para sobrevivir al servicio de varios amos.'    
     },
@@ -165,7 +165,7 @@ const Data = [
         title: 'Don Quijote de la Mancha',
         language: 'Es',
         author: 'Miguel de Cervantes',
-        genre: ['Novel', 'Satire', 'Adventure'],
+        genre: ['Satire', 'Adventure'],
         period: 'Renaissance',
         summary: 'La novela sigue las aventuras del hidalgo Alonso Quijano, quien, influenciado por la lectura de libros de caballería, se convierte en el caballero andante Don Quijote. Acompañado por su fiel escudero, Sancho Panza, Don Quijote se embarca en numerosas aventuras, confundiendo la realidad con sus fantasías caballerescas.'
     },
@@ -176,7 +176,7 @@ const Data = [
         language: 'Fr',
         author: 'Jules Verne',
         genre: ['Adventure', 'Science Fiction'],
-        period: 'Modernism',
+        period: 'Realism',
         summary: 'L’histoire suit Phileas Fogg, un gentleman anglais qui parie qu’il peut faire le tour du monde en quatre-vingts jours. Accompagné de son fidèle serviteur, Passepartout, Fogg entreprend un voyage passionnant à travers divers pays et affronte de nombreux défis.'
     },
     
@@ -187,7 +187,7 @@ const Data = [
         language: 'Es',
         author: 'Julio Verne',
         genre: ['Adventure', 'Science Fiction'],
-        period: 'Modernism',
+        period: 'Realism',
         summary: 'La historia sigue a Phileas Fogg, un caballero inglés que apuesta que puede dar la vuelta al mundo en ochenta días. Acompañado por su fiel sirviente, Passepartout, Fogg se embarca en una emocionante travesía que los lleva a través de diversos países y enfrenta numerosos desafíos.'
     },
 
@@ -196,7 +196,7 @@ const Data = [
         title: 'Vingt mille lieues sous les mers',
         language: 'Fr',
         author: 'Jules Verne',
-        genre: ['Adventure', 'Science Fiction'],
+        genre: ['Adventure', 'Romance'],
         period: 'Modernism',
         summary: 'L’histoire suit le professeur Pierre Aronnax, son serviteur Conseil et le pêcheur Ned Land, qui sont capturés par le Capitaine Nemo à bord du sous-marin Nautilus. Au cours de leur voyage à travers les océans du monde, les personnages explorent des merveilles sous-marines, affrontent des dangers et découvrent des secrets cachés sous l’eau.'
     },    
