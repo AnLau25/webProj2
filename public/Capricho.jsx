@@ -3,6 +3,7 @@ import Home from './Home'
 import AbtUs from './AbtUs'
 import Clndr from './Clndr'
 import Foot from './Foot'
+import Events from './Events'
 
 const Capricho = () => {
     return (

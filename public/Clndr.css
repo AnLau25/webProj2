@@ -99,7 +99,7 @@
   background-color: transparent;
 }
 
-.clndr .form-control:focus{
+.form-control:focus{
   border-color: rgba(165, 103, 11, 1);
   box-shadow: none !important;
 }
@@ -135,7 +135,7 @@
 
 
 
-.lateral-tab {
+.clndr .lateral-tab {
   position: absolute;
   right: 0;
   top: 50%;
@@ -154,19 +154,19 @@
   padding: 10px;
 }
 
-.lateral-tab p{
+.clndr .lateral-tab p{
   font-family: "Inknut Antiqua", serif;
   color: rgba(63, 40, 7, 1);
   margin-top: 10px;
 }
 
-.lateral-tab h5{
+.clndr .lateral-tab h5{
   color: rgba(165, 103, 11, 1);
   font-family: "Italianno", cursive;
   font-size: 30px;
 }
 
-.lateral-tab .toggle-btn {
+.clndr .lateral-tab .toggle-btn {
   position: absolute;
   left: -30px;
   top: 50%;
@@ -179,28 +179,28 @@
   cursor: pointer;
 }
 
-.lateral-tab .toggle-btn:focus,
-.lateral-tab .toggle-btn:hover {
+.clndr .lateral-tab .toggle-btn:focus,
+.clndr .lateral-tab .toggle-btn:hover {
     transform: translateY(-50%) rotate(270deg);
 }
 
-.lateral-tab .toggle-icon {
+.clndr .lateral-tab .toggle-icon {
   width: 100%;
   height: auto;
 }
 
-.lateral-tab.open {
+.clndr .lateral-tab.open {
   right: 0;
 }
 
-.lateral-tab:not(.open) {
+.clndr .lateral-tab:not(.open) {
   right: -300px;
 }
 
-.tab-content {
+.clndr .tab-content {
   display: none;
 }
 
-.lateral-tab.open .tab-content {
+.clndr .lateral-tab.open .tab-content {
   display: block;
 }
