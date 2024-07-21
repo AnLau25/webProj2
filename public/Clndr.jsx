@@ -196,7 +196,7 @@ const Clndr = () => {
             </Toast.Body>
           </Toast>
         </ToastContainer>
-        <ToastContainer position="bottom-end" className="p-3 tiny">
+        <ToastContainer position="top-end" className="p-3 tiny">
           <Toast onClose={() => setShowLateralToast(false)} show={showLateralToast} delay={3000} autohide>
             <Toast.Header>
               <strong className="me-auto">Notification</strong>
