@@ -1,19 +1,23 @@
 .lib {
     background-color: rgba(220, 212, 201, 1);
     padding-top: 120px;
-    text-align: center;  /* Center text inside child elements */
+    text-align: center;
+    height: 100%;
+    /* Center text inside child elements */
 }
 
 .lib .container-fluid {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
+    align-items: center;
+    /* Center horizontally */
 }
 
 .lib .row {
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the row content */
+    justify-content: center;
+    /* Center the row content */
 }
 
 .lib h1 {
@@ -26,13 +30,116 @@
     margin-bottom: 20px;
 }
 
-.lib .book-container{
-    margin-left: 50px;
+.lib .flt {
+    margin-bottom: 0px !important;
+    line-height: 1;
 }
 
 .lib .filter {
-    text-align: left; 
+    height: 100%;
+    text-align: left;
     border-radius: 50px;
     background-color: rgba(202, 181, 155, 1);
     border: 2px solid rgba(165, 103, 11, 1);
+}
+
+.lib .form-control {
+    color: rgba(63, 40, 7, 1);
+    font-family: "Inknut Antiqua", serif;
+    appearance: menulist;
+    border-color: transparent;
+    border-bottom-color: rgba(63, 40, 7, 1);
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.lib .select__control,
+.lib .select__control:hover,
+.lib .select__control--is-focused,
+.lib .select__control--menu-is-open,
+.lib .css-t3ipsp-control,
+.lib .css-13cymwt-control {
+    color: rgba(63, 40, 7, 1);
+    font-family: "Inknut Antiqua", serif;
+    border-color: transparent;
+    border-bottom-color: rgba(63, 40, 7, 1);
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+
+.lib .select__menu {
+    color: rgba(63, 40, 7, 1);
+    font-family: "Inknut Antiqua", serif;
+    background-color: rgba(202, 181, 155, 1);
+}
+
+.lib .select__option--is-focused,
+.lib .select__option--is-selected {
+    color: rgba(63, 40, 7, 1);
+    background-color: rgba(220, 212, 201, 1) !important;
+}
+
+.lib .select__multi-value {
+    color: rgba(63, 40, 7, 1);
+    background-color: rgba(202, 181, 155, 1);
+    border-radius: 50px;
+    padding: 2px 5px;
+    border: 2px solid rgba(165, 103, 11, 1);
+}
+
+.lib .select__multi-value__label {
+    color: rgba(63, 40, 7, 1);
+    font-family: "Inknut Antiqua", serif;
+}
+
+.lib .select__multi-value__remove {
+    color: rgba(63, 40, 7, 1);
+    cursor: pointer;
+}
+
+.lib .select__multi-value__remove:hover {
+    color: rgba(220, 212, 201, 1);
+    background-color: rgba(165, 103, 11, 0.5);
+    border-radius: 50px;
+}
+
+.lib .select__control::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('AvroArrow.svg') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lib .select__control--is-focused::after,
+.lib .select__control--menu-is-open::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.lib .css-15lsz6c-indicatorContainer,
+.lib .css-15lsz6c-indicatorContainer:hover,
+.lib .css-15lsz6c-indicatorContainer:focus,
+.lib .css-1xc3v61-indicatorContainer,
+.lib .css-1xc3v61-indicatorContainer:hover,
+.lib .css-1xc3v61-indicatorContainer:focus {
+    color: rgba(202, 181, 155, 1);
+}
+
+.lib .css-1u9des2-indicatorSeparator {
+    background-color: rgba(63, 40, 7, 1);
+}
+
+.lib .css-1jqq78o-placeholder,
+.lib input::placeholder {
+    color: rgba(220, 212, 201, 1) !important;
 }

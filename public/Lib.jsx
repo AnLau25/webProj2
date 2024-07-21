@@ -11,10 +11,8 @@ const Lib = () => {
     const [site, setSite] = useState('');
     const [selectedGenre, setSelectedGenre] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedLanguage, setSelectedLanguage] = useState('');
-    const [selectedPeriod, setSelectedPeriod] = useState('');
-
-    console.log(Data); // Log Data to check if it is being imported correctly
+    const [selectedLanguage, setSelectedLanguage] = useState({ value: 'default', label: 'LANGUAGE' });
+    const [selectedPeriod, setSelectedPeriod] = useState({ value: 'default', label: 'PERIOD' });
 
     const handleChange = (event) => {
         setSite(event.target.value);
@@ -28,12 +26,12 @@ const Lib = () => {
         setSearchTerm(event.target.value);
     };
 
-    const handleLanguageChange = (event) => {
-        setSelectedLanguage(event.target.value);
+    const handleLanguageChange = (selectedOption) => {
+        setSelectedLanguage(selectedOption);
     };
 
-    const handlePeriodChange = (event) => {
-        setSelectedPeriod(event.target.value);
+    const handlePeriodChange = (selectedOption) => {
+        setSelectedPeriod(selectedOption);
     };
 
     const genreOptions = [
@@ -55,13 +53,49 @@ const Lib = () => {
         { value: 'Satire', label: 'Satire' }
     ];
 
-    // Filtered books based on search term, genre, language, and period
+    const languageOptions = [
+        { value: 'default', label: 'LANGUAGE' },
+        { value: 'En', label: 'English' },
+        { value: 'Fr', label: 'French' },
+        { value: 'It', label: 'Italian' },
+        { value: 'Sp', label: 'Spanish' }
+    ];
+
+    const periodOptions = [
+        { value: 'default', label: 'PERIOD' },
+        { value: 'Renaissance', label: 'Renaissance' },
+        { value: 'Neoclassicism', label: 'Neoclassicism' },
+        { value: 'Romanticism', label: 'Romanticism' },
+        { value: 'Realism', label: 'Realism' },
+        { value: 'Modernism', label: 'Modernism' }
+    ];
+
+    const customStyles = {
+        option: (provided, state) => ({
+            ...provided,
+            color: state.data.value === 'default' ? 'rgba(220, 212, 201, 1)' : 'rgba(63, 40, 7, 1)',
+            backgroundColor: state.isFocused
+                ? 'rgba(220, 212, 201, 1)'
+                : state.isSelected
+                    ? 'rgba(202, 181, 155, 1)'
+                    : undefined
+        }),
+        singleValue: (provided, state) => ({
+            ...provided,
+            color: state.data.value === 'default' ? 'rgba(220, 212, 201, 1)' : 'rgba(63, 40, 7, 1)',
+        }),
+        placeholder: (provided, state) => ({
+            ...provided,
+            color: 'rgba(220, 212, 201, 1)',
+        }),
+    };
+
     const filteredBooks = Data.filter(book =>
         (book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-         book.author.toLowerCase().includes(searchTerm.toLowerCase())) &&
-        (selectedGenre.length === 0 || selectedGenre.every(genre => book.genre.includes(genre.value))) &&
-        (!selectedLanguage || book.language === selectedLanguage) &&
-        (!selectedPeriod || book.period === selectedPeriod)
+            book.author.toLowerCase().includes(searchTerm.toLowerCase())) &&
+        (selectedGenre.length === 0 || selectedGenre.some(genre => genre.value === 'default' || book.genre.includes(genre.value))) &&
+        (selectedLanguage.value === 'default' || book.language === selectedLanguage.value) &&
+        (selectedPeriod.value === 'default' || book.period === selectedPeriod.value)
     );
 
     return (
@@ -73,7 +107,7 @@ const Lib = () => {
                     <Row>
                         <Col xs={12} md={3}>
                             <Container className="filter">
-                                <h1>Filter</h1>
+                                <h1 className='flt'>Filter</h1>
                                 <input
                                     type="text"
                                     placeholder="Search by title or author"
@@ -90,30 +124,28 @@ const Lib = () => {
                                     placeholder="GENRE"
                                     value={selectedGenre}
                                     onChange={handleGenreChange}
+                                    styles={customStyles}
                                 />
-                                <select
-                                    className="form-control custom-select mb-3"
+                                <Select
+                                    name="language"
+                                    options={languageOptions}
+                                    className="basic-single-select"
+                                    classNamePrefix="select"
+                                    placeholder="LANGUAGE"
                                     value={selectedLanguage}
                                     onChange={handleLanguageChange}
-                                >
-                                    <option value="">LANGUAGE</option>
-                                    <option value="En">English</option>
-                                    <option value="Fr">French</option>
-                                    <option value="It">Italian</option>
-                                    <option value="Sp">Spanish</option>
-                                </select>
-                                <select
-                                    className="form-control custom-select"
+                                    styles={customStyles}
+                                />
+                                <Select
+                                    name="period"
+                                    options={periodOptions}
+                                    className="basic-single-select"
+                                    classNamePrefix="select"
+                                    placeholder="PERIOD"
                                     value={selectedPeriod}
                                     onChange={handlePeriodChange}
-                                >
-                                    <option value="">PERIOD</option>
-                                    <option value="Renaissance">Renaissance</option>
-                                    <option value="Neoclassicism">Neoclassicism</option>
-                                    <option value="Romanticism">Romanticism</option>
-                                    <option value="Realism">Realism</option>
-                                    <option value="Modernism">Modernism</option>
-                                </select>
+                                    styles={customStyles}
+                                />
                             </Container>
                         </Col>
                         <Col xs={12} md={9}>
