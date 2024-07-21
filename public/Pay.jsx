@@ -7,7 +7,7 @@ import GoldSep from './GoldSep';
 import { Row, Col, Container, ToastContainer, Toast, Form, Button } from 'react-bootstrap';
 
 const Pay = () => {
-    const [event, setEvent] = useState('');
+    const [site, setSite] = useState('');
     const [days, setDays] = useState([]);
     const [selectedDay, setSelectedDay] = useState('');
     const [ussEmail, setUssEmail] = useState('');
@@ -20,7 +20,7 @@ const Pay = () => {
     const [showConfirmationToast, setShowConfirmationToast] = useState(false);
     const [confirmationToastMessage, setConfirmationToastMessage] = useState('');
     const [validation, setValidation] = useState({
-        event: true,
+        site: true,
         selectedDay: true,
         ussEmail: true,
         cardHolderName: true,
@@ -30,17 +30,17 @@ const Pay = () => {
     });
     const formRef = useRef(null);
 
-    const handleEventChange = (event) => {
-        const selectedEvent = event.target.value;
-        setEvent(selectedEvent);
+    const handleSiteChange = (event) => {
+        const selectedSite = event.target.value;
+        setSite(selectedSite);
         setSelectedDay('');
-        if (selectedEvent === 'Maurice Leblanc') {
+        if (selectedSite === 'Maurice Leblanc') {
             setDays(['Mon', 'Tue']);
-        } else if (selectedEvent === 'Agatha Christie') {
+        } else if (selectedSite === 'Agatha Christie') {
             setDays(['Wed', 'Fri']);
-        } else if (selectedEvent === 'Jane Austen') {
+        } else if (selectedSite === 'Jane Austen') {
             setDays(['Thu']);
-        } else if (selectedEvent === 'Nicolás Maquiavelo') {
+        } else if (selectedSite === 'Nicolás Maquiavelo') {
             setDays(['Sat']);
         } else {
             setDays([]);
@@ -54,7 +54,7 @@ const Pay = () => {
     const handleClearForm = () => {
         if (formRef.current) {
             formRef.current.reset();
-            setEvent('');
+            setSite('');
             setDays([]);
             setUssEmail('');
             setSelectedDay('');
@@ -68,7 +68,7 @@ const Pay = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        const isEventValid = event.trim() !== '';
+        const isSiteValid = site.trim() !== '';
         const isSelectedDayValid = selectedDay.trim() !== '';
         const isEmailValid = ussEmail.trim() !== '';
         const isCardHolderNameValid = cardHolderName.trim() !== '';
@@ -77,16 +77,17 @@ const Pay = () => {
         const isCvvValid = cvv.trim() !== '';
 
         setValidation({
-            event: isEventValid,
-            selectedDay: isSelectedDayValid,
+            site: isSiteValid,
             ussEmail: isEmailValid,
+            ussEmail: isEmailValid,
+            selectedDay: isSelectedDayValid,
             cardHolderName: isCardHolderNameValid,
             expirationDate: isExpirationDateValid,
             cardNumber: isCardNumberValid,
             cvv: isCvvValid
         });
 
-        if (!isEventValid || !isSelectedDayValid || !isEmailValid ||!isCardHolderNameValid || !isExpirationDateValid || !isCardNumberValid || !isCvvValid) {
+        if (!isSiteValid || !isSelectedDayValid || !isEmailValid || !isCardHolderNameValid || !isExpirationDateValid || !isCardNumberValid || !isCvvValid) {
             return;
         }
 
@@ -121,9 +122,9 @@ const Pay = () => {
                                     <Col sm={6} className='px-1 form-element'>
                                         <Form.Control
                                             as="select"
-                                            className={`form-control custom-select ${!validation.event ? 'is-invalid' : ''}`}
-                                            value={event}
-                                            onChange={handleEventChange}
+                                            className={`form-control custom-select ${!validation.site ? 'is-invalid' : ''}`}
+                                            value={site}
+                                            onChange={handleSiteChange}
                                         >
                                             <option value="" disabled>EVENT</option>
                                             <option value="Maurice Leblanc">Maurice Leblanc</option>
