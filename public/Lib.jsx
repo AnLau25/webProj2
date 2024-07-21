@@ -6,6 +6,8 @@ import GoldSep from './GoldSep';
 import Foot from './Foot';
 import BCard from './BCard';
 import Data from './Data';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Lib = () => {
     const [site, setSite] = useState('');
@@ -13,6 +15,7 @@ const Lib = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedLanguage, setSelectedLanguage] = useState({ value: 'default', label: 'LANGUAGE' });
     const [selectedPeriod, setSelectedPeriod] = useState({ value: 'default', label: 'PERIOD' });
+    const [books, setBooks] = useState(Data);
 
     const handleChange = (event) => {
         setSite(event.target.value);
@@ -32,6 +35,17 @@ const Lib = () => {
 
     const handlePeriodChange = (selectedOption) => {
         setSelectedPeriod(selectedOption);
+    };
+
+    const updateBorrowStatus = (index) => {
+        const book = books[index];
+        if (!book.borrowed && !books.some(b => b.borrowed)) {
+            const updatedBooks = books.map((b, i) => i === index ? { ...b, borrowed: true } : b);
+            setBooks(updatedBooks);
+            toast.success(`${book.title} was borrowed!`);
+        } else {
+            toast.error('This book is already borrowed or another book is currently borrowed.');
+        }
     };
 
     const genreOptions = [
@@ -90,7 +104,7 @@ const Lib = () => {
         }),
     };
 
-    const filteredBooks = Data.filter(book =>
+    const filteredBooks = books.filter(book =>
         (book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
             book.author.toLowerCase().includes(searchTerm.toLowerCase())) &&
         (selectedGenre.length === 0 || selectedGenre.some(genre => genre.value === 'default' || book.genre.includes(genre.value))) &&
@@ -160,6 +174,8 @@ const Lib = () => {
                                                 authprop={book.author}
                                                 genprop={book.genre}
                                                 sumprop={book.summary}
+                                                index={index}
+                                                updateBorrowStatus={updateBorrowStatus}
                                             />
                                         </Col>
                                     ))}
@@ -170,6 +186,7 @@ const Lib = () => {
                 </Container>
             </section>
             <Foot />
+            <ToastContainer />
         </>
     );
 };

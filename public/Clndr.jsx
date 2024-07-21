@@ -201,7 +201,7 @@ const Clndr = () => {
             <Toast.Header>
               <strong className="me-auto">Notification</strong>
             </Toast.Header>
-            <Toast.Body>Event has been created successfully!</Toast.Body>
+            <Toast.Body>Hi! We got your suggestion, we'll get back to you via e-mail.</Toast.Body>
           </Toast>
         </ToastContainer>
       </section>

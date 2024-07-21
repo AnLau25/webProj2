@@ -1,46 +1,26 @@
-import React, { useState } from 'react';
-import BCard from './BCard';
-import Data from './Data';
-import { ToastContainer, toast } from 'react-toastify';
+import React from 'react';
+import './BCard.css';
+import GoldBtnBase from './GoldBtnBase';
 
-const BookLibrary = () => {
-    const [books, setBooks] = useState(Data);
-
-    const handleBorrow = (selectedBook) => {
-        const alreadyBorrowedBook = books.find(book => book.borrowed === 'true');
-        if (selectedBook.borrowed === 'true') {
-            toast.info('This book has already been borrowed.');
-            return;
-        }
-
-        if (!alreadyBorrowedBook) {
-            toast.success('Book was borrowed.');
-            updateBookBorrowedStatus(selectedBook, true);
-        } else {
-            const confirmSwap = window.confirm('Another book is already borrowed. Would you like to swap?');
-            if (confirmSwap) {
-                toast.success('Book was borrowed.');
-                updateBookBorrowedStatus(alreadyBorrowedBook, false);
-                updateBookBorrowedStatus(selectedBook, true);
-            }
-        }
-    };
-
-    const updateBookBorrowedStatus = (bookToUpdate, status) => {
-        const updatedBooks = books.map(book => 
-            book.title === bookToUpdate.title ? { ...book, borrowed: status.toString() } : book
-        );
-        setBooks(updatedBooks);
+const BCard = ({ imgprop, titleprop, langprop, authprop, genprop, sumprop, index, updateBorrowStatus }) => {
+    const handleBorrowClick = () => {
+        updateBorrowStatus(index);
     };
 
     return (
-        <div>
-            <ToastContainer />
-            {books.map(book => (
-                <BCard key={book.title} book={book} onBorrow={handleBorrow} />
-            ))}
+        <div className='BCard'>
+            <img src={imgprop} alt={titleprop} />
+            <div className='introB'>
+                <h1>{titleprop} <em>({langprop})</em></h1>
+                <p>{sumprop}</p>
+                <div className='authgen'>
+                    <p>Author: {authprop}</p>
+                    <p>Genres: {genprop.join(', ')}</p>
+                </div>
+                <GoldBtnBase className='smol custom-bcard-button' prop="Borrow" onClick={handleBorrowClick} />
+            </div>
         </div>
     );
-};
+}
 
-export default BookLibrary;
+export default BCard;
