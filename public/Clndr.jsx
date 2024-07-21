@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Row, Col, Container, Card, Form, ToastContainer, Toast, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Row, Col, Container, Card, Form, ToastContainer, Toast, OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
 import './Clndr.css';
 import GoldSep from './GoldSep';
 import GoldBtnBase from './GoldBtnBase';
 import moment from 'moment';
+import arrowIcon from './AvroArrow.svg'; 
 
 const workHours = {
   start: 10,
   end: 18
 };
 
-// Predefined events
+
 const predefinedEvents = [
   {
     day: 'Sunday',
@@ -71,14 +72,22 @@ const predefinedEvents = [
 ];
 
 const Clndr = () => {
-  const [events, setEvents] = useState(predefinedEvents); 
+  const [events, setEvents] = useState(predefinedEvents);
   const [selectedDay, setSelectedDay] = useState(null);
   const [startTime, setStartTime] = useState(moment().hour(workHours.start).minute(0));
   const [endTime, setEndTime] = useState(moment().hour(workHours.start + 1).minute(0));
   const [showToast, setShowToast] = useState(false);
+  const [ussEmail, setUssEmail] = useState('');
   const [eventTitle, setEventTitle] = useState('');
   const [eventDescription, setEventDescription] = useState('');
-  const [showLateralToast, setShowLateralToast] = useState(false); 
+  const [showLateralToast, setShowLateralToast] = useState(false);
+  const [isTabOpen, setIsTabOpen] = useState(true);
+  const [error, setError] = useState('');
+  const [validation, setValidation] = useState({
+    ussEmail: true,
+    eventTitle: true,
+    eventDescription: true
+  });
 
   const handleDayClick = (day) => {
     console.log(`Day clicked: ${day}`); 
@@ -86,11 +95,30 @@ const Clndr = () => {
     setShowToast(true);
   };
 
+  
   const handleSubmit = (event) => {
-    event.preventDefault();  // Prevent the default form submission behavior
+    event.preventDefault();
+
+    const isEmailValid = ussEmail.trim() !== '';
+    const isTitleValid = eventTitle.trim() !== '';
+    const isDescriptionValid = eventDescription.trim() !== '';
+
+    setValidation({
+      ussEmail: isEmailValid,
+      eventTitle: isTitleValid,
+      eventDescription: isDescriptionValid
+    });
+
+    if (!isEmailValid || !isTitleValid || !isDescriptionValid) {
+      setShowToast(true);
+      return;
+    }
+
+    setError('');
     setShowToast(false);
-    setShowLateralToast(true); 
+    setShowLateralToast(true);
   };
+
 
   const renderEvents = (day) => {
     const dayEvents = events.filter(event => event.day === day);
@@ -149,7 +177,18 @@ const Clndr = () => {
             </Toast.Header>
             <Toast.Body>
               <Container className='toast-content'>
+                {error && <p style={{ color: 'red' }}>{error}</p>}
                 <Form onSubmit={handleSubmit}>
+                  <Form.Group controlId="ussEmail">
+                    <Form.Label>E-Mail</Form.Label>
+                    <Form.Control
+                      type='email'
+                      placeholder="Enter your e-mail"
+                      value={ussEmail}
+                      onChange={(e) => setUssEmail(e.target.value)}
+                      isInvalid={!validation.ussEmail}
+                    />
+                  </Form.Group>
                   <Form.Group controlId="eventTitle">
                     <Form.Label>Event Title</Form.Label>
                     <Form.Control
@@ -157,6 +196,7 @@ const Clndr = () => {
                       placeholder="Enter event title"
                       value={eventTitle}
                       onChange={(e) => setEventTitle(e.target.value)}
+                      isInvalid={!validation.eventTitle}
                     />
                   </Form.Group>
                   <Form.Group controlId="eventDescription">
@@ -166,6 +206,7 @@ const Clndr = () => {
                       placeholder="Enter event description"
                       value={eventDescription}
                       onChange={(e) => setEventDescription(e.target.value)}
+                      isInvalid={!validation.eventDescription}
                     />
                   </Form.Group>
                   <Row>
@@ -204,6 +245,19 @@ const Clndr = () => {
             <Toast.Body>Hi! We got your suggestion, we'll get back to you via e-mail.</Toast.Body>
           </Toast>
         </ToastContainer>
+        <div className={`lateral-tab ${isTabOpen ? 'open' : ''}`}>
+          <button className="toggle-btn" onClick={() => setIsTabOpen(!isTabOpen)}>
+            <img src={arrowIcon} alt="Toggle" className="toggle-icon" />
+          </button>
+          <div className="tab-content">
+            <h5>Our Shcedule</h5>
+            <GoldSep/>
+            <p>
+              Wanna get more detail about the reading clubs? Just hover over them!
+              Wanna suggest us a club idea? Click on the schedule to fill out the form and we'll contact you about it.
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );
