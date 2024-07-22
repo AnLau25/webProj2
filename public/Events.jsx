@@ -17,12 +17,12 @@ const Events = () => {
                                         <div className='txt'>
                                             <h1>Library Collection</h1>
                                             <p>Short description of the way the library system works. A lil talk about the classics maybe talk abt the booking system.</p>
-                                            <GoldBtn href="#" prop='Browse our Collection' />
+                                            <GoldBtn href="/Lib" prop='Browse our Collection' />
                                         </div>
                                         <div className='txt'>
                                             <h1>Café and Menu</h1>
                                             <p>Specs about the menu, the time at which each menu happens, maybe talk about the chef.</p>
-                                            <GoldBtn href="#" prop='Check out the menu' />
+                                            <GoldBtn href="/Cafe#menu" prop='Check out the menu' />
                                         </div>
                                     </Col>
                                     <Col xs={12} md={8} className='events-card'>
@@ -71,9 +71,34 @@ const Events = () => {
                                 </Row>
                             </div>
                         </Tab>
-                        <Tab eventKey="wrtrs" title="Writers">
+                        <Tab eventKey="wrtrs" title="Pages">
                             <div className='tab-content'>
-                                <div className='placeholder'>Dear gentle authors, fret not, this page shall be soon written.</div>
+                            <Row>
+                                    <Col xs={12} md={6} className='txt-container'>
+                                        <div className='txt'>
+                                            <h1>Schedule</h1>
+                                            <p>The longuer secription about hao the schedule works,probably more content abouyt the clubs, actually, it'll probably mainly6 be an introduction to the clubs and whatnot.</p>
+                                            <GoldBtn href="/#clndr" prop='Our Schedule' />
+                                        </div>
+                                        <div className='txt'>
+                                            <h1>Clubs</h1>
+                                            <p>Will be explaining the requirements of a club, it'll discus thenujber of members, how they will deal with the catering and so on and so forth, the are more informal than events.</p>
+                                        </div>
+                                    </Col>
+                                    <Col xs={12} md={6} className='txt-container'>
+                                        <div className='txt'>
+                                            <h1>Paid Events</h1>
+                                            <p>The more serious stuff since it involves authors reaching out to them or viceversa for events regarding the author's book's marketing and whanot. A brief explenation as to why these are paid.</p>
+                                            <GoldBtn href="/Cafe#pay" prop='Register for an event' />
+                                        </div>
+                                        <div className='txt'>
+                                            <h1>Damaged book policie</h1>
+                                            <p>Yes, they do lend the books and yes you an read and eat but the place has very old books that can be easly damages and require costly repairs.</p>
+                                            <GoldBtn href="/Lib" prop='Our Collection' />
+                                        </div>
+                                    </Col>
+                                    
+                                </Row>
                             </div>
                         </Tab>
                     </Tabs>

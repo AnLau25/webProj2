@@ -6,26 +6,26 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 const AbtUsSp = () => {
     return (
-        <section className='AbtUs' id='abtus'>
+        <section className='AbtUs' id='abtussp'>
             <GoldSep />
             <Container fluid>
                 <Row className='content-row'>
                     <Col xs={12} md={6} className='txt-container'>
-                        <h1>About our “Capricho”</h1>
+                        <h1>Sobre "Capricho"</h1>
                         <p>
-                            Short explanation of the café’s name and the fact that “Capricho”
-                            means whim in Spanish. Some background info as to who the small group
-                            of entrepreneurs is, you know the basics. This page works well because
-                            it’s for a start-up and cause this place has a background story in my
-                            head that deserves to be told.
+                            Breve explicación sobre el nombre del café y el hecho de que "Capricho"
+                            significa antojo en español. Algo de información de fondo sobre el grupo
+                            pequeño de emprendedores, lo básico. Esta página funciona bien porque es
+                            para una startup y porque este lugar tiene una historia en mi cabeza que
+                            merece ser contada.
                         </p>
                         <div className='times'>
-                            <div>Mon-Thu : 10h00 - 12h00 am</div>
-                            <div>Fri-Sun : 11h00 - 01h00 am</div>
+                            <div>Lun-Jue : 10h00 - 12h00 am</div>
+                            <div>Vie-Dom : 11h00 - 01h00 am</div>
                         </div>
                         <div className='btn-container'>
-                            <GoldBtn href="#" prop='Check out the events' />
-                            <GoldBtn href="#" prop='Check out the menu' />
+                            <GoldBtn href="/Cafe#events" prop='Ver eventos' />
+                            <GoldBtn href="/Cafe#menu" prop='Ver menú' />
                         </div>
                     </Col>
                     <Col xs={12} md={6} className='map-container'>

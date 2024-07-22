@@ -64,6 +64,7 @@ const Navnav = () => {
                                 <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>Event booking</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>Our Collection</Nav.Link>
+                            <Nav.Link as={Link} to="/Sp" className="custom-nav-link" onClick={() => handleNavLinkClick('homesp')}>Our Collection</Nav.Link>
                         </Nav>
                         <div className="login-signup">
                             {isSignedIn ? (

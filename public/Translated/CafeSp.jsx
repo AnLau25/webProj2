@@ -1,20 +1,21 @@
 import React from 'react'
-import Events from '/public/Events'
-import Menu from './Menu'
-import Pay from './Pay'
-import Foot from './Foot'
+import EventsSp from '../EventsSp'
+import MenuSp from '../MenuSp'
+import PaySp from '../PaySp'
 
 const CafeSp = () => {
   return (
     <>
-    <div className='background-banner'>
-        <Events/>
-        <Menu/>
-        <Pay/>
-    </div>
-    <Foot/>
+      <div className='background-banner'>
+        <EventsSp />
+        <MenuSp />
+        <PaySp/>
+      </div>
+      <Foot />
     </>
   )
 }
 
 export default CafeSp
+
+//eventssp , menusp , paysp

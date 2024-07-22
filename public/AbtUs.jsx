@@ -24,8 +24,8 @@ const AbtUs = () => {
                             <div>Fri-Sun : 11h00 - 01h00 am</div>
                         </div>
                         <div className='btn-container'>
-                            <GoldBtn href="#" prop='Check out the events' />
-                            <GoldBtn href="#" prop='Check out the menu' />
+                            <GoldBtn href="/Cafe#events" prop='Check out the events' />
+                            <GoldBtn href="/Cafe#menu" prop='Check out the menu' />
                         </div>
                     </Col>
                     <Col xs={12} md={6} className='map-container'>
