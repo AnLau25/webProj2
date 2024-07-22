@@ -4,6 +4,7 @@ import './Bluebg.css';
 import GoldBtnBase from './GoldBtnBase';
 import GoldCard from './GoldCard';
 import GoldSep from './GoldSep';
+import arrowIcon from './AvroArrow.svg'; 
 import { Row, Col, Container, ToastContainer, Toast, Form, Button } from 'react-bootstrap';
 
 const Pay = () => {
@@ -19,6 +20,7 @@ const Pay = () => {
     const [toastMessage, setToastMessage] = useState('');
     const [showConfirmationToast, setShowConfirmationToast] = useState(false);
     const [confirmationToastMessage, setConfirmationToastMessage] = useState('');
+    const [isTabOpen, setIsTabOpen] = useState(true);
     const [validation, setValidation] = useState({
         site: true,
         selectedDay: true,
@@ -69,7 +71,7 @@ const Pay = () => {
         event.preventDefault();
 
         const isSiteValid = site.trim() !== '';
-        const isSelectedDayValid = selectedDay.trim() !== '';
+        const isSelectedDayValid = selectedDay.trim() !== '' || site === 'Club';
         const isEmailValid = ussEmail.trim() !== '';
         const isCardHolderNameValid = cardHolderName.trim() !== '';
         const isExpirationDateValid = expirationDate.trim() !== '';
@@ -79,19 +81,18 @@ const Pay = () => {
         setValidation({
             site: isSiteValid,
             ussEmail: isEmailValid,
-            ussEmail: isEmailValid,
             selectedDay: isSelectedDayValid,
-            cardHolderName: isCardHolderNameValid,
-            expirationDate: isExpirationDateValid,
-            cardNumber: isCardNumberValid,
-            cvv: isCvvValid
+            cardHolderName: site === 'Club' ? true : isCardHolderNameValid,
+            expirationDate: site === 'Club' ? true : isExpirationDateValid,
+            cardNumber: site === 'Club' ? true : isCardNumberValid,
+            cvv: site === 'Club' ? true : isCvvValid
         });
 
-        if (!isSiteValid || !isSelectedDayValid || !isEmailValid || !isCardHolderNameValid || !isExpirationDateValid || !isCardNumberValid || !isCvvValid) {
+        if (!isSiteValid || !isSelectedDayValid || !isEmailValid || (!isCardHolderNameValid && site !== 'Club') || (!isExpirationDateValid && site !== 'Club') || (!isCardNumberValid && site !== 'Club') || (!isCvvValid && site !== 'Club')) {
             return;
         }
 
-        setConfirmationToastMessage('Are you sure you want to proceed with the transaction?');
+        setConfirmationToastMessage(`Are you sure you want to proceed with the ${site === 'Club' ? 'registration' : 'transaction'}?`);
         setShowConfirmationToast(true);
     };
 
@@ -99,7 +100,7 @@ const Pay = () => {
         handleClearForm();
         setConfirmationToastMessage('');
         setShowConfirmationToast(false);
-        setToastMessage('Transaction accomplished');
+        setToastMessage(`${site === 'Club' ? 'Registration' : 'Transaction'} accomplished`);
         setShowToast(true);
     };
 
@@ -127,6 +128,7 @@ const Pay = () => {
                                             onChange={handleSiteChange}
                                         >
                                             <option value="" disabled>EVENT</option>
+                                            <option value="Club">Club</option>
                                             <option value="Maurice Leblanc">Maurice Leblanc</option>
                                             <option value="Agatha Christie">Agatha Christie</option>
                                             <option value="Jane Austen">Jane Austen</option>
@@ -134,19 +136,39 @@ const Pay = () => {
                                         </Form.Control>
                                     </Col>
                                     <Col sm={6} className='px-1 form-element'>
-                                        <Form.Control
-                                            as="select"
-                                            className={`form-control custom-select ${!validation.selectedDay ? 'is-invalid' : ''}`}
-                                            value={selectedDay}
-                                            onChange={handleDayChange}
-                                        >
-                                            <option value="" disabled>DAY</option>
-                                            {days.map((day, index) => (
-                                                <option key={index} value={day}>{day}</option>
-                                            ))}
-                                        </Form.Control>
+                                        {site !== 'Club' ? (
+                                            <Form.Control
+                                                as="select"
+                                                className={`form-control custom-select ${!validation.selectedDay ? 'is-invalid' : ''}`}
+                                                value={selectedDay}
+                                                onChange={handleDayChange}
+                                            >
+                                                <option value="" disabled>DAY</option>
+                                                {days.map((day, index) => (
+                                                    <option key={index} value={day}>{day}</option>
+                                                ))}
+                                            </Form.Control>
+                                        ) : (
+                                            <Form.Control
+                                                as="select"
+                                                className={`form-control custom-select ${!validation.selectedDay ? 'is-invalid' : ''}`}
+                                                value={selectedDay}
+                                                onChange={handleDayChange}
+                                            >
+                                                <option value="" disabled>CLUB</option>
+                                                {/* Add Club options here */}
+                                                <option value="1">Midi de theatre (Fr)</option>
+                                                <option value="2">Verne's reading club (Eng)</option>
+                                                <option value="3">Greek Myth exploration gang (Eng)</option>
+                                                <option value="4">Horror Tuesdays (Eng)</option>
+                                                <option value="5">Love birds chirping club (Eng)</option>
+                                                <option value="6">Le culte de Samsagaz Gamyi (Fr)</option>
+                                                <option value="7">Victorian readings and biscuits (Eng)</option>
+                                                <option value="8">Sci-fi Sam! (Fr)</option>
+                                            </Form.Control>
+                                        )}
                                     </Col>
-                                    <h3>Payment info</h3>
+                                    <h3>{site === 'Club' ? 'Registration info' : 'Payment info'}</h3>
                                     <Col sm={12} className='px-1 form-element'>
                                         <Form.Control
                                             type="email"
@@ -156,42 +178,46 @@ const Pay = () => {
                                             onChange={(e) => setUssEmail(e.target.value)}
                                         />
                                     </Col>
-                                    <Col sm={6} className='px-1 form-element'>
-                                        <Form.Control
-                                            type="text"
-                                            className={`form-control ${!validation.cardHolderName ? 'is-invalid' : ''}`}
-                                            placeholder="CARD HOLDER NAME"
-                                            value={cardHolderName}
-                                            onChange={(e) => setCardHolderName(e.target.value)}
-                                        />
-                                    </Col>
-                                    <Col sm={6} className='px-1 form-element'>
-                                        <Form.Control
-                                            type="text"
-                                            className={`form-control ${!validation.expirationDate ? 'is-invalid' : ''}`}
-                                            placeholder="EXPIRATION DATE"
-                                            value={expirationDate}
-                                            onChange={(e) => setExpirationDate(e.target.value)}
-                                        />
-                                    </Col>
-                                    <Col sm={6} className='px-1 form-element'>
-                                        <Form.Control
-                                            type="tel"
-                                            className={`form-control ${!validation.cardNumber ? 'is-invalid' : ''}`}
-                                            placeholder="CARD NUMBER"
-                                            value={cardNumber}
-                                            onChange={(e) => setCardNumber(e.target.value)}
-                                        />
-                                    </Col>
-                                    <Col sm={6} className='px-1 form-element'>
-                                        <Form.Control
-                                            type="text"
-                                            className={`form-control ${!validation.cvv ? 'is-invalid' : ''}`}
-                                            placeholder="CVV"
-                                            value={cvv}
-                                            onChange={(e) => setCvv(e.target.value)}
-                                        />
-                                    </Col>
+                                    {site !== 'Club' && (
+                                        <>
+                                            <Col sm={6} className='px-1 form-element'>
+                                                <Form.Control
+                                                    type="text"
+                                                    className={`form-control ${!validation.cardHolderName ? 'is-invalid' : ''}`}
+                                                    placeholder="CARD HOLDER NAME"
+                                                    value={cardHolderName}
+                                                    onChange={(e) => setCardHolderName(e.target.value)}
+                                                />
+                                            </Col>
+                                            <Col sm={6} className='px-1 form-element'>
+                                                <Form.Control
+                                                    type="text"
+                                                    className={`form-control ${!validation.expirationDate ? 'is-invalid' : ''}`}
+                                                    placeholder="EXPIRATION DATE"
+                                                    value={expirationDate}
+                                                    onChange={(e) => setExpirationDate(e.target.value)}
+                                                />
+                                            </Col>
+                                            <Col sm={6} className='px-1 form-element'>
+                                                <Form.Control
+                                                    type="tel"
+                                                    className={`form-control ${!validation.cardNumber ? 'is-invalid' : ''}`}
+                                                    placeholder="CARD NUMBER"
+                                                    value={cardNumber}
+                                                    onChange={(e) => setCardNumber(e.target.value)}
+                                                />
+                                            </Col>
+                                            <Col sm={6} className='px-1 form-element'>
+                                                <Form.Control
+                                                    type="text"
+                                                    className={`form-control ${!validation.cvv ? 'is-invalid' : ''}`}
+                                                    placeholder="CVV"
+                                                    value={cvv}
+                                                    onChange={(e) => setCvv(e.target.value)}
+                                                />
+                                            </Col>
+                                        </>
+                                    )}
                                     <Col sm={12} className='px-1 form-element'>
                                         <GoldBtnBase prop="Book my spot" type="submit" />
                                     </Col>
@@ -203,12 +229,6 @@ const Pay = () => {
                 </Row>
             </Container>
             <ToastContainer position="middle-center" className="p-3 custom-toast-container">
-                <Toast onClose={() => setShowToast(false)} show={showToast}>
-                    <Toast.Header>
-                        <strong className="me-auto">{toastMessage}</strong>
-                    </Toast.Header>
-                    <Toast.Body>For any modifications or cancellations, please do not hesitate to contact us.</Toast.Body>
-                </Toast>
                 <Toast onClose={() => setShowConfirmationToast(false)} show={showConfirmationToast}>
                     <Toast.Header>
                         <strong className="me-auto">{confirmationToastMessage}</strong>
@@ -223,6 +243,19 @@ const Pay = () => {
                     </Toast.Body>
                 </Toast>
             </ToastContainer>
+            <div className={`lateral-tab ${isTabOpen ? 'open' : ''}`}>
+                    <button className="toggle-btn" onClick={() => setIsTabOpen(!isTabOpen)}>
+                        <img src={arrowIcon} alt="Toggle" className="toggle-icon" />
+                    </button>
+                    <div className="tab-content">
+                        <h5>Register</h5>
+                        <GoldSep />
+                        <p>
+                            Registering for an event? Pick your event and the date, you can see all our events in the corresponding tab. 
+                            Club? Select that option pick your club and register. It's free! (For more info see our schedule)
+                        </p>
+                    </div>
+                </div>
         </section>
     );
 }

@@ -181,3 +181,74 @@
         font-size: 16px;
     }
 }
+
+.pay .lateral-tab {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: rgba(165, 103, 11, 1) solid 2px;
+    border-radius: 30px;
+    width: 300px;
+    height: auto;
+    background-color: rgba(220, 212, 201, 1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .pay .lateral-tab p{
+    font-family: "Inknut Antiqua", serif;
+    color: rgba(63, 40, 7, 1);
+    margin-top: 10px;
+  }
+  
+  .pay .lateral-tab h5{
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+    font-size: 30px;
+  }
+  
+  .pay .lateral-tab .toggle-btn {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgba(202, 181, 155, 1);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pay .lateral-tab .toggle-btn:focus,
+  .pay .lateral-tab .toggle-btn:hover {
+      transform: translateY(-50%) rotate(270deg);
+  }
+  
+  .pay .lateral-tab .toggle-icon {
+    width: 100%;
+    height: auto;
+  }
+  
+  .pay .lateral-tab.open {
+    right: 0;
+  }
+  
+  .pay .lateral-tab:not(.open) {
+    right: -300px;
+  }
+  
+  .pay .lateral-tab .tab-content {
+    display: none;
+  }
+  
+  .pay .lateral-tab.open .tab-content {
+    display: block;
+  }
