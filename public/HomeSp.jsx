@@ -23,8 +23,8 @@ const HomeSp = () => {
                 <h3>¡Bienvenidos lectores!</h3>
                 <p>Ven y experimenta la máxima experiencia de lectura en nuestro acogedor café, con sabrosos bocados y una colección de clásicos que satisfacen todos los gustos.</p>
                 <div className='nav-links'>
-                    <a as={Link} to="/#abtussp" className='nav-link'>Acerca de nosotros</a>
-                    <a as={Link} to="/Cafe#eventssp" className='nav-link'>Eventos y Actividades</a>
+                    <a as={Link} to="/#abtus" className='nav-link'>El Café</a>
+                    <a as={Link} to="/Cafe#events" className='nav-link'>Eventos</a>
                 </div>
             </div>
         </section>
