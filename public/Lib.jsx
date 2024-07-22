@@ -8,6 +8,7 @@ import BCard from './BCard';
 import Data from './Data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import arrowIcon from './AvroArrow.svg'; 
 
 const Lib = () => {
     const [site, setSite] = useState('');
@@ -16,6 +17,8 @@ const Lib = () => {
     const [selectedLanguage, setSelectedLanguage] = useState({ value: 'default', label: 'LANGUAGE' });
     const [selectedPeriod, setSelectedPeriod] = useState({ value: 'default', label: 'PERIOD' });
     const [books, setBooks] = useState(Data);
+    const [isTabOpen, setIsTabOpen] = useState(true);
+    const [currentlyBorrowedIndex, setCurrentlyBorrowedIndex] = useState(null);
 
     const handleChange = (event) => {
         setSite(event.target.value);
@@ -39,12 +42,21 @@ const Lib = () => {
 
     const updateBorrowStatus = (index) => {
         const book = books[index];
-        if (!book.borrowed && !books.some(b => b.borrowed)) {
-            const updatedBooks = books.map((b, i) => i === index ? { ...b, borrowed: true } : b);
+        if (!book.borrowed) {
+            const updatedBooks = books.map((b, i) => {
+                if (i === index) {
+                    return { ...b, borrowed: true };
+                }
+                if (i === currentlyBorrowedIndex) {
+                    return { ...b, borrowed: false };
+                }
+                return b;
+            });
             setBooks(updatedBooks);
+            setCurrentlyBorrowedIndex(index);
             toast.success(`${book.title} was borrowed!`);
         } else {
-            toast.error('This book is already borrowed or another book is currently borrowed.');
+            toast.error('This book is already borrowed.');
         }
     };
 
@@ -184,6 +196,19 @@ const Lib = () => {
                         </Col>
                     </Row>
                 </Container>
+                <div className={`lateral-tab ${isTabOpen ? 'open' : ''}`}>
+                    <button className="toggle-btn" onClick={() => setIsTabOpen(!isTabOpen)}>
+                        <img src={arrowIcon} alt="Toggle" className="toggle-icon" />
+                    </button>
+                    <div className="tab-content">
+                        <h5>Our Collection</h5>
+                        <GoldSep />
+                        <p>
+                            Wanna borrow a book? Just click on "borrow". We pressently allow one book per person so if you wanna select a diferent book than the one you got then click on that one.
+                            Please keep in mind that all reservations are conciderered for "the day of" and we work with a first come first served system
+                        </p>
+                    </div>
+                </div>
             </section>
             <Foot />
             <ToastContainer />

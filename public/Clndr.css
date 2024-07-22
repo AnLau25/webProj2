@@ -135,6 +135,10 @@
 
 
 
+
+
+
+
 .clndr .lateral-tab {
   position: absolute;
   right: 0;
@@ -197,7 +201,7 @@
   right: -300px;
 }
 
-.clndr .tab-content {
+.clndr .lateral-tab .tab-content {
   display: none;
 }
 

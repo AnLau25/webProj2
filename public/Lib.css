@@ -3,6 +3,7 @@
     padding-top: 120px;
     text-align: center;
     height: 100%;
+    overflow-x: hidden
     /* Center text inside child elements */
 }
 
@@ -143,3 +144,78 @@
 .lib input::placeholder {
     color: rgba(220, 212, 201, 1) !important;
 }
+
+
+
+
+.lib .lateral-tab {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: rgba(165, 103, 11, 1) solid 2px;
+    border-radius: 30px;
+    width: 300px;
+    height: auto;
+    background-color: rgba(220, 212, 201, 1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .lib .lateral-tab p{
+    font-family: "Inknut Antiqua", serif;
+    color: rgba(63, 40, 7, 1);
+    margin-top: 10px;
+  }
+  
+  .lib .lateral-tab h5{
+    color: rgba(165, 103, 11, 1);
+    font-family: "Italianno", cursive;
+    font-size: 30px;
+  }
+  
+  .lib .lateral-tab .toggle-btn {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: rgba(202, 181, 155, 1);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .lib .lateral-tab .toggle-btn:focus,
+  .lib .lateral-tab .toggle-btn:hover {
+      transform: translateY(-50%) rotate(270deg);
+  }
+  
+  .lib .lateral-tab .toggle-icon {
+    width: 100%;
+    height: auto;
+  }
+  
+  .lib .lateral-tab.open {
+    right: 0;
+  }
+  
+  .lib .lateral-tab:not(.open) {
+    right: -300px;
+  }
+  
+  .lib .lateral-tab .tab-content {
+    display: none;
+  }
+  
+  .lib .lateral-tab.open .tab-content {
+    display: block;
+  }
+  
