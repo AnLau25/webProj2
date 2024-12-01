@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Row, Col, Container, Card, Form, ToastContainer, Toast, OverlayTrigger, Tooltip, Button } from 'react-bootstrap';
 import './Clndr.css';
-import GoldSep from './GoldSep';
-import GoldBtnBase from './GoldBtnBase';
+import GoldSep from '../GoldSep';
+import GoldBtnBase from '../GoldBtnBase';
 import moment from 'moment';
 import arrowIcon from './AvroArrow.svg'; 
 

@@ -8,7 +8,6 @@ const Navnav = () => {
     const [showModal, setShowModal] = useState(false);
     const [isSignedIn, setIsSignedIn] = useState(false);
     const navigate = useNavigate();
-    const location = useLocation();
 
     const handleShow = () => setShowModal(true);
     const handleClose = () => setShowModal(false);
@@ -28,14 +27,6 @@ const Navnav = () => {
             const yOffset = -120; // Adjust offset to account for fixed navbar
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
-        }
-    };
-
-    const toggleLanguage = () => {
-        if (location.pathname === '/Sp') {
-            navigate('/#home');
-        } else {
-            navigate('/Sp');
         }
     };
 
@@ -59,7 +50,7 @@ const Navnav = () => {
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container fluid>
                     <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
-                        <img src='./Tuntun_Logo1.svg' alt='Logo' className="navbar-brand"/>
+                        <img src='./Tuntun_Logo1.svg' alt='Logo' className="navbar-brand" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -74,9 +65,6 @@ const Navnav = () => {
                                 <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>Event booking</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>Our Collection</Nav.Link>
-                            <Nav.Link onClick={toggleLanguage} className="custom-nav-link">
-                                {location.pathname === '/Sp' ? 'English' : 'Español'}
-                            </Nav.Link>
                         </Nav>
                         <div className="login-signup">
                             {isSignedIn ? (

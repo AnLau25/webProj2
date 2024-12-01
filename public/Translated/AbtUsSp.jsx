@@ -1,7 +1,7 @@
 import React from 'react';
 import './AbtUs.css';
-import GoldSep from './GoldSep';
-import GoldBtn from './GoldBtn';
+import GoldSep from '../GoldSep';
+import GoldBtn from '../GoldBtn';
 import { Row, Col, Container } from 'react-bootstrap';
 
 const AbtUsSp = () => {
