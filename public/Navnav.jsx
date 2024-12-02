@@ -49,12 +49,14 @@ const Navnav = () => {
         <>
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container fluid>
-                    <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
-                        <img src='./Tuntun_Logo1.svg' alt='Logo' className="navbar-brand" />
-                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mx-auto">
+                        <div className="navbar-brand">
+                            <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
+                                <img src='./Tuntun_Logo1.svg' alt='Logo' className="navbar-brand" />
+                            </Navbar.Brand>
+                        </div>
+                        <Nav className="nav-middle mx-auto">
                             <NavDropdown title="Our Capricho" className="no-caret">
                                 <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>About Us</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('clndr')}>Schedule</NavDropdown.Item>
@@ -66,13 +68,19 @@ const Navnav = () => {
                             </NavDropdown>
                             <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>Our Collection</Nav.Link>
                         </Nav>
-                        <div className="login-signup">
-                            {isSignedIn ? (
-                                <Button className="signin-login-button" onClick={handleSignOut}>Sign Out</Button>
-                            ) : (
-                                <Button className="signin-login-button" onClick={handleShow}>SignIn/LogIn</Button>
-                            )}
-                        </div>
+                        <Nav className="ms-auto d-flex align-items-center">
+                            <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src="./GlobeT.svg" alt="Dropdown Icon" className="dropdown-image" />}>
+                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>English</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>Español</NavDropdown.Item>
+                            </NavDropdown>
+                            <div className="login-signup">
+                                {isSignedIn ? (
+                                    <Button className="signin-login-button" onClick={handleSignOut}>Sign Out</Button>
+                                ) : (
+                                    <Button className="signin-login-button" onClick={handleShow}>SignIn/LogIn</Button>
+                                )}
+                            </div>
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
@@ -87,3 +95,5 @@ const Navnav = () => {
 };
 
 export default Navnav;
+
+//Change the after space on the buttons for in between

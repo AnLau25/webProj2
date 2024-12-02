@@ -58,6 +58,12 @@
     text-decoration-thickness: 2px;
 }
 
+.custom-image-dropdown .dropdown-image {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
 .login-signup .signin-login-button:focus,
 .navbar-nav .custom-nav-link:focus,
 .navbar-nav .nav-item .dropdown-toggle:focus,
