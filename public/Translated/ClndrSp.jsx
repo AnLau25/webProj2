@@ -12,7 +12,7 @@ const workHours = {
 };
 
 const predefinedEvents = [
-    {
+     {
         day: 'Sunday',
         start: moment().day(7).hour(12).minute(0).second(0),
         end: moment().day(7).hour(13).minute(0).second(0),
@@ -150,7 +150,7 @@ const ClndrSp = () => {
       <section className="clndr" id='clndrsp'>
         <div className='title'>
           <GoldSep />
-          <h1>Nuestro horario semanal</h1>
+          <h1>Horario semanal</h1>
         </div>
         <Row>
           <Container className='clndr-container'>
@@ -171,7 +171,7 @@ const ClndrSp = () => {
         <ToastContainer position="top-center" className="custom-toast-container p-3">
           <Toast onClose={() => setShowToast(false)} show={showToast}>
             <Toast.Header>
-              <strong className="me-auto">Crear Evento</strong>
+              <strong className="me-auto">Crear Club</strong>
             </Toast.Header>
             <Toast.Body>
               <Container className='toast-content'>

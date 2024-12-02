@@ -17,8 +17,8 @@ const predefinedEvents = [
     day: 'Sunday',
     start: moment().day(7).hour(12).minute(0).second(0),
     end: moment().day(7).hour(13).minute(0).second(0),
-    title: 'Midi de theatre (Fr)',
-    description: 'Nous discutons des pièces de théâtre tout en dégustant une collation, rien de nouveau.'
+    title: 'Mediodía de teatro (Esp)',
+    description: 'Hablamos de obras de teatro mientras degustamos un refrigerio, nada nuevo.'
   },
   {
     day: 'Monday',
@@ -52,8 +52,8 @@ const predefinedEvents = [
     day: 'Thursday',
     start: moment().day(5).hour(13).minute(0).second(0),
     end: moment().day(5).hour(14).minute(0).second(0),
-    title: 'Le culte de Samsagaz Gamyi (Fr)',
-    description: 'Rien de bizarre, on fait juste s\'asseoir pour discuter des théories ou lire le Seigneur des Anneux. Mais admets que le titre est attrayant !'
+    title: 'El culto de Samsagaz Gamyi (Esp)',
+    description: 'Nada raro, solo nos sentamos a discutir teorías o leer El Señor de los Anillos. ¡Pero admite que el título es atractivo!'
   },
   {
     day: 'Friday',
@@ -66,8 +66,8 @@ const predefinedEvents = [
     day: 'Saturday',
     start: moment().day(7).hour(12).minute(0).second(0),
     end: moment().day(7).hour(13).minute(0).second(0),
-    title: 'Sci-fi Sam! (Fr)',
-    description: 'On est un groupe de voyageurs de sofa à la recherche du meilleur snack'
+    title: '¡Ciencia ficción Sab! (Esp)',
+    description: 'Somos un grupo de viajeros de sofá en busca del mejor refrigerio'
   }
 ];
 

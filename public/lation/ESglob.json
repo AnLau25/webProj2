@@ -1,0 +1,57 @@
+{
+    "home":{
+        "h3":"¡Bienvenidos lectores!",
+        "p": "Ven y experimenta la máxima experiencia de lectura en nuestro acogedor café, con sabrosos bocados y una colección de clásicos que satisfacen todos los gustos.",
+        "a1":"El Capricho",
+        "a2":"Eventos y Actividades"
+    },
+    
+    "abtUs": {
+        "sectionTitle": "Sobre el “Capricho”",
+        "description": "Breve explicación sobre el nombre del café y el hecho de que “Capricho” significa antojo en español. Algo de información de fondo sobre el grupo pequeño de emprendedores, lo básico. Esta página funciona bien porque es para una startup y porque este lugar tiene una historia en mi cabeza que merece ser contada.",
+        "openingHours": {
+          "monThu": "Lun-Jue : 10h00 - 12h00 am",
+          "friSun": "Vie-Dom : 11h00 - 01h00 am"
+        },
+        "buttons": {
+          "events": "Explorar eventos",
+          "menu": "Explorar menú"
+        }
+    },
+
+    "clndr": {
+    "title": "Horario semanal",
+    "createEventToast": {
+      "header": "Crear Evento",
+      "error": "Rellene correctamente todos los campos.",
+      "labels": {
+        "email": "E-Mail",
+        "emailPlaceholder": "Escriba su e-mail",
+        "eventTitle": "Nombre del evento",
+        "titlePlaceholder": "Escriba un nombre",
+        "eventDescription": "Descripción",
+        "descriptionPlaceholder": "Escriba una descripción",
+        "startTime": "Hora de inicio",
+        "endTime": "Hora de fin",
+        "createEventButton": "Crear Evento"
+      }
+    },
+    "notificationToast": {
+      "header": "Notificación",
+      "body": "Hola! Hemos recibido tu sugerencia, nos pondremos en contacto contigo por correo electrónico."
+    },
+    "lateralTab": {
+      "header": "Calendario",
+      "content": "¿Quieres obtener más detalles sobre los clubes de lectura? ¡Solo pasa el cursor sobre ellos! ¿Quieres sugerirnos una idea de club? Haz clic en el horario para completar el formulario y nos pondremos en contacto contigo al respecto."
+    },
+    "daysOfWeek": {
+      "Sunday": "Domingo",
+      "Monday": "Lunes",
+      "Tuesday": "Martes",
+      "Wednesday": "Miercoles",
+      "Thursday": "Jueves",
+      "Friday": "Viernes",
+      "Saturday": "Sábado"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+    "home":{
+        "h3":"Welcome Readers!",
+        "p":"Come experience the ultimate reading experience in our cozy café, with flavorful snacks and a collection of classics that accommodates everyone’s taste.",
+        "a1":"About us",
+        "a2":"Events & Activities"
+    },
+    
+    "abtUs": {
+        "sectionTitle": "About our “Capricho”",
+        "description": "Short explanation of the café’s name and the fact that “Capricho” means whim in Spanish. Some background info as to who the small group of entrepreneurs is, you know the basics. This page works well because it’s for a start-up and cause this place has a background story in my head that deserves to be told.",
+        "openingHours": {
+          "monThu": "Mon-Thu : 10h00 - 12h00 am",
+          "friSun": "Fri-Sun : 11h00 - 01h00 am"
+        },
+        "buttons": {
+          "events": "Check out the events",
+          "menu": "Check out the menu"
+        }
+    },
+
+    "clndr": {
+    "title": "Our weekly schedule",
+    "createEventToast": {
+      "header": "Create Event",
+      "error": "Please fill out all fields correctly.",
+      "labels": {
+        "email": "E-Mail",
+        "emailPlaceholder": "Enter your e-mail",
+        "eventTitle": "Event Title",
+        "titlePlaceholder": "Enter event title",
+        "eventDescription": "Event Description",
+        "descriptionPlaceholder": "Enter event description",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "createEventButton": "Create Event"
+      }
+    },
+    "notificationToast": {
+      "header": "Notification",
+      "body": "Hi! We got your suggestion, we'll get back to you via e-mail."
+    },
+    "lateralTab": {
+      "header": "Our Schedule",
+      "content": "Wanna get more detail about the reading clubs? Just hover over them! Wanna suggest us a club idea? Click on the schedule to fill out the form and we'll contact you about it."
+    },
+    "daysOfWeek": {
+      "Sunday": "Sunday",
+      "Monday": "Monday",
+      "Tuesday": "Tuesday",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday"
+    }
+  }
+}

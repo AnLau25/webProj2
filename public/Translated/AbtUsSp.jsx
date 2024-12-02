@@ -11,7 +11,7 @@ const AbtUsSp = () => {
             <Container fluid>
                 <Row className='content-row'>
                     <Col xs={12} md={6} className='txt-container'>
-                        <h1>Sobre "Capricho"</h1>
+                        <h1>Sobre el "Capricho"</h1>
                         <p>
                             Breve explicación sobre el nombre del café y el hecho de que "Capricho"
                             significa antojo en español. Algo de información de fondo sobre el grupo
@@ -24,8 +24,8 @@ const AbtUsSp = () => {
                             <div>Vie-Dom : 11h00 - 01h00 am</div>
                         </div>
                         <div className='btn-container'>
-                            <GoldBtn href="/Cafe#events" prop='Ver eventos' />
-                            <GoldBtn href="/Cafe#menu" prop='Ver menú' />
+                            <GoldBtn href="/Cafe#events" prop='Explorar eventos' />
+                            <GoldBtn href="/Cafe#menu" prop='Explorar menú' />
                         </div>
                     </Col>
                     <Col xs={12} md={6} className='map-container'>
