@@ -3,8 +3,13 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Button, Container, Modal } from 'react-bootstrap';
 import './Navnav.css';
 import Sinsout from './Sinsout';
+import { useTranslation } from 'react-i18next';
 
 const Navnav = () => {
+    const [t, i18n] = useTranslation('global');
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
     const [showModal, setShowModal] = useState(false);
     const [isSignedIn, setIsSignedIn] = useState(false);
     const navigate = useNavigate();
@@ -57,21 +62,21 @@ const Navnav = () => {
                             </Navbar.Brand>
                         </div>
                         <Nav className="nav-middle mx-auto">
-                            <NavDropdown title="Our Capricho" className="no-caret">
-                                <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>About Us</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('clndr')}>Schedule</NavDropdown.Item>
+                            <NavDropdown title={t('nav.dropt1')} className="no-caret">
+                                <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>{t("nav.down11")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('clndr')}>{t("nav.down12")}</NavDropdown.Item>
                             </NavDropdown>
-                            <NavDropdown title="Our Café" className="no-caret">
-                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>Events</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>Menu</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>Event booking</NavDropdown.Item>
+                            <NavDropdown title={t("nav.dropt2")} className="no-caret">
+                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>{t("nav.down21")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>{t("nav.down22")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>{t("nav.down23")}</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>Our Collection</Nav.Link>
+                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>{t("nav.navLink")}</Nav.Link>
                         </Nav>
                         <Nav className="ms-auto d-flex align-items-center">
                             <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src="./GlobeT.svg" alt="Dropdown Icon" className="dropdown-image" />}>
-                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>English</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>Español</NavDropdown.Item>
+                                <NavDropdown.Item onClick={() => changeLanguage('en')}>English</NavDropdown.Item>
+                                <NavDropdown.Item onClick={() => changeLanguage('es')}>Español</NavDropdown.Item>
                             </NavDropdown>
                             <div className="login-signup">
                                 {isSignedIn ? (

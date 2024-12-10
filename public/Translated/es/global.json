@@ -1,25 +1,37 @@
 {
-    "home":{
-        "h3":"¡Bienvenidos lectores!",
-        "p": "Ven y experimenta la máxima experiencia de lectura en nuestro acogedor café, con sabrosos bocados y una colección de clásicos que satisfacen todos los gustos.",
-        "a1":"El Capricho",
-        "a2":"Eventos y Actividades"
-    },
-    
-    "abtUs": {
-        "sectionTitle": "Sobre el “Capricho”",
-        "description": "Breve explicación sobre el nombre del café y el hecho de que “Capricho” significa antojo en español. Algo de información de fondo sobre el grupo pequeño de emprendedores, lo básico. Esta página funciona bien porque es para una startup y porque este lugar tiene una historia en mi cabeza que merece ser contada.",
-        "openingHours": {
-          "monThu": "Lun-Jue : 10h00 - 12h00 am",
-          "friSun": "Vie-Dom : 11h00 - 01h00 am"
-        },
-        "buttons": {
-          "events": "Explorar eventos",
-          "menu": "Explorar menú"
-        }
-    },
 
-    "clndr": {
+  "nav":{
+    "dropt1":"El Capricho",
+    "down11":"Nuestro Equipo",
+    "down12":"Horarios",
+    "dropt2":"El Café",
+    "down21":"Eventos",
+    "down22":"Menú",
+    "down23":"Reservas",
+    "NavLink":"El Librero"
+  },
+
+  "home": {
+    "h3": "¡Bienvenidos lectores!",
+    "p": "Ven y experimenta la máxima experiencia de lectura en nuestro acogedor café, con sabrosos bocados y una colección de clásicos que satisfacen todos los gustos.",
+    "a1": "El Capricho",
+    "a2": "Eventos y Actividades"
+  },
+
+  "abtUs": {
+    "sectionTitle": "Sobre el “Capricho”",
+    "description": "Breve explicación sobre el nombre del café y el hecho de que “Capricho” significa antojo en español. Algo de información de fondo sobre el grupo pequeño de emprendedores, lo básico. Esta página funciona bien porque es para una startup y porque este lugar tiene una historia en mi cabeza que merece ser contada.",
+    "openingHours": {
+      "monThu": "Lun-Jue : 10h00 - 12h00 am",
+      "friSun": "Vie-Dom : 11h00 - 01h00 am"
+    },
+    "buttons": {
+      "events": "Explorar eventos",
+      "menu": "Explorar menú"
+    }
+  },
+
+  "clndr": {
     "title": "Horario semanal",
     "createEventToast": {
       "header": "Crear Evento",

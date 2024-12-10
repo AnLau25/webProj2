@@ -1,25 +1,37 @@
 {
-    "home":{
-        "h3":"Welcome Readers!",
-        "p":"Come experience the ultimate reading experience in our cozy café, with flavorful snacks and a collection of classics that accommodates everyone’s taste.",
-        "a1":"About us",
-        "a2":"Events & Activities"
-    },
-    
-    "abtUs": {
-        "sectionTitle": "About our “Capricho”",
-        "description": "Short explanation of the café’s name and the fact that “Capricho” means whim in Spanish. Some background info as to who the small group of entrepreneurs is, you know the basics. This page works well because it’s for a start-up and cause this place has a background story in my head that deserves to be told.",
-        "openingHours": {
-          "monThu": "Mon-Thu : 10h00 - 12h00 am",
-          "friSun": "Fri-Sun : 11h00 - 01h00 am"
-        },
-        "buttons": {
-          "events": "Check out the events",
-          "menu": "Check out the menu"
-        }
-    },
+  
+  "nav":{
+    "dropt1":"Our Capricho",
+    "down11":"About Us",
+    "down12":"Schedue",
+    "dropt2":"Our Café",
+    "down21":"Events",
+    "down22":"Menu",
+    "down23":"Event Booking",
+    "navLink":"Our Collection"
+  },
 
-    "clndr": {
+  "home": {
+    "h3": "Welcome Readers!",
+    "p": "Come experience the ultimate reading experience in our cozy café, with flavorful snacks and a collection of classics that accommodates everyone’s taste.",
+    "a1": "About us",
+    "a2": "Events & Activities"
+  },
+
+  "abtUs": {
+    "sectionTitle": "About our “Capricho”",
+    "description": "Short explanation of the café’s name and the fact that “Capricho” means whim in Spanish. Some background info as to who the small group of entrepreneurs is, you know the basics. This page works well because it’s for a start-up and cause this place has a background story in my head that deserves to be told.",
+    "openingHours": {
+      "monThu": "Mon-Thu : 10h00 - 12h00 am",
+      "friSun": "Fri-Sun : 11h00 - 01h00 am"
+    },
+    "buttons": {
+      "events": "Check out the events",
+      "menu": "Check out the menu"
+    }
+  },
+
+  "clndr": {
     "title": "Our weekly schedule",
     "createEventToast": {
       "header": "Create Event",
