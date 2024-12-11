@@ -1,14 +1,13 @@
 {
-  
-  "nav":{
-    "dropt1":"Our Capricho",
-    "down11":"About Us",
-    "down12":"Schedue",
-    "dropt2":"Our Café",
-    "down21":"Events",
-    "down22":"Menu",
-    "down23":"Event Booking",
-    "navLink":"Our Collection"
+  "nav": {
+    "dropt1": "Our Capricho",
+    "down11": "About Us",
+    "down12": "Schedue",
+    "dropt2": "Our Café",
+    "down21": "Events",
+    "down22": "Menu",
+    "down23": "Event Booking",
+    "navLink": "Our Collection"
   },
 
   "home": {
@@ -64,6 +63,73 @@
       "Thursday": "Thursday",
       "Friday": "Friday",
       "Saturday": "Saturday"
+    }
+  },
+
+  "events": {
+    "tabs": {
+      "t1": "Readers",
+      "t2": "Pages"
+    },
+    "readersTab": {
+      "libraryCollection": {
+        "title": "Library Collection",
+        "description": "Short description of the way the library system works. A lil talk about the classics maybe talk abt the booking system.",
+        "buttonText": "Browse our Collection"
+      },
+      "cafeAndMenu": {
+        "title": "Café and Menu",
+        "description": "Specs about the menu, the time at which each menu happens, maybe talk about the chef.",
+        "buttonText": "Check out the menu"
+      },
+      "eventsHeader": "Events of the week",
+      "accordion": {
+        "au1":{
+          "author": "Maurice Leblanc",
+          "days": "Mon Tue",
+          "title": "On how to write a classy burglar",
+          "description": "Join renowned creator of Arsène Lupin, Maurice Leblanc, for a workshop on creating a character with dubious morals but plenty of finesse. Discover the art of crafting a sophisticated and charming thief, master the elements of suspense and intrigue, and learn how to weave captivating plots that keep readers hooked. Unleash your imagination and bring your own elegant rogue to life."
+        },
+        "au2":{
+          "author": "Agatha Christie",
+          "days": "Wed Fri",
+          "title": "Send chills down your readers spines",
+          "description": "Join the legendary queen of mystery, Agatha Christie, for an immersive workshop on crafting suspenseful narratives that will leave your readers on the edge of their seats. Learn the secrets of building tension, developing unforgettable characters, and creating twists that will keep your audience guessing until the very end."
+        },
+        "au3":{
+          "author": "Jane Austen",
+          "days": "Thu",
+          "title": "Write your own, prideful Lover Boy",
+          "description": "Step into the elegant world of Jane Austen and discover how to create charming and complex characters with a touch of pride. In this workshop, you'll learn from the master of romantic fiction how to develop intriguing plots, witty dialogue, and captivating love interests that resonate with readers. Unleash your creativity and craft a timeless story filled with romance and social commentary."
+        },
+       "au4":{
+          "author": "Nicolás Maquiavelo",
+          "days": "Sat",
+          "title": "Book reading of “The Prince”",
+          "description": "Join us for a captivating book reading of 'The Prince' by Nicolás Maquiavelo, where you'll delve into the intricate world of political strategy and leadership. Experience the timeless wisdom of Machiavelli as we explore his profound insights on power, governance, and human nature. This event promises to be an enlightening journey through one of history's most influential works on political philosophy."
+        }
+      }
+    },
+    "pagesTab": {
+      "schedule": {
+        "title": "Schedule",
+        "description": "The longer description about how the schedule works, probably more content about the clubs. Actually, it'll probably mainly be an introduction to the clubs and whatnot.",
+        "buttonText": "Our Schedule"
+      },
+      "clubs": {
+        "title": "Clubs",
+        "description": "Will be explaining the requirements of a club, it'll discuss the number of members, how they will deal with the catering and so on and so forth. They are more informal than events."
+      },
+      "paidEvents": {
+        "title": "Paid Events",
+        "description": "The more serious stuff since it involves authors reaching out to them or vice versa for events regarding the author's book's marketing and whatnot. A brief explanation as to why these are paid.",
+        "buttonText": "Register for an event"
+      },
+      "damagedBooks": {
+        "title": "Damaged Book Policy",
+        "description": "Yes, they do lend the books and yes you can read and eat, but the place has very old books that can be easily damaged and require costly repairs.",
+        "buttonText": "Our Collection"
+      }
     }
   }
 }

@@ -3,10 +3,11 @@ import './Menu.css';
 import './Bluebg.css';
 import GoldBtn from './GoldBtn';
 import { Row, Col, Container, Tabs, Tab, Nav } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
     const [defaultTab, setDefaultTab] = useState('first');
-
+    const [t, i18n] = useTranslation('global');
     useEffect(() => {
         const hash = window.location.hash;
         if (hash.includes('?')) {

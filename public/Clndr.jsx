@@ -263,3 +263,6 @@ const Clndr = () => {
 }
 
 export default Clndr;
+
+//Fix days translate
+//Fix calndr dimentions
