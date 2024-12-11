@@ -196,7 +196,7 @@
   },
 
   "lib": {
-    "btn":"Borrow",
+    "btn": "Borrow",
     "secTitle": "Browse your next page-turner",
     "filter": {
       "title": "Filter",
@@ -248,6 +248,36 @@
     "toast": {
       "success": "was borrowed!",
       "error": "This book is already borrowed."
+    }
+  },
+
+  "sinsout": {
+    "inBtn": "Sign In",
+    "outBtn": "Log In",
+
+    "create": {
+      "header": "Create an account",
+      "uss": "User name",
+      "email": "E-mail",
+      "pass": "Password"
+    },
+
+    "connect": {
+      "header": "Connect to account",
+      "uss": "User name",
+      "pass": "Password"
+    },
+
+    "usual": {
+      "title": "Welcome back!",
+      "subT": "Glad to see you again",
+      "btn": "Log In"
+    },
+
+    "new": {
+      "title": "Hello there!",
+      "subT": "Nice to meet you",
+      "btn": "Sign In"
     }
   }
 }

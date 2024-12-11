@@ -65,5 +65,220 @@
       "Friday": "Viernes",
       "Saturday": "Sábado"
     }
+  },
+
+  "events": {
+    "tabs": {
+      "t1": "Readers",
+      "t2": "Pages"
+    },
+    "readersTab": {
+      "libraryCollection": {
+        "title": "Library Collection",
+        "description": "Short description of the way the library system works. A lil talk about the classics maybe talk abt the booking system.",
+        "buttonText": "Browse our Collection"
+      },
+      "cafeAndMenu": {
+        "title": "Café and Menu",
+        "description": "Specs about the menu, the time at which each menu happens, maybe talk about the chef.",
+        "buttonText": "Check out the menu"
+      },
+      "eventsHeader": "Events of the week",
+      "accordion": {
+        "au1": {
+          "author": "Maurice Leblanc",
+          "days": "Mon Tue",
+          "title": "On how to write a classy burglar",
+          "description": "Join renowned creator of Arsène Lupin, Maurice Leblanc, for a workshop on creating a character with dubious morals but plenty of finesse. Discover the art of crafting a sophisticated and charming thief, master the elements of suspense and intrigue, and learn how to weave captivating plots that keep readers hooked. Unleash your imagination and bring your own elegant rogue to life."
+        },
+        "au2": {
+          "author": "Agatha Christie",
+          "days": "Wed Fri",
+          "title": "Send chills down your readers spines",
+          "description": "Join the legendary queen of mystery, Agatha Christie, for an immersive workshop on crafting suspenseful narratives that will leave your readers on the edge of their seats. Learn the secrets of building tension, developing unforgettable characters, and creating twists that will keep your audience guessing until the very end."
+        },
+        "au3": {
+          "author": "Jane Austen",
+          "days": "Thu",
+          "title": "Write your own, prideful Lover Boy",
+          "description": "Step into the elegant world of Jane Austen and discover how to create charming and complex characters with a touch of pride. In this workshop, you'll learn from the master of romantic fiction how to develop intriguing plots, witty dialogue, and captivating love interests that resonate with readers. Unleash your creativity and craft a timeless story filled with romance and social commentary."
+        },
+        "au4": {
+          "author": "Nicolás Maquiavelo",
+          "days": "Sat",
+          "title": "Book reading of “The Prince”",
+          "description": "Join us for a captivating book reading of 'The Prince' by Nicolás Maquiavelo, where you'll delve into the intricate world of political strategy and leadership. Experience the timeless wisdom of Machiavelli as we explore his profound insights on power, governance, and human nature. This event promises to be an enlightening journey through one of history's most influential works on political philosophy."
+        }
+      }
+    },
+    "pagesTab": {
+      "schedule": {
+        "title": "Schedule",
+        "description": "The longer description about how the schedule works, probably more content about the clubs. Actually, it'll probably mainly be an introduction to the clubs and whatnot.",
+        "buttonText": "Our Schedule"
+      },
+      "clubs": {
+        "title": "Clubs",
+        "description": "Will be explaining the requirements of a club, it'll discuss the number of members, how they will deal with the catering and so on and so forth. They are more informal than events."
+      },
+      "paidEvents": {
+        "title": "Paid Events",
+        "description": "The more serious stuff since it involves authors reaching out to them or vice versa for events regarding the author's book's marketing and whatnot. A brief explanation as to why these are paid.",
+        "buttonText": "Register for an event"
+      },
+      "damagedBooks": {
+        "title": "Damaged Book Policy",
+        "description": "Yes, they do lend the books and yes you can read and eat, but the place has very old books that can be easily damaged and require costly repairs.",
+        "buttonText": "Our Collection"
+      }
+    }
+  },
+
+  "menu": {
+    "tabs": {
+      "t1": "Brunch",
+      "t2": "Lunch",
+      "t3": "Munch"
+    },
+    "drinks": {
+      "title": "Drink up!",
+      "name": "Drink",
+      "description": "Drink : Short description"
+    },
+    "savory": {
+      "title": "Savory of mind",
+      "handhelds": {
+        "title": "Handhelds",
+        "name": "Salty dish",
+        "description": "Salty dish : Short description"
+      },
+      "salads_soups": {
+        "title": "Salads & Soups",
+        "name": "Salty dish",
+        "description": "Salty dish : Short description"
+      }
+    },
+    "desserts": {
+      "title": "For the sweet tooth!",
+      "name": "Dessert",
+      "description": "Dessert : Short description"
+    }
+  },
+
+  "pay": {
+    "header": "We’ll save you a chair",
+    "eventTitle": "Event info",
+    "registerTitle": "Registration info",
+    "payTitle": "Payment info",
+    "fields": {
+      "f1": "DAY",
+      "f2": "E-MAIL",
+      "f3": "CARD HOLDER NAME",
+      "f4": "EXPIRATION DATE",
+      "f5": "CARD NUMBER"
+    },
+    "buttons": {
+      "submit": "Book my spot",
+      "y": "Yes",
+      "n": "No"
+    },
+    "toast": {
+      "confirmMsg": "Are you sure you want to proceed with the ",
+      "finMsg": " accomplished",
+      "typeL1": "registration",
+      "typeL2": "transaction",
+      "typeU1": "registration",
+      "typeU2": "transaction"
+    },
+    "tab": {
+      "title": "Register",
+      "description": "Registering for an event? Pick your event and the date, you can see all our events in the corresponding tab. Club? Select that option, pick your club, and register. It's free! (For more info, see our schedule)"
+    }
+  },
+
+  "lib": {
+    "btn": "Borrow",
+    "secTitle": "Browse your next page-turner",
+    "filter": {
+      "title": "Filter",
+      "search": "Search by title or author",
+      "gen": "GENRE",
+      "lang": "LANGUAGE",
+      "priod": "PERIOD"
+    },
+
+    "gen": {
+      "lbl1": "Adventure",
+      "lbl2": "Allegory",
+      "lbl3": "Crime",
+      "lbl4": "Detective",
+      "lbl5": "Dystopian",
+      "lbl6": "Essay",
+      "lbl7": "Fables",
+      "lbl8": "Fairy Tale",
+      "lbl9": "Fantasy",
+      "lbl10": "Magic Realism",
+      "lbl11": "Mystery",
+      "lbl12": "Poetry",
+      "lbl13": "Picaresque",
+      "lbl14": "Psychological",
+      "lbl15": "Romance",
+      "lbl16": "Satire"
+    },
+
+    "lang": {
+      "lbl1": "English",
+      "lbl2": "French",
+      "lbl3": "Italian",
+      "lbl4": "Spanish"
+    },
+
+    "priod": {
+      "lbl1": "Renaissance",
+      "lbl2": "Neoclassicism",
+      "lbl3": "Romanticism",
+      "lbl4": "Realism",
+      "lbl5": "Modernism"
+    },
+
+    "tab": {
+      "title": "Our Collection",
+      "content": "Wanna borrow a book? Just click on 'borrow'. We presently allow one book per person, so if you want to select a different book than the one you got, click on that one. Please keep in mind that all reservations are considered for 'the day of' and we work with a first-come, first-served system."
+    },
+
+    "toast": {
+      "success": "was borrowed!",
+      "error": "This book is already borrowed."
+    }
+  },
+
+  "sinsout": {
+    "inBtn": "Sign In",
+    "outBtn": "Log In",
+
+    "create": {
+      "header": "Create an account",
+      "uss": "User name",
+      "email": "E-mail",
+      "pass": "Password"
+    },
+
+    "connect": {
+      "header": "Connect to account",
+      "uss": "User name",
+      "pass": "Password"
+    },
+
+    "usual": {
+      "title": "Welcome back!",
+      "subT": "Glad to see you again",
+      "btn": "Log In"
+    },
+
+    "new": {
+      "title": "Hello there!",
+      "subT": "Nice to meet you",
+      "btn": "Sign In"
+    }
   }
 }
