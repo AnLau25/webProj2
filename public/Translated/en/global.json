@@ -84,25 +84,25 @@
       },
       "eventsHeader": "Events of the week",
       "accordion": {
-        "au1":{
+        "au1": {
           "author": "Maurice Leblanc",
           "days": "Mon Tue",
           "title": "On how to write a classy burglar",
           "description": "Join renowned creator of Arsène Lupin, Maurice Leblanc, for a workshop on creating a character with dubious morals but plenty of finesse. Discover the art of crafting a sophisticated and charming thief, master the elements of suspense and intrigue, and learn how to weave captivating plots that keep readers hooked. Unleash your imagination and bring your own elegant rogue to life."
         },
-        "au2":{
+        "au2": {
           "author": "Agatha Christie",
           "days": "Wed Fri",
           "title": "Send chills down your readers spines",
           "description": "Join the legendary queen of mystery, Agatha Christie, for an immersive workshop on crafting suspenseful narratives that will leave your readers on the edge of their seats. Learn the secrets of building tension, developing unforgettable characters, and creating twists that will keep your audience guessing until the very end."
         },
-        "au3":{
+        "au3": {
           "author": "Jane Austen",
           "days": "Thu",
           "title": "Write your own, prideful Lover Boy",
           "description": "Step into the elegant world of Jane Austen and discover how to create charming and complex characters with a touch of pride. In this workshop, you'll learn from the master of romantic fiction how to develop intriguing plots, witty dialogue, and captivating love interests that resonate with readers. Unleash your creativity and craft a timeless story filled with romance and social commentary."
         },
-       "au4":{
+        "au4": {
           "author": "Nicolás Maquiavelo",
           "days": "Sat",
           "title": "Book reading of “The Prince”",
@@ -131,5 +131,38 @@
         "buttonText": "Our Collection"
       }
     }
+  },
+
+  "menu": {
+    "tabs": {
+      "t1": "Brunch",
+      "t2": "Lunch",
+      "t3": "Munch"
+    },
+    "drinks": {
+      "title": "Drink up!",
+      "name": "Drink",
+      "description": "Drink : Short description"
+    },
+    "savory": {
+      "title": "Savory of mind",
+      "handhelds": {
+        "title": "Handhelds",
+        "name": "Salty dish",
+        "description": "Salty dish : Short description"
+      },
+      "salads_soups": {
+        "title": "Salads & Soups",
+        "name": "Salty dish",
+        "description": "Salty dish : Short description"
+      }
+    },
+    "desserts": {
+      "title": "For the sweet tooth!",
+      "name": "Dessert",
+      "description": "Dessert : Short description"
+    }
   }
+
+  
 }

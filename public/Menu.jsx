@@ -32,13 +32,13 @@ const Menu = () => {
                             <div className="center-align">
                                 <Nav variant='pills'>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="first" id="menu-tab-first">Brunch</Nav.Link>
+                                        <Nav.Link eventKey="first" id="menu-tab-first">{t('menu.tabs.t1')}</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="second" id="menu-tab-second">Lunch</Nav.Link>
+                                        <Nav.Link eventKey="second" id="menu-tab-second">{t('menu.tabs.t2')}</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="third" id="menu-tab-third">Munch</Nav.Link>
+                                        <Nav.Link eventKey="third" id="menu-tab-third">{t('menu.tabs.t3')}</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                             </div>
@@ -49,159 +49,159 @@ const Menu = () => {
                                     </Row>
                                     <Row className='menu-content'>
                                         <Col xs={12} md={4}>
-                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1'/>
-                                            <h1>Drink up!</h1>
+                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1' />
+                                            <h1>{t('menu.drinks.title')}</h1>
                                             <div className='menu-items'>
-                                                <h3>Drink 1</h3>
-                                                <p>Drink 1 : Short description</p>
-                                                <h3>Drink 2</h3>
-                                                <p>Drink 2 : Short description</p>
-                                                <h3>Drink 3</h3>
-                                                <p>Drink 3 : Short description</p>
-                                                <h3>Drink 4</h3>
-                                                <p>Drink 4 : Short description</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
-                                            <h1>Savory of mind</h1>
-                                            <h3>Handhelds</h3>
+                                            <h1>{t('menu.savory.title')}</h1>
+                                            <h3>{t('menu.savory.handhelds.title')}</h3>
                                             <div className='menu-items'>
-                                                <h3>Salty dish  1</h3>
-                                                <p>Salty dish 1 : Short description</p>
-                                                <h3>Salty dish  2</h3>
-                                                <p>Salty dish 2 : Short description</p>
-                                                <h3>Salty dish  3</h3>
-                                                <p>Salty dish 3 : Short description</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
                                             </div>
-                                            <h3>Salads & Soups</h3>
+                                            <h3>{t('menu.savory.salads_soups.title')}</h3>
                                             <div className='menu-items'>
-                                                <h3>Salty dish  1</h3>
-                                                <p>Salty dish 1 : Short description</p>
-                                                <h3>Salty dish  2</h3>
-                                                <p>Salty dish 2 : Short description</p>
+                                                <h3>{t('menu.savory.salads_soups.name')}</h3>
+                                                <p>{t('menu.savory.salads_soups.description')}</p>
+                                                <h3>{t('menu.savory.salads_soups.name')}</h3>
+                                                <p>{t('menu.savory.salads_soups.description')}</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
-                                            <h1>For the sweet tooth!</h1>
+                                            <h1>{t('menu.desserts.title')}</h1>
                                             <div className='menu-items'>
-                                                <h3>Dessert  1</h3>
-                                                <p>Dessert 1 : Short description</p>
-                                                <h3>Dessert  2</h3>
-                                                <p>Dessert 2 : Short description</p>
-                                                <h3>Dessert  3</h3>
-                                                <p>Dessert 3 : Short description</p>
-                                                <h3>Dessert  4</h3>
-                                                <p>Dessert 4 : Short description</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
                                             </div>
-                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2'/>
+                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2' />
                                         </Col>
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                <Row>
+                                    <Row>
                                         <h3 className="center-align">01h00 pm - 05h00 pm</h3>
                                     </Row>
                                     <Row className='menu-content'>
                                         <Col xs={12} md={4}>
-                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1'/>
-                                            <h1>Drink up!</h1>
+                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1' />
+                                            <h1>{t('menu.drinks.title')}</h1>
                                             <div className='menu-items'>
-                                                <h3>Drink 1</h3>
-                                                <p>Drink 1 : Short description</p>
-                                                <h3>Drink 2</h3>
-                                                <p>Drink 2 : Short description</p>
-                                                <h3>Drink 3</h3>
-                                                <p>Drink 3 : Short description</p>
-                                                <h3>Drink 4</h3>
-                                                <p>Drink 4 : Short description</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
-                                            <h1>Savory of mind</h1>
-                                            <h3>Handhelds</h3>
+                                            <h1>{t('menu.savory.title')}</h1>
+                                            <h3>{t('menu.savory.handhelds.title')}</h3>
                                             <div className='menu-items'>
-                                                <h3>Salty dish  1</h3>
-                                                <p>Salty dish 1 : Short description</p>
-                                                <h3>Salty dish  2</h3>
-                                                <p>Salty dish 2 : Short description</p>
-                                                <h3>Salty dish  3</h3>
-                                                <p>Salty dish 3 : Short description</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
                                             </div>
-                                            <h3>Salads & Soups</h3>
+                                            <h3>{t('menu.savory.salads_soups.title')}</h3>
                                             <div className='menu-items'>
-                                                <h3>Salty dish  1</h3>
-                                                <p>Salty dish 1 : Short description</p>
-                                                <h3>Salty dish  2</h3>
-                                                <p>Salty dish 2 : Short description</p>
+                                                <h3>{t('menu.savory.salads_soups.name')}</h3>
+                                                <p>{t('menu.savory.salads_soups.description')}</p>
+                                                <h3>{t('menu.savory.salads_soups.name')}</h3>
+                                                <p>{t('menu.savory.salads_soups.description')}</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
-                                            <h1>For the sweet tooth!</h1>
+                                            <h1>{t('menu.desserts.title')}</h1>
                                             <div className='menu-items'>
-                                                <h3>Dessert  1</h3>
-                                                <p>Dessert 1 : Short description</p>
-                                                <h3>Dessert  2</h3>
-                                                <p>Dessert 2 : Short description</p>
-                                                <h3>Dessert  3</h3>
-                                                <p>Dessert 3 : Short description</p>
-                                                <h3>Dessert  4</h3>
-                                                <p>Dessert 4 : Short description</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
                                             </div>
-                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2'/>
+                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2' />
                                         </Col>
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                <Row>
+                                    <Row>
                                         <h3 className="center-align">05h00 pm - 12h00 am</h3>
                                     </Row>
                                     <Row className='menu-content'>
                                         <Col xs={12} md={4}>
-                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1'/>
-                                            <h1>Drink up!</h1>
+                                            <img src='../Component 1BookMug.png' alt='menuDeco' className='img1' />
+                                            <h1>{t('menu.drinks.title')}</h1>
                                             <div className='menu-items'>
-                                                <h3>Drink 1</h3>
-                                                <p>Drink 1 : Short description</p>
-                                                <h3>Drink 2</h3>
-                                                <p>Drink 2 : Short description</p>
-                                                <h3>Drink 3</h3>
-                                                <p>Drink 3 : Short description</p>
-                                                <h3>Drink 4</h3>
-                                                <p>Drink 4 : Short description</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
+                                                <h3>{t('menu.drinks.name')}</h3>
+                                                <p>{t('menu.drinks.description')}</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
-                                            <h1>Savory of mind</h1>
-                                            <h3>Handhelds</h3>
+                                            <h1>{t('menu.savory.title')}</h1>
+                                            <h3>{t('menu.savory.handhelds.title')}</h3>
                                             <div className='menu-items'>
-                                                <h3>Salty dish  1</h3>
-                                                <p>Salty dish 1 : Short description</p>
-                                                <h3>Salty dish  2</h3>
-                                                <p>Salty dish 2 : Short description</p>
-                                                <h3>Salty dish  3</h3>
-                                                <p>Salty dish 3 : Short description</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
+                                                <h3>{t('menu.savory.handhelds.name')}</h3>
+                                                <p>{t('menu.savory.handhelds.description')}</p>
                                             </div>
-                                            <h3>Salads & Soups</h3>
+                                            <h3>{t('menu.savory.salads_soups.title')}</h3>
                                             <div className='menu-items'>
-                                                <h3>Salty dish  1</h3>
-                                                <p>Salty dish 1 : Short description</p>
-                                                <h3>Salty dish  2</h3>
-                                                <p>Salty dish 2 : Short description</p>
+                                                <h3>{t('menu.savory.salads_soups.name')}</h3>
+                                                <p>{t('menu.savory.salads_soups.description')}</p>
+                                                <h3>{t('menu.savory.salads_soups.name')}</h3>
+                                                <p>{t('menu.savory.salads_soups.description')}</p>
                                             </div>
                                         </Col>
                                         <Col xs={12} md={4}>
-                                            <h1>For the sweet tooth!</h1>
+                                            <h1>{t('menu.desserts.title')}</h1>
                                             <div className='menu-items'>
-                                                <h3>Dessert  1</h3>
-                                                <p>Dessert 1 : Short description</p>
-                                                <h3>Dessert  2</h3>
-                                                <p>Dessert 2 : Short description</p>
-                                                <h3>Dessert  3</h3>
-                                                <p>Dessert 3 : Short description</p>
-                                                <h3>Dessert  4</h3>
-                                                <p>Dessert 4 : Short description</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
+                                                <h3>{t('menu.desserts.name')}</h3>
+                                                <p>{t('menu.desserts.description')}</p>
                                             </div>
-                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2'/>
+                                            <img src='../Component 2CakeDough.png' alt='menuDeco' className='img2' />
                                         </Col>
                                     </Row>
                                 </Tab.Pane>
