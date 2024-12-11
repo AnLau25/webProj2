@@ -5,6 +5,7 @@ import GoldSep from './GoldSep';
 import GoldBtnBase from './GoldBtnBase';
 import moment from 'moment';
 import arrowIcon from './AvroArrow.svg'; 
+import { useTranslation } from 'react-i18next';
 
 const workHours = {
   start: 10,
@@ -72,6 +73,7 @@ const predefinedEvents = [
 ];
 
 const Clndr = () => {
+  const [t, i18n] = useTranslation('global');
   const [events, setEvents] = useState(predefinedEvents);
   const [selectedDay, setSelectedDay] = useState(null);
   const [startTime, setStartTime] = useState(moment().hour(workHours.start).minute(0));
@@ -152,7 +154,7 @@ const Clndr = () => {
       <section className="clndr" id='clndr'>
         <div className='title'>
           <GoldSep />
-          <h1>Our weekly schedule</h1>
+          <h1>{t("clndr.title")}</h1>
         </div>
         <Row>
           <Container className='clndr-container'>
@@ -173,37 +175,37 @@ const Clndr = () => {
         <ToastContainer position="top-center" className="custom-toast-container p-3">
           <Toast onClose={() => setShowToast(false)} show={showToast}>
             <Toast.Header>
-              <strong className="me-auto">Create Event</strong>
+              <strong className="me-auto">{t("clndr.createEventToast.header")}</strong>
             </Toast.Header>
             <Toast.Body>
               <Container className='toast-content'>
                 {error && <p style={{ color: 'red' }}>{error}</p>}
                 <Form onSubmit={handleSubmit}>
                   <Form.Group controlId="ussEmail">
-                    <Form.Label>E-Mail</Form.Label>
+                    <Form.Label>{t("clndr.createEventToast.labels.email")}</Form.Label>
                     <Form.Control
                       type='email'
-                      placeholder="Enter your e-mail"
+                      placeholder={t("clndr.createEventToast.labels.emailPlaceholder")}
                       value={ussEmail}
                       onChange={(e) => setUssEmail(e.target.value)}
                       isInvalid={!validation.ussEmail}
                     />
                   </Form.Group>
                   <Form.Group controlId="eventTitle">
-                    <Form.Label>Event Title</Form.Label>
+                    <Form.Label>{t("clndr.createEventToast.labels.eventTitle")}</Form.Label>
                     <Form.Control
                       type="text"
-                      placeholder="Enter event title"
+                      placeholder={t("clndr.createEventToast.labels.titlePlaceholder")}
                       value={eventTitle}
                       onChange={(e) => setEventTitle(e.target.value)}
                       isInvalid={!validation.eventTitle}
                     />
                   </Form.Group>
                   <Form.Group controlId="eventDescription">
-                    <Form.Label>Event Description</Form.Label>
+                    <Form.Label>{t("clndr.createEventToast.labels.eventDescription")}</Form.Label>
                     <Form.Control
                       type="text"
-                      placeholder="Enter event description"
+                      placeholder={t("clndr.createEventToast.labels.descriptionPlaceholder")}
                       value={eventDescription}
                       onChange={(e) => setEventDescription(e.target.value)}
                       isInvalid={!validation.eventDescription}
@@ -212,7 +214,7 @@ const Clndr = () => {
                   <Row>
                     <Col xs={6}>
                       <Form.Group controlId="startTime">
-                        <Form.Label>Start Time</Form.Label>
+                        <Form.Label>{t("clndr.createEventToast.labels.startTime")}</Form.Label>
                         <Form.Control
                           type="time"
                           value={startTime.format('HH:mm')}
@@ -222,7 +224,7 @@ const Clndr = () => {
                     </Col>
                     <Col xs={6}>
                       <Form.Group controlId="endTime">
-                        <Form.Label>End Time</Form.Label>
+                        <Form.Label>{t("clndr.createEventToast.labels.endTime")}</Form.Label>
                         <Form.Control
                           type="time"
                           value={endTime.format('HH:mm')}
@@ -231,7 +233,7 @@ const Clndr = () => {
                       </Form.Group>
                     </Col>
                   </Row>
-                  <GoldBtnBase prop="Create Event" type="submit" />
+                  <GoldBtnBase prop={t("clndr.createEventToast.labels.createEventButton")} type="submit" />
                 </Form>
               </Container>
             </Toast.Body>
@@ -240,9 +242,9 @@ const Clndr = () => {
         <ToastContainer position="top-end" className="p-3 tiny">
           <Toast onClose={() => setShowLateralToast(false)} show={showLateralToast} delay={3000} autohide>
             <Toast.Header>
-              <strong className="me-auto">Notification</strong>
+              <strong className="me-auto">{t("clndr.notificationToast.header")}</strong>
             </Toast.Header>
-            <Toast.Body>Hi! We got your suggestion, we'll get back to you via e-mail.</Toast.Body>
+            <Toast.Body>{t("clndr.notificationToast.body")}</Toast.Body>
           </Toast>
         </ToastContainer>
         <div className={`lateral-tab ${isTabOpen ? 'open' : ''}`}>
@@ -250,12 +252,9 @@ const Clndr = () => {
             <img src={arrowIcon} alt="Toggle" className="toggle-icon" />
           </button>
           <div className="tab-content">
-            <h5>Our Shcedule</h5>
+            <h5>{t("clndr.lateralTab.header")}</h5>
             <GoldSep/>
-            <p>
-              Wanna get more detail about the reading clubs? Just hover over them!
-              Wanna suggest us a club idea? Click on the schedule to fill out the form and we'll contact you about it.
-            </p>
+            <p>{t("clndr.lateralTab.content")}</p>
           </div>
         </div>
       </section>

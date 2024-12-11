@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel, Row, Col, Container } from 'react-bootstrap';
 import './Home.css';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+    const [t, i18n] = useTranslation('global');
+   
     return (
         <section className='slideshow' id='home'>
             <div className='carousel'>
@@ -20,11 +23,11 @@ const Home = () => {
                 </Carousel>
             </div>
             <div className='text-container'>
-                <h3>Welcome Readers!</h3>
-                <p>Come experience the ultimate reading experience in our cozy café, with flavorful snacks and a collection of classics that accommodates everyone’s taste. </p>
+                <h3>{t('home.h3')}</h3>
+                <p>{t('home.p')}</p>
                 <div className='nav-links'>
-                    <a as={Link} to="/#abtus" className='nav-link'>About us</a>
-                    <a as={Link} to="/Cafe#events" className='nav-link'>Events & Activities</a>
+                    <a as={Link} to="/#abtus" className='nav-link'>{t('home.a1')}</a>
+                    <a as={Link} to="/Cafe#events" className='nav-link'>{t('home.a2')}</a>
                 </div>
             </div>
         </section>

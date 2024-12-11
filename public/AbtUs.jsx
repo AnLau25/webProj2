@@ -3,29 +3,25 @@ import './AbtUs.css';
 import GoldSep from './GoldSep';
 import GoldBtn from './GoldBtn';
 import { Row, Col, Container } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
-const AbtUs = () => {
+const AbtUsSp = () => {
+    const [t, i18n] = useTranslation('global');
     return (
-        <section className='AbtUs' id='abtus'>
+        <section className='AbtUs' id='abtussp'>
             <GoldSep />
             <Container fluid>
                 <Row className='content-row'>
                     <Col xs={12} md={6} className='txt-container'>
-                        <h1>About our “Capricho”</h1>
-                        <p>
-                            Short explanation of the café’s name and the fact that “Capricho”
-                            means whim in Spanish. Some background info as to who the small group
-                            of entrepreneurs is, you know the basics. This page works well because
-                            it’s for a start-up and cause this place has a background story in my
-                            head that deserves to be told.
-                        </p>
+                        <h1>{t('abtUs.sectionTitle')}</h1>
+                        <p>{t('abtUs.description')}</p>
                         <div className='times'>
-                            <div>Mon-Thu : 10h00 - 12h00 am</div>
-                            <div>Fri-Sun : 11h00 - 01h00 am</div>
+                            <div>{t('abtUs.openingHours.monThu')}</div>
+                            <div>{t('abtUs.openingHours.friSun')}</div>
                         </div>
                         <div className='btn-container'>
-                            <GoldBtn href="/Cafe#events" prop='Check out the events' />
-                            <GoldBtn href="/Cafe#menu" prop='Check out the menu' />
+                            <GoldBtn href="/Cafe#events" prop={t('abtUs.buttons.events')} />
+                            <GoldBtn href="/Cafe#menu" prop={t('abtUs.buttons.menu')} />
                         </div>
                     </Col>
                     <Col xs={12} md={6} className='map-container'>
@@ -41,4 +37,4 @@ const AbtUs = () => {
     );
 }
 
-export default AbtUs;
+export default AbtUsSp;
