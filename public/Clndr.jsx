@@ -53,7 +53,7 @@ const predefinedEvents = [
     day: 'Thursday',
     start: moment().day(5).hour(13).minute(0).second(0),
     end: moment().day(5).hour(14).minute(0).second(0),
-    title: 'El culto de Samsagaz Gamyi (Esp)',
+    title: 'El culto de Samsagaz (Esp)',
     description: 'Nada raro, solo nos sentamos a discutir teorías o leer El Señor de los Anillos. ¡Pero admite que el título es atractivo!'
   },
   {
@@ -67,7 +67,7 @@ const predefinedEvents = [
     day: 'Saturday',
     start: moment().day(7).hour(12).minute(0).second(0),
     end: moment().day(7).hour(13).minute(0).second(0),
-    title: '¡Ciencia ficción Sab! (Esp)',
+    title: '¡Ciencia y ficción! (Esp)',
     description: 'Somos un grupo de viajeros de sofá en busca del mejor refrigerio'
   }
 ];

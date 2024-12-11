@@ -162,7 +162,38 @@
       "name": "Dessert",
       "description": "Dessert : Short description"
     }
+  },
+  
+  "pay": {
+    "header": "We’ll save you a chair",
+    "eventTitle": "Event info",
+    "registerTitle": "Registration info",
+    "payTitle": "Payment info",
+    "fields": {
+      "f1": "DAY",
+      "f2": "E-MAIL",
+      "f3": "CARD HOLDER NAME",
+      "f4": "EXPIRATION DATE",
+      "f5": "CARD NUMBER"
+    },
+    "buttons": {
+      "submit": "Book my spot",
+      "y": "Yes",
+      "n": "No"
+    },
+    "toast": {
+      "confirmMsg": "Are you sure you want to proceed with the ",
+      "finMsg": " accomplished",
+      "typeL1":"registration",
+      "typeL2":"transaction",
+      "typeU1":"registration",
+      "typeU2":"transaction"
+    },
+    "tab": {
+      "title": "Register",
+      "description": "Registering for an event? Pick your event and the date, you can see all our events in the corresponding tab. Club? Select that option, pick your club, and register. It's free! (For more info, see our schedule)"
+    }
   }
 
-  
+
 }

@@ -6,8 +6,10 @@ import GoldCard from './GoldCard';
 import GoldSep from './GoldSep';
 import arrowIcon from './AvroArrow.svg'; 
 import { Row, Col, Container, ToastContainer, Toast, Form, Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 const Pay = () => {
+    const [t, i18n] = useTranslation('global');
     const [site, setSite] = useState('');
     const [days, setDays] = useState([]);
     const [selectedDay, setSelectedDay] = useState('');
@@ -92,7 +94,7 @@ const Pay = () => {
             return;
         }
 
-        setConfirmationToastMessage(`Are you sure you want to proceed with the ${site === 'Club' ? 'registration' : 'transaction'}?`);
+        setConfirmationToastMessage(`${t("pay.toast.confirmMsg")}  ${site === 'Club' ? t("pay.toast.typeL1") : t("pay.toast.typeL2")}?`);
         setShowConfirmationToast(true);
     };
 
@@ -100,7 +102,7 @@ const Pay = () => {
         handleClearForm();
         setConfirmationToastMessage('');
         setShowConfirmationToast(false);
-        setToastMessage(`${site === 'Club' ? 'Registration' : 'Transaction'} accomplished`);
+        setToastMessage(`${site === 'Club' ? t("pay.toast.typeU1") : t("pay.toast.typeU1")} ${t("pay.toast.finMsg")}`);
         setShowToast(true);
     };
 
@@ -117,9 +119,9 @@ const Pay = () => {
                         <div className="inner-container">
                             <Form ref={formRef} onSubmit={handleSubmit}>
                                 <Row>
-                                    <h1>We’ll save you a chair</h1>
+                                    <h1>{t("pay.header")}</h1>
                                     <GoldSep />
-                                    <h3>Event info</h3>
+                                    <h3>{t("pay.eventTitle")}</h3>
                                     <Col sm={6} className='px-1 form-element'>
                                         <Form.Control
                                             as="select"
@@ -143,7 +145,7 @@ const Pay = () => {
                                                 value={selectedDay}
                                                 onChange={handleDayChange}
                                             >
-                                                <option value="" disabled>DAY</option>
+                                                <option value="" disabled>{t("pay.fields.f1")}</option>
                                                 {days.map((day, index) => (
                                                     <option key={index} value={day}>{day}</option>
                                                 ))}
@@ -156,24 +158,23 @@ const Pay = () => {
                                                 onChange={handleDayChange}
                                             >
                                                 <option value="" disabled>CLUB</option>
-                                                {/* Add Club options here */}
-                                                <option value="1">Midi de theatre (Fr)</option>
+                                                <option value="1">Mediodía de teatro (Esp)</option>
                                                 <option value="2">Verne's reading club (Eng)</option>
                                                 <option value="3">Greek Myth exploration gang (Eng)</option>
                                                 <option value="4">Horror Tuesdays (Eng)</option>
                                                 <option value="5">Love birds chirping club (Eng)</option>
-                                                <option value="6">Le culte de Samsagaz Gamyi (Fr)</option>
+                                                <option value="6">El culto de Samsagaz (Esp)</option>
                                                 <option value="7">Victorian readings and biscuits (Eng)</option>
-                                                <option value="8">Sci-fi Sam! (Fr)</option>
+                                                <option value="8">¡Ciencia y ficción! (Esp)</option>
                                             </Form.Control>
                                         )}
                                     </Col>
-                                    <h3>{site === 'Club' ? 'Registration info' : 'Payment info'}</h3>
+                                    <h3>{site === 'Club' ? t("pay.registerTitle") : t("pay.payTitle")}</h3>
                                     <Col sm={12} className='px-1 form-element'>
                                         <Form.Control
                                             type="email"
                                             className={`form-control ${!validation.ussEmail ? 'is-invalid' : ''}`}
-                                            placeholder="E-MAIL"
+                                            placeholder={t("pay.fields.f2")}
                                             value={ussEmail}
                                             onChange={(e) => setUssEmail(e.target.value)}
                                         />
@@ -184,7 +185,7 @@ const Pay = () => {
                                                 <Form.Control
                                                     type="text"
                                                     className={`form-control ${!validation.cardHolderName ? 'is-invalid' : ''}`}
-                                                    placeholder="CARD HOLDER NAME"
+                                                    placeholder={t("pay.fields.f3")}
                                                     value={cardHolderName}
                                                     onChange={(e) => setCardHolderName(e.target.value)}
                                                 />
@@ -193,7 +194,7 @@ const Pay = () => {
                                                 <Form.Control
                                                     type="text"
                                                     className={`form-control ${!validation.expirationDate ? 'is-invalid' : ''}`}
-                                                    placeholder="EXPIRATION DATE"
+                                                    placeholder={t("pay.fields.f4")}
                                                     value={expirationDate}
                                                     onChange={(e) => setExpirationDate(e.target.value)}
                                                 />
@@ -202,7 +203,7 @@ const Pay = () => {
                                                 <Form.Control
                                                     type="tel"
                                                     className={`form-control ${!validation.cardNumber ? 'is-invalid' : ''}`}
-                                                    placeholder="CARD NUMBER"
+                                                    placeholder={t("pay.fields.f5")}
                                                     value={cardNumber}
                                                     onChange={(e) => setCardNumber(e.target.value)}
                                                 />
@@ -219,7 +220,7 @@ const Pay = () => {
                                         </>
                                     )}
                                     <Col sm={12} className='px-1 form-element'>
-                                        <GoldBtnBase prop="Book my spot" type="submit" />
+                                        <GoldBtnBase prop={t("pay.buttons.submit")} type="submit" />
                                     </Col>
                                 </Row>
                             </Form>
@@ -235,10 +236,10 @@ const Pay = () => {
                     </Toast.Header>
                     <Toast.Body className="d-flex justify-content-center">
                         <Button className="rcustom-button" onClick={handleConfirmYes}>
-                            <span className="rcustom-button-title">Yes</span>
+                            <span className="rcustom-button-title">{t("pay.buttons.y")} </span>
                         </Button>
                         <Button className="rcustom-button" onClick={handleConfirmNo}>
-                            <span className="rcustom-button-title">No</span>
+                            <span className="rcustom-button-title">{t("pay.buttons.n")} </span>
                         </Button>
                     </Toast.Body>
                 </Toast>
@@ -248,12 +249,9 @@ const Pay = () => {
                         <img src={arrowIcon} alt="Toggle" className="toggle-icon" />
                     </button>
                     <div className="tab-content">
-                        <h5>Register</h5>
+                        <h5>{t("pay.tab.title")} </h5>
                         <GoldSep />
-                        <p>
-                            Registering for an event? Pick your event and the date, you can see all our events in the corresponding tab. 
-                            Club? Select that option pick your club and register. It's free! (For more info see our schedule)
-                        </p>
+                        <p>{t("pay.tab.description")}</p>
                     </div>
                 </div>
         </section>
@@ -261,3 +259,6 @@ const Pay = () => {
 }
 
 export default Pay;
+//Fix days language
+//Toast for confirmation (might be launching on top, see later)
+//Just checked, it doesn't seem to pop on top
