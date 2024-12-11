@@ -9,8 +9,10 @@ import Data from './Data';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import arrowIcon from './AvroArrow.svg'; 
+import { useTranslation } from 'react-i18next';
 
 const Lib = () => {
+    const [t, i18n] = useTranslation('global');
     const [site, setSite] = useState('');
     const [selectedGenre, setSelectedGenre] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -54,46 +56,44 @@ const Lib = () => {
             });
             setBooks(updatedBooks);
             setCurrentlyBorrowedIndex(index);
-            toast.success(`${book.title} was borrowed!`);
+            toast.success(`${book.title} ${t('lib.toast.success')}`);
         } else {
-            toast.error('This book is already borrowed.');
+            toast.error(`${t('lib.toast.error')}`);
         }
     };
 
     const genreOptions = [
-        { value: 'Adventure', label: 'Adventure' },
-        { value: 'Allegory', label: 'Allegory' },
-        { value: 'Crime', label: 'Crime' },
-        { value: 'Detective', label: 'Detective' },
-        { value: 'Dystopian', label: 'Dystopian' },
-        { value: 'Essay', label: 'Essay' },
-        { value: 'Fables', label: 'Fables' },
-        { value: 'Fairy Tale', label: 'Fairy Tale' },
-        { value: 'Fantasy', label: 'Fantasy' },
-        { value: 'Magic Realism', label: 'Magic Realism' },
-        { value: 'Mystery', label: 'Mystery' },
-        { value: 'Poetry', label: 'Poetry' },
-        { value: 'Picaresque', label: 'Picaresque' },
-        { value: 'Psychological', label: 'Psychological' },
-        { value: 'Romance', label: 'Romance' },
-        { value: 'Satire', label: 'Satire' }
+        { value: 'Adventure', label: t('lib.gen.lbl1') },
+        { value: 'Allegory', label: t('lib.gen.lbl2') },
+        { value: 'Crime', label: t('lib.gen.lbl3') },
+        { value: 'Detective', label: t('lib.gen.lbl4') },
+        { value: 'Dystopian', label: t('lib.gen.lbl5') },
+        { value: 'Essay', label: t('lib.gen.lbl6') },
+        { value: 'Fables', label: t('lib.gen.lbl7') },
+        { value: 'Fairy Tale', label: t('lib.gen.lbl8') },
+        { value: 'Fantasy', label: t('lib.gen.lbl9') },
+        { value: 'Magic Realism', label: t('lib.gen.lbl10') },
+        { value: 'Mystery', label: t('lib.gen.lbl11') },
+        { value: 'Poetry', label: t('lib.gen.lbl12') },
+        { value: 'Picaresque', label: t('lib.gen.lbl13') },
+        { value: 'Psychological', label: t('lib.gen.lbl14') },
+        { value: 'Romance', label: t('lib.gen.lbl15') },
+        { value: 'Satire', label: t('lib.gen.lbl16') }
     ];
 
     const languageOptions = [
-        { value: 'default', label: 'LANGUAGE' },
-        { value: 'En', label: 'English' },
-        { value: 'Fr', label: 'French' },
-        { value: 'It', label: 'Italian' },
-        { value: 'Sp', label: 'Spanish' }
+        { value: 'En', label: t('lib.lang.lbl1') },
+        { value: 'Fr', label: t('lib.lang.lbl2') },
+        { value: 'It', label: t('lib.lang.lbl3') },
+        { value: 'Sp', label: t('lib.lang.lbl4') }
     ];
 
     const periodOptions = [
-        { value: 'default', label: 'PERIOD' },
-        { value: 'Renaissance', label: 'Renaissance' },
-        { value: 'Neoclassicism', label: 'Neoclassicism' },
-        { value: 'Romanticism', label: 'Romanticism' },
-        { value: 'Realism', label: 'Realism' },
-        { value: 'Modernism', label: 'Modernism' }
+        { value: 'Renaissance', label: t('lib.priod.lbl1') },
+        { value: 'Neoclassicism', label: t('lib.priod.lbl2') },
+        { value: 'Romanticism', label: t('lib.priod.lbl3') },
+        { value: 'Realism', label: t('lib.priod.lbl4') },
+        { value: 'Modernism', label: t('lib.priod.lbl5') }
     ];
 
     const customStyles = {
@@ -128,15 +128,15 @@ const Lib = () => {
         <>
             <section className="lib" id="lib">
                 <GoldSep />
-                <h1>Browse your next page-turner</h1>
+                <h1>{t('lib.secTitle')}</h1>
                 <Container fluid>
                     <Row>
                         <Col xs={12} md={3}>
                             <Container className="filter">
-                                <h1 className='flt'>Filter</h1>
+                                <h1 className='flt'>{t('lib.filter.title')}</h1>
                                 <input
                                     type="text"
-                                    placeholder="Search by title or author"
+                                    placeholder={t('lib.filter.search')}
                                     value={searchTerm}
                                     onChange={handleSearchChange}
                                     className="form-control mb-3"
@@ -147,7 +147,7 @@ const Lib = () => {
                                     options={genreOptions}
                                     className="basic-multi-select"
                                     classNamePrefix="select"
-                                    placeholder="GENRE"
+                                    placeholder={t('lib.filter.gen')}
                                     value={selectedGenre}
                                     onChange={handleGenreChange}
                                     styles={customStyles}
@@ -157,7 +157,7 @@ const Lib = () => {
                                     options={languageOptions}
                                     className="basic-single-select"
                                     classNamePrefix="select"
-                                    placeholder="LANGUAGE"
+                                    placeholder={t('lib.filter.lang')}
                                     value={selectedLanguage}
                                     onChange={handleLanguageChange}
                                     styles={customStyles}
@@ -167,7 +167,7 @@ const Lib = () => {
                                     options={periodOptions}
                                     className="basic-single-select"
                                     classNamePrefix="select"
-                                    placeholder="PERIOD"
+                                    placeholder={t('lib.filter.priod')}
                                     value={selectedPeriod}
                                     onChange={handlePeriodChange}
                                     styles={customStyles}
@@ -201,12 +201,9 @@ const Lib = () => {
                         <img src={arrowIcon} alt="Toggle" className="toggle-icon" />
                     </button>
                     <div className="tab-content">
-                        <h5>Our Collection</h5>
+                        <h5>{t('lib.tab.title')}</h5>
                         <GoldSep />
-                        <p>
-                            Wanna borrow a book? Just click on "borrow". We pressently allow one book per person so if you wanna select a diferent book than the one you got then click on that one.
-                            Please keep in mind that all reservations are conciderered for "the day of" and we work with a first come first served system
-                        </p>
+                        <p>{t('lib.tab.content')}</p>
                     </div>
                 </div>
             </section>

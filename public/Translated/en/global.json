@@ -163,7 +163,7 @@
       "description": "Dessert : Short description"
     }
   },
-  
+
   "pay": {
     "header": "We’ll save you a chair",
     "eventTitle": "Event info",
@@ -184,16 +184,70 @@
     "toast": {
       "confirmMsg": "Are you sure you want to proceed with the ",
       "finMsg": " accomplished",
-      "typeL1":"registration",
-      "typeL2":"transaction",
-      "typeU1":"registration",
-      "typeU2":"transaction"
+      "typeL1": "registration",
+      "typeL2": "transaction",
+      "typeU1": "registration",
+      "typeU2": "transaction"
     },
     "tab": {
       "title": "Register",
       "description": "Registering for an event? Pick your event and the date, you can see all our events in the corresponding tab. Club? Select that option, pick your club, and register. It's free! (For more info, see our schedule)"
     }
+  },
+
+  "lib": {
+    "btn":"Borrow",
+    "secTitle": "Browse your next page-turner",
+    "filter": {
+      "title": "Filter",
+      "search": "Search by title or author",
+      "gen": "GENRE",
+      "lang": "LANGUAGE",
+      "priod": "PERIOD"
+    },
+
+    "gen": {
+      "lbl1": "Adventure",
+      "lbl2": "Allegory",
+      "lbl3": "Crime",
+      "lbl4": "Detective",
+      "lbl5": "Dystopian",
+      "lbl6": "Essay",
+      "lbl7": "Fables",
+      "lbl8": "Fairy Tale",
+      "lbl9": "Fantasy",
+      "lbl10": "Magic Realism",
+      "lbl11": "Mystery",
+      "lbl12": "Poetry",
+      "lbl13": "Picaresque",
+      "lbl14": "Psychological",
+      "lbl15": "Romance",
+      "lbl16": "Satire"
+    },
+
+    "lang": {
+      "lbl1": "English",
+      "lbl2": "French",
+      "lbl3": "Italian",
+      "lbl4": "Spanish"
+    },
+
+    "priod": {
+      "lbl1": "Renaissance",
+      "lbl2": "Neoclassicism",
+      "lbl3": "Romanticism",
+      "lbl4": "Realism",
+      "lbl5": "Modernism"
+    },
+
+    "tab": {
+      "title": "Our Collection",
+      "content": "Wanna borrow a book? Just click on 'borrow'. We presently allow one book per person, so if you want to select a different book than the one you got, click on that one. Please keep in mind that all reservations are considered for 'the day of' and we work with a first-come, first-served system."
+    },
+
+    "toast": {
+      "success": "was borrowed!",
+      "error": "This book is already borrowed."
+    }
   }
-
-
 }
