@@ -3,6 +3,8 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Button, Container, Modal } from 'react-bootstrap';
 import './Navnav.css';
 import Sinsout from './Sinsout';
+import ussImg from "./ussimg.svg"
+import inImg from './inimg.svg'
 import { useTranslation } from 'react-i18next';
 
 const Navnav = () => {
@@ -80,9 +82,15 @@ const Navnav = () => {
                             </NavDropdown>
                             <div className="login-signup">
                                 {isSignedIn ? (
-                                    <Button className="signin-login-button" onClick={handleSignOut}>Sign Out</Button>
+                                    <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src={ussImg} alt="User" className="dropdown-image" />}>
+                                        <NavDropdown.Item onClick={handleSignOut}>{t("nav.sinOut")}</NavDropdown.Item>
+                                    </NavDropdown>
                                 ) : (
-                                    <Button className="signin-login-button" onClick={handleShow}>SignIn/LogIn</Button>
+                                    <Nav.Link className="no-caret custom-nav-link" onClick={handleShow} id="custom-dropdown">
+                                        <div>
+                                            <img src={inImg} alt="User" className="dropdown-image" />
+                                        </div>
+                                    </Nav.Link>
                                 )}
                             </div>
                         </Nav>

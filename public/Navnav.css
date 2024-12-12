@@ -58,7 +58,7 @@
     text-decoration-thickness: 2px;
 }
 
-.custom-image-dropdown .dropdown-image {
+.dropdown-image {
     width: 40px;
     height: auto;
     cursor: pointer;
