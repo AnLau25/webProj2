@@ -69,7 +69,7 @@ const Sinsout = ({ onClose, onSignIn }) => {
             <input type='password' placeholder={t('sinsout.create.pass')} className='form-control form-control-lg bg-light fs-6' />
           </div>
           <div className='input-group mb-3 justify-content-center'>
-            <GoldBtn prop={t('sinsout.inBtn')} onClick={handleGoldBtnClick} />
+            <GoldBtn prop={t('sinsout.usual.btn')} onClick={handleGoldBtnClick} />
           </div>
         </form>
       </div>
@@ -91,7 +91,7 @@ const Sinsout = ({ onClose, onSignIn }) => {
             <input type='password' placeholder={t('sinsout.connect.pass')}  className='form-control form-control-lg bg-light fs-6' />
           </div>
           <div className='input-group mb-3 justify-content-center'>
-            <GoldBtn prop='Log In' onClick={handleGoldBtnClick} />
+            <GoldBtn prop={t('sinsout.new.btn')} onClick={handleGoldBtnClick} />
           </div>
         </form>
       </div>

@@ -37,7 +37,7 @@ const MenuSp = () => {
                                         <Nav.Link eventKey="second" id="menu-tab-second">Almuerzo</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="third" id="menu-tab-third">Merienda</Nav.Link>
+                                        <Nav.Link eventKey="third" id="menu-tab-third">Cena</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                             </div>

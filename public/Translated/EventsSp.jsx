@@ -44,7 +44,7 @@ const EventsSp = () => {
                                                         <div>Pon los pelos de punta a tus lectores</div>
                                                     </Accordion.Header>
                                                     <Accordion.Body>
-                                                        Únete a la legendaria reina del misterio, Agatha Christie, para un taller inmersivo sobre cómo crear narrativas llenas de suspense que dejarán a tus lectores al borde de sus asientos. Aprende los secretos para construir tensión, desarrollar personajes inolvidables y crear giros que mantendrán a tu audiencia adivinando hasta el final.
+                                                        La legendaria reina del misterio, Agatha Christie, nos ofrece un taller inmersivo sobre cómo crear narrativas llenas de suspenso que dejarán a tus lectores al borde de sus asientos. Aprende los secretos para construir tensión, desarrollar personajes inolvidables y crear giros que mantendrán a tu audiencia adivinando hasta el final.
                                                     </Accordion.Body>
                                                 </Accordion.Item>
                                                 <Accordion.Item eventKey="2">

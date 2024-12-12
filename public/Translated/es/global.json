@@ -69,216 +69,215 @@
 
   "events": {
     "tabs": {
-      "t1": "Readers",
+      "t1": "Lectores",
       "t2": "Pages"
     },
     "readersTab": {
       "libraryCollection": {
-        "title": "Library Collection",
-        "description": "Short description of the way the library system works. A lil talk about the classics maybe talk abt the booking system.",
-        "buttonText": "Browse our Collection"
+        "title": "Colección de la Biblioteca",
+        "description": "Breve descripción de cómo funciona el sistema de la biblioteca. Un poco sobre los clásicos, quizás hablar sobre el sistema de reservas.",
+        "buttonText": "Explorar nuestra colección"
       },
       "cafeAndMenu": {
-        "title": "Café and Menu",
+        "title": "Café y Menú",
         "description": "Specs about the menu, the time at which each menu happens, maybe talk about the chef.",
-        "buttonText": "Check out the menu"
+        "buttonText": "Consultar el menú"
       },
-      "eventsHeader": "Events of the week",
+      "eventsHeader": "Eventos de la semana",
       "accordion": {
         "au1": {
           "author": "Maurice Leblanc",
-          "days": "Mon Tue",
-          "title": "On how to write a classy burglar",
-          "description": "Join renowned creator of Arsène Lupin, Maurice Leblanc, for a workshop on creating a character with dubious morals but plenty of finesse. Discover the art of crafting a sophisticated and charming thief, master the elements of suspense and intrigue, and learn how to weave captivating plots that keep readers hooked. Unleash your imagination and bring your own elegant rogue to life."
+          "days": "Lun Mar",
+          "title": "Cómo escribir sobre un ladrón elegante",
+          "description": " Únete al renombrado creador de Arsène Lupin, Maurice Leblanc, para un taller sobre cómo crear un personaje con una moral dudosa pero con mucha elegancia. Descubre el arte de crear un ladrón sofisticado y encantador, domina los elementos del suspense y la intriga, y aprende a tejer tramas cautivadoras que mantengan a los lectores enganchados. Desata tu imaginación y da vida a tu propio pícaro elegante."
         },
         "au2": {
           "author": "Agatha Christie",
-          "days": "Wed Fri",
-          "title": "Send chills down your readers spines",
-          "description": "Join the legendary queen of mystery, Agatha Christie, for an immersive workshop on crafting suspenseful narratives that will leave your readers on the edge of their seats. Learn the secrets of building tension, developing unforgettable characters, and creating twists that will keep your audience guessing until the very end."
+          "days": "Mie Vie",
+          "title": "Pon los pelos de punta a tus lectores",
+          "description": "La legendaria reina del misterio, Agatha Christie, nos ofrece un taller inmersivo sobre cómo crear narrativas llenas de suspenso que dejarán a tus lectores al borde de sus asientos. Aprende los secretos para construir tensión, desarrollar personajes inolvidables y crear giros que mantendrán a tu audiencia enganchada hasta el final."
         },
         "au3": {
           "author": "Jane Austen",
-          "days": "Thu",
-          "title": "Write your own, prideful Lover Boy",
-          "description": "Step into the elegant world of Jane Austen and discover how to create charming and complex characters with a touch of pride. In this workshop, you'll learn from the master of romantic fiction how to develop intriguing plots, witty dialogue, and captivating love interests that resonate with readers. Unleash your creativity and craft a timeless story filled with romance and social commentary."
+          "days": "Jue",
+          "title": "Escribe tu propio amante orgulloso",
+          "description": "Sumérgete en el elegante mundo de Jane Austen y descubre cómo crear personajes encantadores y complejos con un toque de orgullo. En este taller, aprenderás del maestro de la ficción romántica cómo desarrollar tramas intrigantes, diálogos ingeniosos e intereses amorosos cautivadores que resuenen con los lectores. Desata tu creatividad y crea una historia atemporal llena de romance y comentario social."
         },
         "au4": {
           "author": "Nicolás Maquiavelo",
           "days": "Sat",
-          "title": "Book reading of “The Prince”",
-          "description": "Join us for a captivating book reading of 'The Prince' by Nicolás Maquiavelo, where you'll delve into the intricate world of political strategy and leadership. Experience the timeless wisdom of Machiavelli as we explore his profound insights on power, governance, and human nature. This event promises to be an enlightening journey through one of history's most influential works on political philosophy."
+          "title": "Lectura de “El Príncipe”",
+          "description": "Únete a nosotros para una cautivadora lectura de “El Príncipe” de Nicolás Maquiavelo, donde te adentrarás en el intrincado mundo de la estrategia política y el liderazgo. Experimenta la sabiduría intemporal de Maquiavelo mientras exploramos sus profundas ideas sobre el poder, la gobernanza y la naturaleza humana. Este evento promete ser un viaje esclarecedor a través de una de las obras más influyentes de la filosofía política."
         }
       }
     },
     "pagesTab": {
       "schedule": {
-        "title": "Schedule",
-        "description": "The longer description about how the schedule works, probably more content about the clubs. Actually, it'll probably mainly be an introduction to the clubs and whatnot.",
-        "buttonText": "Our Schedule"
+        "title": "Horario",
+        "description": "Una descripción más larga sobre cómo funciona el horario, probablemente más contenido sobre los clubes, de hecho, probablemente será una introducción a los clubes y demás.",
+        "buttonText": "Nuestro Horario"
       },
       "clubs": {
-        "title": "Clubs",
-        "description": "Will be explaining the requirements of a club, it'll discuss the number of members, how they will deal with the catering and so on and so forth. They are more informal than events."
+        "title": "Clubes",
+        "description": "Se explicarán los requisitos de un club, se discutirá el número de miembros, cómo se ocuparán del catering, etc. Son más informales que los eventos."
       },
       "paidEvents": {
-        "title": "Paid Events",
-        "description": "The more serious stuff since it involves authors reaching out to them or vice versa for events regarding the author's book's marketing and whatnot. A brief explanation as to why these are paid.",
-        "buttonText": "Register for an event"
+        "title": "Eventos pagos",
+        "description": "Los asuntos más serios ya que involucra a los autores para eventos relacionados con la comercialización de los libros del autor y demás. Una breve explicación de por qué estos son pagados.",
+        "buttonText": "Registrar para un evento"
       },
       "damagedBooks": {
-        "title": "Damaged Book Policy",
-        "description": "Yes, they do lend the books and yes you can read and eat, but the place has very old books that can be easily damaged and require costly repairs.",
-        "buttonText": "Our Collection"
+        "title": "Política de libros dañados",
+        "description": "Sí, prestan los libros y sí, puedes leer y comer, pero el lugar tiene libros muy antiguos que pueden dañarse fácilmente y requieren costosas reparaciones.",
+        "buttonText": "Nuestra Colección"
       }
     }
   },
 
   "menu": {
     "tabs": {
-      "t1": "Brunch",
-      "t2": "Lunch",
-      "t3": "Munch"
+      "t1": "Almuerzo tardío",
+      "t2": "Merienda de la tarde",
+      "t3": "Sanck de madrugada"
     },
     "drinks": {
-      "title": "Drink up!",
-      "name": "Drink",
-      "description": "Drink : Short description"
+      "title": "¡Hasta el fondo!",
+      "name": "Bebida",
+      "description": "Bebida : Corta descripción"
     },
     "savory": {
-      "title": "Savory of mind",
+      "title": "Sazón para la mente mente",
       "handhelds": {
-        "title": "Handhelds",
-        "name": "Salty dish",
-        "description": "Salty dish : Short description"
+        "title": "Sandwishes",
+        "name": "Plato salado",
+        "description": "Plato salado : Corta descripción"
       },
       "salads_soups": {
-        "title": "Salads & Soups",
-        "name": "Salty dish",
-        "description": "Salty dish : Short description"
+        "title": "Ensaladas y sopas",
+        "name": "Plato salado",
+        "description": "Plato salado : Corta descripción"
       }
     },
     "desserts": {
-      "title": "For the sweet tooth!",
-      "name": "Dessert",
-      "description": "Dessert : Short description"
+      "title": "Para los golosos",
+      "name": "Postre",
+      "description": "Postre : Corta descripción"
     }
   },
 
   "pay": {
-    "header": "We’ll save you a chair",
-    "eventTitle": "Event info",
-    "registerTitle": "Registration info",
-    "payTitle": "Payment info",
+    "header": "Te guardaremos un asiento",
+    "eventTitle": "Info del evento",
+    "registerTitle": "Info de inscripción'",
+    "payTitle": "Info de pago",
     "fields": {
-      "f1": "DAY",
+      "f1": "DIA",
       "f2": "E-MAIL",
-      "f3": "CARD HOLDER NAME",
-      "f4": "EXPIRATION DATE",
-      "f5": "CARD NUMBER"
+      "f3": "NOMBRE DEL PROPRIETARIO",
+      "f4": "FECHA DE EXRACION",
+      "f5": "NUMERO CARTA"
     },
     "buttons": {
-      "submit": "Book my spot",
-      "y": "Yes",
+      "submit": "Reservar",
+      "y": "Si",
       "n": "No"
     },
     "toast": {
-      "confirmMsg": "Are you sure you want to proceed with the ",
+      "confirmMsg": "¿Está seguro de que desea proceder con la ",
       "finMsg": " accomplished",
-      "typeL1": "registration",
-      "typeL2": "transaction",
-      "typeU1": "registration",
-      "typeU2": "transaction"
+      "typeL1": "inscripción",
+      "typeL2": "transacción",
+      "typeU1": "Inscripción",
+      "typeU2": "Transacción"
     },
     "tab": {
-      "title": "Register",
-      "description": "Registering for an event? Pick your event and the date, you can see all our events in the corresponding tab. Club? Select that option, pick your club, and register. It's free! (For more info, see our schedule)"
+      "title": "Registrar",
+      "description": "¿Te estás registrando para un evento? Elige tu evento y la fecha, puedes ver todos nuestros eventos en la pestaña correspondiente. ¿Club? Selecciona esa opción, elige tu club y regístrate. ¡Es gratis! (Para más información, consulta nuestro horario)"
     }
   },
 
   "lib": {
-    "btn": "Borrow",
+    "btn": "Recervar",
     "secTitle": "Browse your next page-turner",
     "filter": {
-      "title": "Filter",
-      "search": "Search by title or author",
-      "gen": "GENRE",
-      "lang": "LANGUAGE",
-      "priod": "PERIOD"
+      "title": "Filtrar",
+      "search": "Buscar por título o autor",
+      "gen": "GENERO",
+      "lang": "IDIOMA",
+      "priod": "PERIODO"
     },
 
     "gen": {
-      "lbl1": "Adventure",
-      "lbl2": "Allegory",
-      "lbl3": "Crime",
+      "lbl1": "Aventura",
+      "lbl2": "Alegoría",
+      "lbl3": "Crimen",
       "lbl4": "Detective",
-      "lbl5": "Dystopian",
-      "lbl6": "Essay",
-      "lbl7": "Fables",
-      "lbl8": "Fairy Tale",
-      "lbl9": "Fantasy",
-      "lbl10": "Magic Realism",
-      "lbl11": "Mystery",
-      "lbl12": "Poetry",
-      "lbl13": "Picaresque",
-      "lbl14": "Psychological",
+      "lbl5": "Distopía",
+      "lbl6": "Ensayo",
+      "lbl7": "Fábulas",
+      "lbl8": "Cuentos de hadas",
+      "lbl9": "Fantasía",
+      "lbl10": "Realismo Mágico",
+      "lbl11": "Misterio",
+      "lbl12": "Poesía",
+      "lbl13": "Picaresca",
+      "lbl14": "Psicológico",
       "lbl15": "Romance",
-      "lbl16": "Satire"
+      "lbl16": "Sátira"
     },
 
     "lang": {
-      "lbl1": "English",
-      "lbl2": "French",
-      "lbl3": "Italian",
-      "lbl4": "Spanish"
+      "lbl1": "Inglés",
+      "lbl2": "Francés",
+      "lbl3": "Italiano",
+      "lbl4": "Español"
     },
 
     "priod": {
-      "lbl1": "Renaissance",
-      "lbl2": "Neoclassicism",
-      "lbl3": "Romanticism",
-      "lbl4": "Realism",
-      "lbl5": "Modernism"
+      "lbl1": "Renacimiento",
+      "lbl2": "Neoclasicismo",
+      "lbl3": "Romanticismo",
+      "lbl4": "Realismo",
+      "lbl5": "Modernismo"
     },
 
     "tab": {
-      "title": "Our Collection",
-      "content": "Wanna borrow a book? Just click on 'borrow'. We presently allow one book per person, so if you want to select a different book than the one you got, click on that one. Please keep in mind that all reservations are considered for 'the day of' and we work with a first-come, first-served system."
-    },
+      "title": "Nuestra Colección",
+      "content": "¿Quieres pedir prestado un libro? Solo haz clic en “Reservar”. Actualmente permitimos un libro por persona, así que si deseas seleccionar un libro diferente al que tienes, haz clic en ese. Ten en cuenta que todas las reservas se consideran para “el día de” y trabajamos con un sistema de “primero en llegar, primero en ser atendido”."
+    },       
 
     "toast": {
-      "success": "was borrowed!",
-      "error": "This book is already borrowed."
+      "success": "fue reservado!",
+      "error": "Este libro ya ha sido reservado."
     }
   },
 
   "sinsout": {
-    "inBtn": "Sign In",
-    "outBtn": "Log In",
-
     "create": {
-      "header": "Create an account",
-      "uss": "User name",
-      "email": "E-mail",
-      "pass": "Password"
+      "header": "Crear una cuenta",
+      "uss": "Nombre de usuario",
+      "email": "Correo electrónico",
+      "pass": "Contraseña"
     },
 
     "connect": {
-      "header": "Connect to account",
-      "uss": "User name",
-      "pass": "Password"
+      "header": "Conectarse a la cuenta",
+      "uss": "Nombre de usuario",
+      "pass": "Contraseña"
     },
 
     "usual": {
-      "title": "Welcome back!",
-      "subT": "Glad to see you again",
-      "btn": "Log In"
+      "title": "¡Hola!",
+      "subT": "Encantados de conocerte",
+      "subq": "¿Ya tienes cuenta?",
+      "btn": "Iniciar sesión"
     },
 
     "new": {
-      "title": "Hello there!",
-      "subT": "Nice to meet you",
-      "btn": "Sign In"
+      "title": "¡Bienvenido!",
+      "subT": "Nos alegra verte de nuevo",
+      "subq": "¿No tienes cuenta?",
+      "btn": "Crear una cuenta"
     }
-  }
+}
 }

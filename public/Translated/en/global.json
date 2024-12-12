@@ -252,9 +252,6 @@
   },
 
   "sinsout": {
-    "inBtn": "Sign In",
-    "outBtn": "Log In",
-
     "create": {
       "header": "Create an account",
       "uss": "User name",

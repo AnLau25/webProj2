@@ -102,3 +102,6 @@ const Navnav = () => {
 export default Navnav;
 
 //Change the after space on the buttons for in between
+//Change in/out for logo, give logout option? Dropdown+hover?
+//Home page: Calibrate for gLine
+//Fix spanish mug in menu
