@@ -142,12 +142,12 @@
       "t3": "Sanck de madrugada"
     },
     "drinks": {
-      "title": "¡Hasta el fondo!",
+      "title": "¡Fondo fondo!",
       "name": "Bebida",
       "description": "Bebida : Corta descripción"
     },
     "savory": {
-      "title": "Sazón para la mente mente",
+      "title": "Sazón para la mente",
       "handhelds": {
         "title": "Sandwishes",
         "name": "Plato salado",
@@ -269,16 +269,16 @@
 
     "usual": {
       "title": "¡Hola!",
-      "subT": "Encantados de conocerte",
-      "subq": "¿Ya tienes cuenta?",
-      "btn": "Iniciar sesión"
+      "subT": "Nos alegra verte de nuevo",
+      "subq": "¿No tienes cuenta?",
+      "btn": "Crea una cuenta"
     },
 
     "new": {
       "title": "¡Bienvenido!",
-      "subT": "Nos alegra verte de nuevo",
-      "subq": "¿No tienes cuenta?",
-      "btn": "Crear una cuenta"
+      "subT": "Encantados de conocerte",
+      "subq": "¿Ya tienes cuenta?",
+      "btn": "Inicia sesión"
     }
 }
 }

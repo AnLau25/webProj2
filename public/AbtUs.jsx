@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 const AbtUsSp = () => {
     const [t, i18n] = useTranslation('global');
     return (
-        <section className='AbtUs' id='abtussp'>
+        <section className='AbtUs' id='abtus'>
             <GoldSep />
             <Container fluid>
                 <Row className='content-row'>

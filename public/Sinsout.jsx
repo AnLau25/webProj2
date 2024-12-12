@@ -101,11 +101,13 @@ const Sinsout = ({ onClose, onSignIn }) => {
           <div className='switch-panel switch-left'>
             <h1>{t('sinsout.usual.title')}</h1>
             <p>{t('sinsout.usual.subT')}</p>
+            <h5>{t('sinsout.usual.subq')}</h5>
             <BglessBtn prop={t('sinsout.usual.btn')} id='login' onClick={handleLogInClick} />
           </div>
           <div className='switch-panel switch-right'>
             <h1>{t('sinsout.new.title')}</h1>
             <p>{t('sinsout.new.subT')}</p>
+            <h5>{t('sinsout.new.subq')}</h5>
             <BglessBtn prop={t('sinsout.new.btn')} id='signin' onClick={handleSignInClick} />
           </div>
         </div>

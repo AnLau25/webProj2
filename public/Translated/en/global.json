@@ -269,12 +269,14 @@
     "usual": {
       "title": "Welcome back!",
       "subT": "Glad to see you again",
+      "subq": "No account?",
       "btn": "Log In"
     },
 
     "new": {
       "title": "Hello there!",
       "subT": "Nice to meet you",
+      "subq": "Already got an account?",
       "btn": "Sign In"
     }
   }

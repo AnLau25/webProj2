@@ -23,6 +23,12 @@
     font-family: "Inknut Antiqua", serif !important;
 }
 
+.sinsout h5{
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-family: "Inknut Antiqua", serif !important;
+}
+
 .sinsout .switch-content {
     position: absolute;
     top: 0;
