@@ -28,6 +28,15 @@ const Navnav = () => {
         handleClose();
     };
 
+    const handleNavLinkClick = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const yOffset = -120; // Adjust offset to account for fixed navbar
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    };
+
     useEffect(() => {
         const handleHashChange = () => {
             const id = window.location.hash.replace('#', '');
@@ -56,15 +65,15 @@ const Navnav = () => {
                         </div>
                         <Nav className="nav-middle mx-auto">
                             <NavDropdown title={t('nav.dropt1')} className="no-caret">
-                                <NavDropdown.Item href="/#abtus">{t("nav.down11")}</NavDropdown.Item>
-                                <NavDropdown.Item href="/clndr">{t("nav.down12")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>{t("nav.down11")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('clndr')}>{t("nav.down12")}</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title={t("nav.dropt2")} className="no-caret">
-                                <NavDropdown.Item href="/Cafe#events">{t("nav.down21")}</NavDropdown.Item>
-                                <NavDropdown.Item href="/Cafe#menu">{t("nav.down22")}</NavDropdown.Item>
-                                <NavDropdown.Item href="/Cafe#pay">{t("nav.down23")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>{t("nav.down21")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>{t("nav.down22")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>{t("nav.down23")}</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="/Lib" className="custom-nav-link">{t("nav.navLink")}</Nav.Link>
+                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>{t("nav.navLink")}</Nav.Link>
                         </Nav>
                         <Nav className="ms-auto d-flex align-items-center">
                             <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src="./GlobeT.svg" alt="Dropdown Icon" className="dropdown-image" />}>
@@ -110,4 +119,3 @@ export default Navnav;
 //Evnt: Fix accordeaon  
 //Menu: Center food
 //Footer
-//Calndr
