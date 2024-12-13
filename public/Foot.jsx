@@ -18,7 +18,7 @@ const Foot = () => {
           </Col>
         </Row>
         <Row>
-          <div className="footer-content">
+          <Col className="footer-content">
             <Col xs={12} md={6}>
               <div className="left-content">
                 <Link to="/#home" className="logo" onClick={() => handleNavLinkClick('home')}>
@@ -35,7 +35,7 @@ const Foot = () => {
                 <a href="#" className="social-icon"><img src="GPin.svg" alt="Pinterest" /></a>
               </div>
             </Col>
-          </div>
+          </Col>
         </Row>
       </Container>
     </section>
