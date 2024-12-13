@@ -8,7 +8,6 @@ body {
     text-align: center;
     height: 100%;
     overflow-x: hidden
-    /* Center text inside child elements */
 }
 
 .lib .container-fluid {
@@ -223,3 +222,11 @@ body {
     display: block;
   }
   
+  @media only screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
