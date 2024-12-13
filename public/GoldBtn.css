@@ -25,3 +25,11 @@
     transform: scale(1.1);
     color: rgba(165, 103, 11, 1);
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .rcustom-button .rcustom-button-title {
+        font-size: 12px !important;
+    }
+    
+}
