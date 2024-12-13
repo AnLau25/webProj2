@@ -1,18 +1,14 @@
 .footer {
     background-color: rgba(220, 212, 201, 1);
-}  
-
-.logo {
-    height: 50px;
-    width: auto;
 }
 
 .footer-content {
     margin: 0 auto;
     display: flex;
     align-items: flex-end;
-    box-sizing: border-box; 
-    justify-content: space-between; /* ensures space between left and right content */
+    box-sizing: border-box;
+    justify-content: space-between;
+    /* ensures space between left and right content */
 }
 
 .left-content {
@@ -24,7 +20,7 @@
 
 .right-content {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 
@@ -46,11 +42,19 @@
         text-align: center;
     }
 
-    .left-content {
-        font-size: 15px;
+    .right-content {
+        display: flex;
+        justify-content: center;
     }
 
-    .logo {
+    .left-content {
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .nav-brand {
         height: 50px;
         width: auto;
     }
@@ -58,7 +62,7 @@
     .social-icon img {
         width: 35px;
         height: 35px;
-        margin: 10px; 
+        margin: 10px;
         transition: transform 0.3s;
     }
 }
