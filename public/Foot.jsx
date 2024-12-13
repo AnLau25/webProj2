@@ -19,7 +19,7 @@ const Foot = () => {
         </Row>
         <Row>
           <div className="footer-content">
-            <Col xs={12} md={4}>
+            <Col xs={12} md={6}>
               <div className="left-content">
                 <Link to="/#home" className="logo" onClick={() => handleNavLinkClick('home')}>
                   <img src="./Tuntun_Logo1.svg" alt="Logo" className="navbar-brand" />
@@ -27,7 +27,7 @@ const Foot = () => {
                 <p>Copyright© Capricho de medianoche by Lupin powered by UO3525</p>
               </div>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={12} md={6}>
               <div align="end" className="right-content" >
                 <a href="#" className="social-icon"><img src="GInsta.svg" alt="Instagram" /></a>
                 <a href="#" className="social-icon"><img src="GSnap.svg" alt="Snapchat" /></a>

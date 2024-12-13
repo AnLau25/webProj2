@@ -3,14 +3,14 @@
 }
 
 .footer-container {
-    box-sizing: border-box; /* Add this line */
+    box-sizing: border-box; 
 }
 
 .footer-content {
     margin: 0 auto;
     display: flex;
     align-items: flex-end;
-    box-sizing: border-box; /* Add this line */
+    box-sizing: border-box; 
 }
 
 .left-content {
@@ -48,6 +48,18 @@
         color: rgba(63, 40, 7, 1);
         font-family: "Inknut Antiqua", serif;
         font-size: 15px;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    .social-icon img {
+        width: 35px;
+        height: 35px;
+        margin: 20px;
+        transition: transform 0.3s;
     }
 }
 
