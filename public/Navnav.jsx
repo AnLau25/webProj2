@@ -117,3 +117,4 @@ export default Navnav;
 //Pay: Up down formulair in menu
 //Evnt: Fix accordeaon  
 //Menu: Center food
+//Sinsout: Horizontal
