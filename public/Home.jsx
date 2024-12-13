@@ -6,6 +6,14 @@ import { useTranslation } from 'react-i18next';
 
 const Home = () => {
     const [t, i18n] = useTranslation('global');
+    const handleNavLinkClick = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const yOffset = -120; // Adjust offset to account for fixed navbar
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    };
    
     return (
         <section className='slideshow' id='home'>
