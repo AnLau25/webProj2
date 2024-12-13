@@ -1,20 +1,15 @@
 .footer {
     background-color: rgba(220, 212, 201, 1);
-    width: 100%;
-    overflow-x: hidden; /* Add this line to hide any overflow */
 }
 
 .footer-container {
-    padding: 0;
     box-sizing: border-box; /* Add this line */
 }
 
 .footer-content {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    padding: 0 5px;
     box-sizing: border-box; /* Add this line */
 }
 
@@ -28,23 +23,17 @@
 .logo {
     height: 100px;
     width: auto;
-    padding: 0;
-    margin: 0;
 }
 
 .right-content {
     display: flex;
-    align-items: flex-end;
 }
 
-.social-icon {
-    margin-left: 10px;
-}
 
 .social-icon img {
     width: 70px;
     height: 70px;
-    margin-bottom: 20px;
+    margin: 20px;
     transition: transform 0.3s;
 }
 
@@ -53,21 +42,13 @@
 }
 
 
-@media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
-	h1.section-title {
-		font-size: 6rem;
-	}
-	#hero h1 {
-		font-size: 7rem;
-	}
-  #about-us .about-bottom .about-person {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
+@media only screen and (max-width: 768px) {
+	.left-content {
+        text-align: left;
+        color: rgba(63, 40, 7, 1);
+        font-family: "Inknut Antiqua", serif;
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
