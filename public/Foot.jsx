@@ -23,7 +23,7 @@ const Foot = () => {
               <Col xs={12} md={6}>
                 <div className="left-content">
                   <Link to="/#home" className="logo" onClick={() => handleNavLinkClick('home')}>
-                    <img src="./Tuntun_Logo1.svg" alt="Logo" className="navbar-brand" />
+                    <img src="./Tuntun_Logo1.svg" alt="Logo" className="logo" />
                   </Link>
                   <p>Copyright© Capricho de medianoche by Lupin powered by UO3525</p>
                 </div>

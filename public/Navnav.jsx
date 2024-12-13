@@ -112,11 +112,10 @@ export default Navnav;
 //Nav: Change the after space on the buttons for in between
 //Nav: Fix dark arround hamburger menu
 //Nav: Take language out of hamburger menu
-//Home: Hix home panel
-//Home: Hix home links
+//Home: Fix home panel
+//Home: Fix home links
 //Home: Calibrate for gLine for sp
 //Lib: Center align books in lib
 //Pay: Up down formulair in menu
 //Evnt: Fix accordeaon  
 //Menu: Center food
-//Footer
