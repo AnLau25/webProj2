@@ -2,6 +2,11 @@
     background-color: rgba(220, 212, 201, 1);
 }  
 
+.logo {
+    height: 50px;
+    width: auto;
+}
+
 .footer-content {
     margin: 0 auto;
     display: flex;
@@ -19,7 +24,7 @@
 
 .right-content {
     display: flex;
-    justify-content: flex-end; /* ensures right-aligned content */
+    justify-content: flex-end; 
 }
 
 
@@ -36,9 +41,9 @@
 
 @media only screen and (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* stacks the content vertically on mobile */
-        align-items: center; /* centers the content */
-        text-align: center; /* centers text */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .left-content {
@@ -53,7 +58,7 @@
     .social-icon img {
         width: 35px;
         height: 35px;
-        margin: 10px; /* adjust spacing to be more compact */
+        margin: 10px; 
         transition: transform 0.3s;
     }
 }
