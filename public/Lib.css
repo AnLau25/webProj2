@@ -185,7 +185,7 @@ body {
 
 .lib .lateral-tab .toggle-btn {
     position: absolute;
-    left: -30px;
+    left: -50px;
     top: 50%;
     transform: translateY(-50%) rotate(90deg);
     width: 30px;
@@ -223,10 +223,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .lib .lateral-tab {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%); 
     }
 
 }
