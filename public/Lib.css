@@ -169,21 +169,21 @@ body {
     align-items: flex-start;
     padding: 10px;
     text-align: left;
-  }
-  
-  .lib .lateral-tab p{
+}
+
+.lib .lateral-tab p {
     font-family: "Inknut Antiqua", serif;
     color: rgba(63, 40, 7, 1);
     margin-top: 10px;
-  }
-  
-  .lib .lateral-tab h5{
+}
+
+.lib .lateral-tab h5 {
     color: rgba(165, 103, 11, 1);
     font-family: "Italianno", cursive;
     font-size: 30px;
-  }
-  
-  .lib .lateral-tab .toggle-btn {
+}
+
+.lib .lateral-tab .toggle-btn {
     position: absolute;
     left: -30px;
     top: 50%;
@@ -194,35 +194,35 @@ body {
     background-color: rgba(202, 181, 155, 1);
     border: none;
     cursor: pointer;
-  }
-  
-  .lib .lateral-tab .toggle-btn:focus,
-  .lib .lateral-tab .toggle-btn:hover {
-      transform: translateY(-50%) rotate(270deg);
-  }
-  
-  .lib .lateral-tab .toggle-icon {
+}
+
+.lib .lateral-tab .toggle-btn:focus,
+.lib .lateral-tab .toggle-btn:hover {
+    transform: translateY(-50%) rotate(270deg);
+}
+
+.lib .lateral-tab .toggle-icon {
     width: 100%;
     height: auto;
-  }
-  
-  .lib .lateral-tab.open {
+}
+
+.lib .lateral-tab.open {
     right: 0;
-  }
-  
-  .lib .lateral-tab:not(.open) {
+}
+
+.lib .lateral-tab:not(.open) {
     right: -300px;
-  }
-  
-  .lib .lateral-tab .tab-content {
+}
+
+.lib .lateral-tab .tab-content {
     display: none;
-  }
-  
-  .lib .lateral-tab.open .tab-content {
+}
+
+.lib .lateral-tab.open .tab-content {
     display: block;
-  }
-  
-  @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
