@@ -104,17 +104,17 @@
 
 @media only screen and (max-width: 768px) {
     .text-container h3 {
-        font-size: 35px !important;
+        font-size: 20px !important;
     }
 
     .text-container p,a {
-        font-size: 15px !important;
+        font-size: 10px !important;
     }
     
     .text-container h3::before {
         content: '';
         position: absolute;
-        top: 13%;
+        top: 20%;
         width: 90%;
         height: 1px;
         background-color: rgba(165, 103, 11, 1);

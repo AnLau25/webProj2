@@ -113,7 +113,7 @@ export default Navnav;
 //Nav: Fix dark arround hamburger menu
 //Nav: Take language out of hamburger menu
 //Home: Fix home links
-//Lib: Center align books in lib
+//Lib: Fix lateral tab to p center
 //Pay: Up down formulair in menu
 //Evnt: Fix accordeaon  
 //Menu: Center food
