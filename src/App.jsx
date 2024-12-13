@@ -21,8 +21,3 @@ function App() {
 
 export default App
 
-//~Home~+~AbtUs~+Calender
-//~Events~+~Menu~+Pay
-//Figure how to wrap tab-cntnt + add borders on menu
-//Lib
-//~Nav~ / ~Footer~ 

@@ -26,8 +26,8 @@ const Home = () => {
                 <h3>{t('home.h3')}</h3>
                 <p>{t('home.p')}</p>
                 <div className='nav-links'>
-                    <a as={Link} to="/#abtus" className='nav-link'>{t('home.a1')}</a>
-                    <a as={Link} to="/Cafe#events" className='nav-link'>{t('home.a2')}</a>
+                    <a href="/#abtus" className='nav-link'>{t('home.a1')}</a>
+                    <a href="/Cafe#events" className='nav-link'>{t('home.a2')}</a>
                 </div>
             </div>
         </section>

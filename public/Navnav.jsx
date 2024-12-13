@@ -57,7 +57,7 @@ const Navnav = () => {
                         <Nav className="nav-middle mx-auto">
                             <NavDropdown title={t('nav.dropt1')} className="no-caret">
                                 <NavDropdown.Item href="/#abtus">{t("nav.down11")}</NavDropdown.Item>
-                                <NavDropdown.Item href="/#clndr">{t("nav.down12")}</NavDropdown.Item>
+                                <NavDropdown.Item href="/clndr">{t("nav.down12")}</NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title={t("nav.dropt2")} className="no-caret">
                                 <NavDropdown.Item href="/Cafe#events">{t("nav.down21")}</NavDropdown.Item>
