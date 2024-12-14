@@ -5,6 +5,7 @@
     background-color: transparent;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .pay .inner-container form h1 {

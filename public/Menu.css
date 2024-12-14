@@ -105,4 +105,8 @@
     .menu .tab-content .tab-pane img{
         width: 40%;
     }
+
+    .menu .tab-content{
+        margin-left: -10px;
+    }
 }
