@@ -15,56 +15,56 @@ const workHours = {
 
 const predefinedEvents = [
   {
-    day: 'Sunday',
+    day: 7,
     start: moment().day(7).hour(12).minute(0).second(0),
     end: moment().day(7).hour(13).minute(0).second(0),
     title: 'Mediodía de teatro (Esp)',
     description: 'Hablamos de obras de teatro mientras degustamos un refrigerio, nada nuevo.'
   },
   {
-    day: 'Monday',
+    day: 1,
     start: moment().day(1).hour(10).minute(0).second(0),
     end: moment().day(1).hour(11).minute(0).second(0),
     title: 'Verne\'s reading club (Eng)',
     description: 'Join us for breakfast and let\'s discuss some of mankind\'s most daring adventures.'
   },
   {
-    day: 'Monday',
+    day: 1,
     start: moment().day(1).hour(14).minute(0).second(0),
     end: moment().day(1).hour(15).minute(0).second(0),
     title: 'Greek Myth exploration gang (Eng)',
     description: 'You bring the myth we bring the snack'
   },
   {
-    day: 'Tuesday',
+    day: 2,
     start: moment().day(2).hour(15).minute(30).second(0),
     end: moment().day(2).hour(17).minute(0).second(0),
     title: 'Horror Tuesdays (Eng)',
     description: 'We discuss horror classics on a Tuesday evening because Monday is scary enough as-is and the night is for binge-watching Sponge Bob.'
   },
   {
-    day: 'Wednesday',
+    day: 3,
     start: moment().day(3).hour(15).minute(30).second(0),
     end: moment().day(3).hour(17).minute(0).second(0),
     title: 'Love birds chirping club (Eng)',
     description: 'We like romance, drama and hot chocolate, come join us!'
   },
   {
-    day: 'Thursday',
+    day: 4,
     start: moment().day(5).hour(13).minute(0).second(0),
     end: moment().day(5).hour(14).minute(0).second(0),
     title: 'El culto de Samsagaz (Esp)',
     description: 'Nada raro, solo nos sentamos a discutir teorías o leer El Señor de los Anillos. ¡Pero admite que el título es atractivo!'
   },
   {
-    day: 'Friday',
+    day: 5,
     start: moment().day(5).hour(13).minute(0).second(0),
     end: moment().day(5).hour(14).minute(0).second(0),
     title: 'Victorian readings and biscuits (Eng)',
     description: 'A bunch of bored peasants gather to munch and talk about books, except it\'s all Victorian romance and social critique.'
   },
   {
-    day: 'Saturday',
+    day: 6,
     start: moment().day(7).hour(12).minute(0).second(0),
     end: moment().day(7).hour(13).minute(0).second(0),
     title: '¡Ciencia y ficción! (Esp)',
@@ -96,7 +96,6 @@ const Clndr = () => {
     setSelectedDay(day);
     setShowToast(true);
   };
-
   
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -121,9 +120,18 @@ const Clndr = () => {
     setShowLateralToast(true);
   };
 
+  const daysOfWeek = [
+    { name: t("clndr.days.Sunday"), iso: 7 },
+    { name: t("clndr.days.Monday"), iso: 1 },
+    { name: t("clndr.days.Tuesday"), iso: 2 },
+    { name: t("clndr.days.Wednesday"), iso: 3 },
+    { name: t("clndr.days.Thursday"), iso: 4 },
+    { name: t("clndr.days.Friday"), iso: 5 },
+    { name: t("clndr.days.Saturday"), iso: 6 },
+  ];
 
-  const renderEvents = (day) => {
-    const dayEvents = events.filter(event => event.day === day);
+  const renderEvents = (iso) => {
+    const dayEvents = events.filter(event => event.day === iso);
 
     return dayEvents.map((event, index) => {
       const startMinutes = event.start.hours() * 60 + event.start.minutes();
@@ -147,8 +155,6 @@ const Clndr = () => {
     });
   };
 
-  const daysOfWeek = moment.weekdays();
-
   return (
     <>
       <section className="clndr" id='clndr'>
@@ -159,12 +165,12 @@ const Clndr = () => {
         <Row>
           <Container className='clndr-container'>
             <Row>
-              {daysOfWeek.map(day => (
-                <Col key={day}>
-                  <div className="day-column" onClick={() => handleDayClick(day)}>
-                    <h5>{day}</h5>
+              {daysOfWeek.map(({name, iso}) => (
+                <Col key={iso}>
+                  <div className="day-column" onClick={() => handleDayClick(name)}>
+                    <h5>{name}</h5>
                     <div className="time-line">
-                      {renderEvents(day)}
+                      {renderEvents(iso)}
                     </div>
                   </div>
                 </Col>

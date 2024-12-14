@@ -56,7 +56,7 @@
       "header": "Our Schedule",
       "content": "Wanna get more detail about the reading clubs? Just hover over them! Wanna suggest us a club idea? Click on the schedule to fill out the form and we'll contact you about it."
     },
-    "daysOfWeek": {
+    "days": {
       "Sunday": "Sunday",
       "Monday": "Monday",
       "Tuesday": "Tuesday",

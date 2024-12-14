@@ -45,6 +45,7 @@
   cursor: pointer;
   border-radius: 0 0 30px 30px;
   box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .event-card {
@@ -207,4 +208,64 @@
 
 .clndr .lateral-tab.open .tab-content {
   display: block;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .clndr.lateral-tab {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%); 
+  }
+
+  .clndr.lateral-tab p {
+      font-size: 12px;
+  }
+  
+  .clndr.lateral-tab h5 {
+      font-size: 25px;
+  }
+
+  .day-column h5 {
+    font-size: 30px;
+    text-decoration-thickness: 1px;
+  }
+  
+  .clndr h1 {
+    font-size: 40px !important;
+    text-decoration-thickness: 1px;
+  }
+
+  .event-card {
+    font-size: 10px;
+  }
+  
+  .clndr .tiny .toast-body {
+    font-size: 12px;
+  }
+  /*_____________________Hand down_____________________________*/
+  .clndr .btn-close{
+    height: 2px;
+    width: auto;
+    margin: 15px;
+  }
+
+  .clndr .toast-header .me-auto{
+    font-size: 30px;
+    margin-bottom: -10px;
+  }
+
+  .clndr .form-label {
+    font-size: 12px;
+  }
+
+  .clndr .form-control {
+    font-size: 12px;
+  }
 }

@@ -57,7 +57,7 @@
       "header": "Calendario",
       "content": "¿Quieres obtener más detalles sobre los clubes de lectura? ¡Solo pasa el cursor sobre ellos! ¿Quieres sugerirnos una idea de club? Haz clic en el horario para completar el formulario y nos pondremos en contacto contigo al respecto."
     },
-    "daysOfWeek": {
+    "days": {
       "Sunday": "Domingo",
       "Monday": "Lunes",
       "Tuesday": "Martes",
