@@ -2,7 +2,7 @@
   "nav": {
     "dropt1": "Our Capricho",
     "down11": "About Us",
-    "down12": "Schedue",
+    "down12": "Schedule",
     "dropt2": "Our Café",
     "down21": "Events",
     "down22": "Menu",
@@ -279,5 +279,9 @@
       "subq": "Already got an account?",
       "btn": "Sign In"
     }
+  },
+
+  "goldCard":{
+      "title":"Contact Us"
   }
 }

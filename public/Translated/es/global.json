@@ -280,5 +280,10 @@
       "subq": "¿Ya tienes cuenta?",
       "btn": "Inicia sesión"
     }
+},
+
+"goldCard":{
+  "title":"Contactanos"
 }
+
 }

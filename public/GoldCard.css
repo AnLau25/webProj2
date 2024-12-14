@@ -61,7 +61,7 @@
 
 .gold-card__socials {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin-top: 30px;
 }
 
@@ -76,20 +76,32 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 1397px) {
-    .gold-card {
-        height: 520px;
-        width: 450px;
+@media only screen and (max-width: 768px) {
+
+    .gold-card .gold-card__header {
+        font-size: 20px !important;
     }
+
+    .gold-card__header::before {
+        height: 1px;
+    }
+
+    .gold-card .icon_contacts{
+        font-size: 15px;
+        margin-bottom: -15px;
+
+    }
+    
+    .gold-card__contact-list-item {
+        font-size: 15px !important;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
 
     .gold-card__socials a img {
-        width: 52px;
-        height: 52px;
-    }
-
-    .gold-card__contact-list-item img {
-        margin-right: 10px;
         width: 40px;
         height: 40px;
     }
+    
 }

@@ -115,7 +115,6 @@ export default Navnav;
 //Home: Fix home links
 //Pay: Up down formulair in menu
 //Sinsout: Horizontal
-//EndAlign that cake
 //BgFix~
 
 /*

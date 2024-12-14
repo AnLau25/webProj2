@@ -113,16 +113,16 @@ const Pay = () => {
 
     return (
         <section className='pay' id='pay'>
-            <Container className='h-100 form-container'>
+            <Container fluid className='h-100 form-container'>
                 <Row className='h-100 align-items-center justify-content-center'>
                     <Col md={7} className='form-section'>
                         <div className="inner-container">
                             <Form ref={formRef} onSubmit={handleSubmit}>
-                                <Row>
+                                <Row className="g-3">
                                     <h1>{t("pay.header")}</h1>
                                     <GoldSep />
                                     <h3>{t("pay.eventTitle")}</h3>
-                                    <Col sm={6} className='px-1 form-element'>
+                                    <Col xs={12} md={6} className='px-1 form-element'>
                                         <Form.Control
                                             as="select"
                                             className={`form-control custom-select ${!validation.site ? 'is-invalid' : ''}`}
@@ -137,7 +137,7 @@ const Pay = () => {
                                             <option value="Nicolás Maquiavelo">Nicolás Maquiavelo</option>
                                         </Form.Control>
                                     </Col>
-                                    <Col sm={6} className='px-1 form-element'>
+                                    <Col xs={12} md={6} className='px-1 form-element'>
                                         {site !== 'Club' ? (
                                             <Form.Control
                                                 as="select"
