@@ -80,8 +80,8 @@
     font-size: 15px;
 }
 
-.menu .tab-content .img2,
-.menu .tab-content .img1{
+
+.menu .tab-content .tab-pane img{
     width: 60%;
 }
 
@@ -111,7 +111,4 @@
         margin-left: -40px;
     }
 
-    .menu .tab-content .img2{
-        margin-right: -40px !important;
-    }
 }
