@@ -113,7 +113,7 @@ const Pay = () => {
 
     return (
         <section className='pay' id='pay'>
-            <Container fluid className='h-100 form-container'>
+            <Container className='h-100 form-container'>
                 <Row className='h-100 align-items-center justify-content-center'>
                     <Col md={7} className='form-section'>
                         <div className="inner-container">

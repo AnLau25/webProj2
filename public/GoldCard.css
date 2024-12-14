@@ -12,10 +12,10 @@
 }
 
 .gold-card__header {
-    font-size: 30px !important;
+    font-size: 25px !important;
     font-weight: bold;
     margin-bottom: 30px !important;
-    margin-top: 20px;
+    margin-top: 15px;
     text-align: left;
     position: relative;
 }
