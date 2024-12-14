@@ -113,7 +113,6 @@ export default Navnav;
 //Nav: Fix dark arround hamburger menu
 //Nav: Take language out of hamburger menu
 //Home: Fix home links
-//Pay: Up down formulair in menu
 //Sinsout: Horizontal
 //BgFix~
 

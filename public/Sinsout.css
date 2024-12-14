@@ -1,10 +1,8 @@
-
 .sinsout {
     background-color: rgba(220, 212, 201, 1);
     border-radius: 40px;
     position: relative;
     overflow: hidden;
-    width: 50vw;
     min-height: 480px;
     max-width: 100%;
 }
@@ -18,12 +16,12 @@
     font-family: "Italianno", cursive;
 }
 
-.sinsout p{
+.sinsout p {
     font-size: 20px;
     font-family: "Inknut Antiqua", serif !important;
 }
 
-.sinsout h5{
+.sinsout h5 {
     font-size: 12px;
     padding-bottom: 5px;
     font-family: "Inknut Antiqua", serif !important;
@@ -47,7 +45,8 @@
 }
 
 .sinsout .switch {
-    background-color: rgba(202, 181, 155, 1);;
+    background-color: rgba(202, 181, 155, 1);
+    ;
     height: 100%;
     color: rgba(63, 40, 7, 1);
     position: relative;
@@ -96,19 +95,19 @@
 }
 
 .close-btn {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  background: none;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 2000;
-  color: rgba(165, 103, 11, 1); 
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2000;
+    color: rgba(165, 103, 11, 1);
 }
 
 .col-md-6 {
-  position: relative; 
+    position: relative;
 }
 
 
@@ -123,10 +122,79 @@
 .line {
     width: 40%;
     height: 1px;
-    background-color: rgba(165, 103, 11, 1); 
+    background-color: rgba(165, 103, 11, 1);
 }
 
 .symbol {
-    width:10%;
+    width: 10%;
     margin: 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sinsout {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .sinsout .col-md-6 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sinsout .right-box {
+        padding: 20px;
+    }
+
+    /* Switch Content Container */
+    .sinsout .switch-content {
+        position: absolute; /* Consistent positioning */
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transform: translateY(-50%); /* Center align by default */
+        transition: transform 0.6s ease-in-out;
+        border-radius: 0;
+    }
+
+    /* Switch Panels */
+    .sinsout .switch {
+        width: 100%;
+        height: 200%; /* Twice the height for sliding effect */
+        transform: translateY(0); /* Default alignment */
+        transition: transform 0.6s ease-in-out;
+    }
+
+    .sinsout .switch-panel {
+        position: absolute;
+        width: 100%;
+        height: 50%; /* Adjust for sliding effect */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        top: 0;
+        transform: translateY(0); /* Default state */
+        transition: transform 0.6s ease-in-out;
+    }
+
+    /* Switch Panel States */
+    .sinsout .switch-left {
+        top: 0;
+        transform: translateY(-100%); /* Move off-screen above */
+    }
+
+    .sinsout.active .switch-left {
+        transform: translateY(0); /* Slide into view */
+    }
+
+    .sinsout .switch-right {
+        top: 50%;
+        transform: translateY(0); /* Default below the visible screen */
+    }
+
+    .sinsout.active .switch-right {
+        transform: translateY(100%); /* Slide off-screen */
+    }
 }
