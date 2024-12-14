@@ -117,4 +117,12 @@ export default Navnav;
 //Evnt: Fix accordeaon  
 //Menu: Center food
 //Sinsout: Horizontal
-//Clndr: lang
+
+/*
+Learning notes:
+
+Cosas como las tallas de las letras y los estilos ponlos todos en la app para no tener que 
+corregirlos en cada condenada pagina.
+
+
+*/

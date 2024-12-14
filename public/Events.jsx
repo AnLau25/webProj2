@@ -20,12 +20,16 @@ const Events = () => {
                                         <div className='txt'>
                                             <h1>{t("events.readersTab.libraryCollection.title")}</h1>
                                             <p>{t("events.readersTab.libraryCollection.description")}</p>
-                                            <GoldBtn href="/Lib" prop={t("events.readersTab.libraryCollection.buttonText")}/>
+                                            <div className='stupidity-is-an-option-so-is-hardcoding'>
+                                                <GoldBtn href="/Lib" prop={t("events.readersTab.libraryCollection.buttonText")} />
+                                            </div>
                                         </div>
                                         <div className='txt'>
                                             <h1>{t("events.readersTab.cafeAndMenu.title")}</h1>
                                             <p>{t("events.readersTab.cafeAndMenu.description")}</p>
-                                            <GoldBtn href="/Cafe#menu" prop={t("events.readersTab.cafeAndMenu.buttonText")} />
+                                            <div className='stupidity-is-an-option-so-is-hardcoding'>
+                                                <GoldBtn href="/Cafe#menu" prop={t("events.readersTab.cafeAndMenu.buttonText")} />
+                                            </div>
                                         </div>
                                     </Col>
                                     <Col xs={12} md={8} className='events-card'>
@@ -38,31 +42,31 @@ const Events = () => {
                                                         <div>{t("events.readersTab.accordion.au1.title")}</div>
                                                     </Accordion.Header>
                                                     <Accordion.Body>
-                                                    {t("events.readersTab.accordion.au1.description")}</Accordion.Body>
+                                                        {t("events.readersTab.accordion.au1.description")}</Accordion.Body>
                                                 </Accordion.Item>
                                                 <Accordion.Item eventKey="1">
-                                                <Accordion.Header>
+                                                    <Accordion.Header>
                                                         <div className='auth'><span>{t("events.readersTab.accordion.au2.author")}</span>{t("events.readersTab.accordion.au2.days")}</div>
                                                         <div>{t("events.readersTab.accordion.au2.title")}</div>
                                                     </Accordion.Header>
                                                     <Accordion.Body>
-                                                    {t("events.readersTab.accordion.au2.description")}</Accordion.Body>
+                                                        {t("events.readersTab.accordion.au2.description")}</Accordion.Body>
                                                 </Accordion.Item>
                                                 <Accordion.Item eventKey="2">
-                                                <Accordion.Header>
+                                                    <Accordion.Header>
                                                         <div className='auth'><span>{t("events.readersTab.accordion.au3.author")}</span>{t("events.readersTab.accordion.au3.days")}</div>
                                                         <div>{t("events.readersTab.accordion.au3.title")}</div>
                                                     </Accordion.Header>
                                                     <Accordion.Body>
-                                                    {t("events.readersTab.accordion.au3.description")}</Accordion.Body>
+                                                        {t("events.readersTab.accordion.au3.description")}</Accordion.Body>
                                                 </Accordion.Item>
                                                 <Accordion.Item eventKey="3">
-                                                <Accordion.Header>
+                                                    <Accordion.Header>
                                                         <div className='auth'><span>{t("events.readersTab.accordion.au4.author")}</span>{t("events.readersTab.accordion.au1.days")}</div>
                                                         <div>{t("events.readersTab.accordion.au4.title")}</div>
                                                     </Accordion.Header>
                                                     <Accordion.Body>
-                                                    {t("events.readersTab.accordion.au4.description")}</Accordion.Body>
+                                                        {t("events.readersTab.accordion.au4.description")}</Accordion.Body>
                                                 </Accordion.Item>
                                             </Accordion>
                                         </Container>
@@ -72,31 +76,37 @@ const Events = () => {
                         </Tab>
                         <Tab eventKey="wrtrs" title={t("events.tabs.t2")}>
                             <div className='tab-content'>
-                            <Row>
+                                <Row>
                                     <Col xs={12} md={6} className='txt-container'>
                                         <div className='txt'>
                                             <h1>{t("events.pagesTab.schedule.title")}</h1>
                                             <p>{t("events.pagesTab.schedule.description")}</p>
-                                            <GoldBtn href="/#clndr" prop={t("events.pagesTab.schedule.buttonText")} />
+                                            <div className='stupidity-is-an-option-so-is-hardcoding'>
+                                                <GoldBtn href="/#clndr" prop={t("events.pagesTab.schedule.buttonText")} />
+                                            </div>
                                         </div>
                                         <div className='txt'>
-                                        <h1>{t("events.pagesTab.clubs.title")}</h1>
+                                            <h1>{t("events.pagesTab.clubs.title")}</h1>
                                             <p>{t("events.pagesTab.clubs.description")}</p>
                                         </div>
                                     </Col>
                                     <Col xs={12} md={6} className='txt-container'>
                                         <div className='txt'>
-                                        <h1>{t("events.pagesTab.paidEvents.title")}</h1>
+                                            <h1>{t("events.pagesTab.paidEvents.title")}</h1>
                                             <p>{t("events.pagesTab.paidEvents.description")}</p>
-                                            <GoldBtn href="/Cafe#pay" prop={t("events.pagesTab.paidEvents.buttonText")} />
+                                            <div className='stupidity-is-an-option-so-is-hardcoding'>
+                                                <GoldBtn href="/Cafe#pay" prop={t("events.pagesTab.paidEvents.buttonText")} />
+                                            </div>
                                         </div>
                                         <div className='txt'>
                                             <h1>{t("events.pagesTab.damagedBooks.title")}</h1>
                                             <p>{t("events.pagesTab.damagedBooks.description")}</p>
-                                            <GoldBtn href="/Lib" prop={t("events.pagesTab.damagedBooks.buttonText")} />
+                                            <div className='stupidity-is-an-option-so-is-hardcoding'>
+                                                <GoldBtn href="/Lib" prop={t("events.pagesTab.damagedBooks.buttonText")} />
+                                            </div>
                                         </div>
                                     </Col>
-                                    
+
                                 </Row>
                             </div>
                         </Tab>

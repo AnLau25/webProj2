@@ -1,6 +1,7 @@
 .events .tab-container {
-    padding:150px 0px 100px 0px ;
+    padding: 150px 0px 100px 0px;
 }
+
 /*Top Right Btm Left*/
 .events .custom-tabs {
     border: none;
@@ -16,7 +17,7 @@
     line-height: 1;
     border-color: rgba(165, 103, 11, 1);
     border-width: 2px;
-    border-style: solid; 
+    border-style: solid;
 }
 
 .custom-tabs .nav-link:focus,
@@ -26,7 +27,7 @@
     background-color: rgba(220, 212, 201, 1);
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    border-color:rgba(220, 212, 201, 1);
+    border-color: rgba(220, 212, 201, 1);
 }
 
 .events .tab-content {
@@ -41,7 +42,7 @@
     padding: 15px;
 }
 
-.events .tab-container .txt{
+.events .tab-container .txt {
     padding: 10px;
 }
 
@@ -70,7 +71,7 @@
     padding: 30px;
     border-color: rgba(165, 103, 11, 1);
     border-width: 2px;
-    border-style: solid; 
+    border-style: solid;
     height: 66vh;
 }
 
@@ -89,11 +90,11 @@
     font-size: 15px;
 }
 
-.events .accord-container .accordion-header span{
+.events .accord-container .accordion-header span {
     text-decoration: underline;
 }
 
-.events .accord-container .accordion-header span::after{
+.events .accord-container .accordion-header span::after {
     content: "";
     display: inline-block;
     width: 10px;
@@ -103,7 +104,7 @@
     vertical-align: middle;
 }
 
-.events .accord-container .accordion-button:not(.collapsed) span::after{
+.events .accord-container .accordion-button:not(.collapsed) span::after {
     height: 2px;
 }
 
@@ -158,7 +159,7 @@
     align-items: start;
     text-align: left;
     box-shadow: none;
-    overflow-y: auto !important; 
+    overflow-y: auto !important;
 }
 
 .accordion-flush>.accordion-item>.accordion-collapse {
@@ -167,9 +168,9 @@
 
 .placeholder {
     color: rgba(165, 103, 11, 1);
-   font-size: 60px;
-   font-family: "Italianno", cursive;
-   background-color: transparent;
+    font-size: 60px;
+    font-family: "Italianno", cursive;
+    background-color: transparent;
 }
 
 .events .accord-container .accordion-body::-webkit-scrollbar {
@@ -177,7 +178,7 @@
 }
 
 .events .accord-container .accordion-body::-webkit-scrollbar-track {
-    background: transparent 
+    background: transparent
 }
 
 .events .accord-container .accordion-body::-webkit-scrollbar-thumb {
@@ -186,4 +187,40 @@
 
 .events .accord-container .accordion-body::-webkit-scrollbar-thumb:hover {
     background: rgba(165, 103, 11, 1);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .placeholder,
+    .events .custom-tabs .nav-link {
+        font-size: 40px;
+    }
+
+    .events .tab-content h1 {
+        font-size: 20px;
+    }
+
+    .events .events-card h1::before {
+        height: 0px !important;
+    }
+
+    .events .tab-content h1::before {
+        height: 1px;
+    }
+
+
+    .events .tab-content p,
+    .accord-container .accordion-body {
+        font-size: 12px;
+    }
+
+    .events .accordion-header .accordion-button {
+        font-size: 15px;
+    }
+
+    .events .stupidity-is-an-option-so-is-hardcoding {
+        display: flex;
+        justify-content: flex-end;
+
+    }
 }

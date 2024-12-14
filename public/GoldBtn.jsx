@@ -11,7 +11,7 @@ const GoldBtn = ({ prop, onClick, href = '#' }) => {
                         onClick(); 
                     } 
                 }}>
-                <Button type='button' className='rcustom-button'>
+                <Button type='button' className='rcustom-button '>
                     <h5 className='rcustom-button-title'>{prop}</h5>
                 </Button>
             </a>
