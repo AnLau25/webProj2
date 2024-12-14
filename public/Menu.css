@@ -68,7 +68,7 @@
 .menu .tab-content .tab-pane h1{
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .menu .tab-content .tab-pane h3{
@@ -108,7 +108,7 @@
     }
 
     .menu .tab-content{
-        margin-left: -40px;
+        margin-left: -20px;
     }
 
 }
