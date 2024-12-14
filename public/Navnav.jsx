@@ -114,9 +114,9 @@ export default Navnav;
 //Nav: Take language out of hamburger menu
 //Home: Fix home links
 //Pay: Up down formulair in menu
-//Evnt: Fix accordeaon  
 //Menu: Center food
 //Sinsout: Horizontal
+//BgFix~
 
 /*
 Learning notes:

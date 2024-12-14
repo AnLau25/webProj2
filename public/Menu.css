@@ -83,3 +83,26 @@
 .menu .tab-content .tab-pane img{
     width: 60%;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .menu .nav.nav-pills .nav-link {
+        font-size: 30px !important;
+     }
+    
+     .menu .tab-content .tab-pane h1{
+        font-size: 20px;
+    }
+    
+    .menu .tab-content .tab-pane h3{
+        font-size: 15px;
+    }
+    
+    .menu .tab-content .tab-pane p{
+        font-size: 12px;
+    }
+    
+    .menu .tab-content .tab-pane img{
+        width: 40%;
+    }
+}

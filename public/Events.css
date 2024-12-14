@@ -1,3 +1,7 @@
+.events{
+    overflow-x: hidden;
+}
+
 .events .tab-container {
     padding: 150px 0px 100px 0px;
 }
@@ -222,5 +226,9 @@
         display: flex;
         justify-content: flex-end;
 
+    }
+
+    .events .events-card {
+        height: 67vh;
     }
 }
