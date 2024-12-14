@@ -1,5 +1,6 @@
 .events{
     overflow-x: hidden;
+    margin: 5px;
 }
 
 .events .tab-container {
@@ -229,6 +230,6 @@
     }
 
     .events .events-card {
-        height: 73vh !important;
+        height: 70vh !important;
     }
 }
