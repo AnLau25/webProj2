@@ -109,4 +109,8 @@
     .menu .tab-content{
         margin-left: -40px;
     }
+
+    .menu .tab-content .img{
+        margin-right: -40px;
+    }
 }

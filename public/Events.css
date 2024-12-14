@@ -1,6 +1,5 @@
 .events{
     overflow-x: hidden;
-    margin: 5px;
 }
 
 .events .tab-container {
@@ -230,6 +229,10 @@
     }
 
     .events .events-card {
-        height: 70vh !important;
+        height: 72vh !important;
+    }
+
+    .events .tab-container {
+        padding: 150px 5px 100px 5px;
     }
 }
