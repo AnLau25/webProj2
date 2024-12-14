@@ -83,5 +83,9 @@
         padding-bottom: 5px;
         text-align: justify;
     }
+
+    .map-container {
+        padding-right: 100px;
+    }
     
 }
