@@ -4,7 +4,7 @@ body {
 
 .lib {
     background-color: rgba(220, 212, 201, 1);
-    padding-top: 120px;
+    margin-top: 100px;
     text-align: center;
     height: 100%;
     overflow-x: hidden
@@ -241,4 +241,14 @@ body {
         background-color: rgba(220, 212, 201, 1);
         padding-top: 60px;
     }
+
+    .lib {
+        margin-top: 40px;
+    }
+
+    .lib h1 {
+        font-size: 40px !important;
+        margin-top: 20px;
+    }
+
 }
