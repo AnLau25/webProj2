@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Menu.css';
-import './Bluebg.css';
 import GoldBtn from './GoldBtn';
 import { Row, Col, Container, Tabs, Tab, Nav } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';

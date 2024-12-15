@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import './Pay.css';
-import './Bluebg.css';
 import GoldBtnBase from './GoldBtnBase';
 import GoldCard from './GoldCard';
 import GoldSep from './GoldSep';
