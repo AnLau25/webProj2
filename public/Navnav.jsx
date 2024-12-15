@@ -78,7 +78,7 @@ const Navnav = () => {
                             </NavDropdown>
                             <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>{t("nav.navLink")}</Nav.Link>
                         </Nav>
-                        <Nav className="ms-auto d-flex align-items-center">
+                        <Nav className="ms-auto d-flex">
                             <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src="./GlobeT.svg" alt="Dropdown Icon" className="dropdown-image" />}>
                                 <NavDropdown.Item onClick={() => changeLanguage('en')}>English</NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => changeLanguage('es')}>Español</NavDropdown.Item>
@@ -112,8 +112,7 @@ const Navnav = () => {
 
 export default Navnav;
 
-//Home: Fix home links
-//BgFix~
+
 
 /*
 Learning notes:

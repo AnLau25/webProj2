@@ -168,4 +168,13 @@
         width: 20px;
         padding: 0 !important;
     }
+
+    .navbar-collapse .custom-image-dropdown {
+        margin-left: 0;
+        justify-content: start !important;
+    }
+
+    .custom-navbar .custom-nav-link, .navbar-nav .nav-item .dropdown-toggle {
+        font-size: 15px !important;
+    }
 }

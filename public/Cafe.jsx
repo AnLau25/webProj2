@@ -3,6 +3,7 @@ import Events from '/public/Events'
 import Menu from './Menu'
 import Pay from './Pay'
 import Foot from './Foot'
+import './Cafe.css';
 
 const Cafe = () => {
   return (

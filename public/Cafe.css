@@ -1,0 +1,8 @@
+.background-banner {
+    background-image: url('./BlueBBg.jpg'); /* Add your image */
+    background-attachment: fixed; /* Keep background fixed */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-size: cover; /* Cover the entire div */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+  }
