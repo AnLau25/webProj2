@@ -1,6 +1,5 @@
 import React from 'react';
 import './Events.css';
-import './Bluebg.css';
 import GoldBtn from './GoldBtn';
 import { Row, Col, Container, Tabs, Tab, Accordion } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Button, Container, Modal } from 'react-bootstrap';
 import './Navnav.css';
 import Sinsout from './Sinsout';
-import ussImg from "./ussimg.svg"
-import inImg from './inimg.svg'
+import ussImg from "./ussimg.svg";
+import inImg from './inimg.svg';
 import { useTranslation } from 'react-i18next';
 
 const Navnav = () => {
@@ -12,8 +12,11 @@ const Navnav = () => {
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     };
+
     const [showModal, setShowModal] = useState(false);
     const [isSignedIn, setIsSignedIn] = useState(false);
+    const [navbarExpanded, setNavbarExpanded] = useState(false); // Track navbar state
+
     const navigate = useNavigate();
 
     const handleShow = () => setShowModal(true);
@@ -35,6 +38,7 @@ const Navnav = () => {
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
+        setNavbarExpanded(false); // Close the navbar
     };
 
     useEffect(() => {
@@ -54,29 +58,42 @@ const Navnav = () => {
 
     return (
         <>
-            <Navbar className="custom-navbar" expand="lg" fixed="top">
+            <Navbar 
+                className="custom-navbar" 
+                expand="lg" 
+                fixed="top" 
+                expanded={navbarExpanded} // Bind state to control expanded state
+                onToggle={(expanded) => setNavbarExpanded(expanded)} // Update state on toggle
+            >
                 <Container fluid>
-                    {/* Navbar.Brand outside of Navbar.Collapse */}
                     <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
                         <img src='./Tuntun_Logo1.svg' alt='Logo' className="navbar-brand" />
                     </Navbar.Brand>
-
-                    {/* Navbar.Toggle for the hamburger menu */}
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-                    {/* Navbar.Collapse for collapsible menu items */}
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="nav-middle mx-auto">
                             <NavDropdown title={t('nav.dropt1')} className="no-caret">
-                                <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>{t("nav.down11")}</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('clndr')}>{t("nav.down12")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>
+                                    {t("nav.down11")}
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/#clndr" onClick={() => handleNavLinkClick('clndr')}>
+                                    {t("nav.down12")}
+                                </NavDropdown.Item>
                             </NavDropdown>
                             <NavDropdown title={t("nav.dropt2")} className="no-caret">
-                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>{t("nav.down21")}</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>{t("nav.down22")}</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>{t("nav.down23")}</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#events" onClick={() => handleNavLinkClick('events')}>
+                                    {t("nav.down21")}
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#menu" onClick={() => handleNavLinkClick('menu')}>
+                                    {t("nav.down22")}
+                                </NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Cafe#pay" onClick={() => handleNavLinkClick('pay')}>
+                                    {t("nav.down23")}
+                                </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>{t("nav.navLink")}</Nav.Link>
+                            <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>
+                                {t("nav.navLink")}
+                            </Nav.Link>
                         </Nav>
                         <Nav className="ms-auto d-flex">
                             <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src="./GlobeT.svg" alt="Dropdown Icon" className="dropdown-image" />}>
@@ -111,6 +128,7 @@ const Navnav = () => {
 };
 
 export default Navnav;
+
 
 
 
