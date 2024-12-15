@@ -56,13 +56,30 @@ const Navnav = () => {
         <>
             <Navbar className="custom-navbar" expand="lg" fixed="top">
                 <Container fluid>
+                    <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
+                        <img src="./Tuntun_Logo1.svg" alt="Logo" className="navbar-brand" />
+                    </Navbar.Brand>
+                    <div className="d-flex align-items-center">
+                        <NavDropdown align="end" className="no-caret custom-image-dropdown me-3" id="custom-dropdown" title={<img src="./GlobeT.svg" alt="Dropdown Icon" className="dropdown-image" />}>
+                            <NavDropdown.Item onClick={() => changeLanguage('en')}>English</NavDropdown.Item>
+                            <NavDropdown.Item onClick={() => changeLanguage('es')}>Español</NavDropdown.Item>
+                        </NavDropdown>
+                        <div className="login-signup">
+                            {isSignedIn ? (
+                                <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src={ussImg} alt="User" className="dropdown-image" />}>
+                                    <NavDropdown.Item onClick={handleSignOut}>{t("nav.sinOut")}</NavDropdown.Item>
+                                </NavDropdown>
+                            ) : (
+                                <Nav.Link className="no-caret custom-nav-link" onClick={handleShow}>
+                                    <div>
+                                        <img src={inImg} alt="User" className="dropdown-image" />
+                                    </div>
+                                </Nav.Link>
+                            )}
+                        </div>
+                    </div>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <div className="navbar-brand">
-                            <Navbar.Brand as={Link} to="/#home" onClick={() => handleNavLinkClick('home')}>
-                                <img src='./Tuntun_Logo1.svg' alt='Logo' className="navbar-brand" />
-                            </Navbar.Brand>
-                        </div>
                         <Nav className="nav-middle mx-auto">
                             <NavDropdown title={t('nav.dropt1')} className="no-caret">
                                 <NavDropdown.Item as={Link} to="/#abtus" onClick={() => handleNavLinkClick('abtus')}>{t("nav.down11")}</NavDropdown.Item>
@@ -75,29 +92,9 @@ const Navnav = () => {
                             </NavDropdown>
                             <Nav.Link as={Link} to="/Lib" className="custom-nav-link" onClick={() => handleNavLinkClick('lib')}>{t("nav.navLink")}</Nav.Link>
                         </Nav>
-                        <Nav className="ms-auto d-flex align-items-center">
-                            <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src="./GlobeT.svg" alt="Dropdown Icon" className="dropdown-image" />}>
-                                <NavDropdown.Item onClick={() => changeLanguage('en')}>English</NavDropdown.Item>
-                                <NavDropdown.Item onClick={() => changeLanguage('es')}>Español</NavDropdown.Item>
-                            </NavDropdown>
-                            <div className="login-signup">
-                                {isSignedIn ? (
-                                    <NavDropdown align="end" className="no-caret custom-image-dropdown" id="custom-dropdown" title={<img src={ussImg} alt="User" className="dropdown-image" />}>
-                                        <NavDropdown.Item onClick={handleSignOut}>{t("nav.sinOut")}</NavDropdown.Item>
-                                    </NavDropdown>
-                                ) : (
-                                    <Nav.Link className="no-caret custom-nav-link" onClick={handleShow} id="custom-dropdown">
-                                        <div>
-                                            <img src={inImg} alt="User" className="dropdown-image" />
-                                        </div>
-                                    </Nav.Link>
-                                )}
-                            </div>
-                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
             <Modal show={showModal} onHide={handleClose} centered className="custom-modal">
                 <Modal.Body>
                     <Sinsout onClose={handleClose} onSignIn={handleSignIn} />
@@ -110,10 +107,8 @@ const Navnav = () => {
 export default Navnav;
 
 //Nav: Change the after space on the buttons for in between
-//Nav: Fix dark arround hamburger menu
 //Nav: Take language out of hamburger menu
 //Home: Fix home links
-//Sinsout: Horizontal
 //BgFix~
 
 /*

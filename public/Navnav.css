@@ -141,11 +141,15 @@
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(165, 103, 11, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
+.custom-navbar .navbar-toggler:focus{
+    color: rgba(165, 103, 11, 1) !important;
+    box-shadow: rgba(165, 103, 11, 1) !important;
+}
+
 @media only screen and (max-width: 768px) {
     .modal-content {
         width: 400vw;
     }
-    
     
     .custom-modal .modal-dialog {
         max-width: 100%;
@@ -154,5 +158,13 @@
     .custom-modal .sinsout {
         width: 100%;
         min-height: 480px;
+    }
+
+    .navbar-brand {
+        height: 70px;
+    }
+
+    .dropdown-image {
+        width: 20px;
     }
 }
