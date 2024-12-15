@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 const Sinsout = ({ onClose, onSignIn }) => {
   const [t, i18n] = useTranslation('global');
-  
+
   useEffect(() => {
     const content = document.getElementById('sinsout');
     const Signbtn = document.getElementById('signin');
@@ -43,7 +43,7 @@ const Sinsout = ({ onClose, onSignIn }) => {
 
   const handleGoldBtnClick = () => {
     onClose();
-    onSignIn(); 
+    onSignIn();
   };
 
   return (
@@ -56,9 +56,9 @@ const Sinsout = ({ onClose, onSignIn }) => {
           </div>
           <div class="divider">
             <div class="line"></div>
-            <img src="../Symbol.svg" alt="Symbol" class="symbol"/>
+            <img src="../Symbol.svg" alt="Symbol" class="symbol" />
             <div class="line"></div>
-        </div>
+          </div>
           <div className='input-group mb-3'>
             <input type='text' placeholder={t('sinsout.create.uss')} className='form-control form-control-lg bg-light fs-6' />
           </div>
@@ -81,14 +81,14 @@ const Sinsout = ({ onClose, onSignIn }) => {
           </div>
           <div class="divider">
             <div class="line"></div>
-            <img src="../Symbol.svg" alt="Symbol" class="symbol"/>
+            <img src="../Symbol.svg" alt="Symbol" class="symbol" />
             <div class="line"></div>
-        </div>
+          </div>
           <div className='input-group mb-3'>
             <input type='text' placeholder={t('sinsout.connect.uss')} className='form-control form-control-lg bg-light fs-6' />
           </div>
           <div className='input-group mb-3'>
-            <input type='password' placeholder={t('sinsout.connect.pass')}  className='form-control form-control-lg bg-light fs-6' />
+            <input type='password' placeholder={t('sinsout.connect.pass')} className='form-control form-control-lg bg-light fs-6' />
           </div>
           <div className='input-group mb-3 justify-content-center'>
             <GoldBtn prop={t('sinsout.new.btn')} onClick={handleGoldBtnClick} />
@@ -119,3 +119,63 @@ const Sinsout = ({ onClose, onSignIn }) => {
 export default Sinsout;
 
 //Make separate div, between text and sign-in/log-in suggestion
+/*
+If u create an animation, create another version of it for the dif query
+or leave it as is.
+Ahí que te llevas? Un dato curioso
+ 
+*/
+
+/* .sinsout {
+        display: flex;
+        flex-direction: column;
+        min-height: 480px; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sinsout .col-md-6 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sinsout .right-box {
+        padding: 20px;
+    }
+
+    //Switch Content 
+  
+
+    .sinsout.active .switch {
+        transform: translateY(-50%); // Move down halfway to align with bottom half 
+    }
+
+    .sinsout .switch-panel {
+        position: absolute;
+        width: 100%;
+        height: 50%; // Fit into half of the container 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 30px;
+        text-align: center;
+        transition: 0.6s ease-in-out;
+    }
+
+    .sinsout .switch-left {
+        transform: translateY(0); // Stay in the top half 
+    }
+
+    .sinsout.active .switch-left {
+        transform: translateY(100%); // Move to bottom half 
+    }
+
+    .switch-right {
+        transform: translateY(100%); // Initially in bottom half 
+    }
+
+    .sinsout.active .switch-right {
+        transform: translateY(0); // Move to top half 
+    }
+*/

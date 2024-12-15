@@ -4,7 +4,6 @@
     position: relative;
     overflow: hidden;
     min-height: 480px;
-    max-width: 100%;
 }
 
 .sinsout .right-box {
@@ -29,9 +28,8 @@
 
 .sinsout .switch-content {
     position: absolute;
-    top: 0;
-    right: 50%;
     width: 50%;
+    /*right: 100%;*/
     height: 100%;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
@@ -46,12 +44,10 @@
 
 .sinsout .switch {
     background-color: rgba(202, 181, 155, 1);
-    ;
     height: 100%;
     color: rgba(63, 40, 7, 1);
     position: relative;
     left: -100%;
-    height: 100%;
     width: 200%;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
@@ -130,71 +126,41 @@
     margin: 0 10px;
 }
 
+.form-control {
+    color: rgba(63, 40, 7, 1) !important;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 15px !important;
+    
+}
+
 @media only screen and (max-width: 768px) {
-    .sinsout {
-        flex-direction: column;
-        min-height: auto;
-    }
 
     .sinsout .col-md-6 {
         width: 100%;
         padding: 20px;
     }
 
-    .sinsout .right-box {
-        padding: 20px;
+    .sinsout h1 {
+        font-size: 20px;
+    }
+    
+    .sinsout p {
+        font-size: 15px;
+        font-family: "Inknut Antiqua", serif !important;
+    }
+    
+    .sinsout h5 {
+        font-size: 7px;
+        padding-bottom: 5px;
+        font-family: "Inknut Antiqua", serif !important;
     }
 
-    /* Switch Content Container */
-    .sinsout .switch-content {
-        position: absolute; /* Consistent positioning */
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: auto;
-        transform: translateY(-50%); /* Center align by default */
-        transition: transform 0.6s ease-in-out;
-        border-radius: 0;
+    .form-control {
+        color: rgba(63, 40, 7, 1) !important;
+        font-family: "Inknut Antiqua", serif;
+        font-size: 12px !important;
+        
     }
-
-    /* Switch Panels */
-    .sinsout .switch {
-        width: 100%;
-        height: 200%; /* Twice the height for sliding effect */
-        transform: translateY(0); /* Default alignment */
-        transition: transform 0.6s ease-in-out;
-    }
-
-    .sinsout .switch-panel {
-        position: absolute;
-        width: 100%;
-        height: 50%; /* Adjust for sliding effect */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        text-align: center;
-        top: 0;
-        transform: translateY(0); /* Default state */
-        transition: transform 0.6s ease-in-out;
-    }
-
-    /* Switch Panel States */
-    .sinsout .switch-left {
-        top: 0;
-        transform: translateY(-100%); /* Move off-screen above */
-    }
-
-    .sinsout.active .switch-left {
-        transform: translateY(0); /* Slide into view */
-    }
-
-    .sinsout .switch-right {
-        top: 50%;
-        transform: translateY(0); /* Default below the visible screen */
-    }
-
-    .sinsout.active .switch-right {
-        transform: translateY(100%); /* Slide off-screen */
-    }
+    
+    
 }

@@ -142,5 +142,17 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .modal-content {
+        width: 400vw;
+    }
     
+    
+    .custom-modal .modal-dialog {
+        max-width: 100%;
+    }
+    
+    .custom-modal .sinsout {
+        width: 100%;
+        min-height: 480px;
+    }
 }
