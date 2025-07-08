@@ -5,6 +5,7 @@ import GoldBtn from './GoldBtn';
 import { Row, Col, Container } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 /*
+Note for next time:
 Create local storage/cookie or smt to hold the langua ge preference.
 react-i18next goes by region pref or usual selected language
 So if I want to keep another langua selection for the site, must keep that stored somewhere
